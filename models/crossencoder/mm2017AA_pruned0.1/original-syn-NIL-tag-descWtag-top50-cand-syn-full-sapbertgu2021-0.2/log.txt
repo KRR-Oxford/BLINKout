@@ -1,0 +1,682 @@
+11/26/2022 15:57:24 - INFO - Blink -   use_ori_classification
+11/26/2022 15:57:24 - INFO - Blink -   use_NIL_classification
+11/26/2022 15:57:24 - INFO - Blink -   lambda_NIL: ${lambda_NIL}
+11/26/2022 15:57:24 - INFO - Blink -   use_men_only_score_ft
+11/26/2022 15:59:50 - INFO - Blink -   use_ori_classification
+11/26/2022 15:59:50 - INFO - Blink -   use_NIL_classification
+11/26/2022 15:59:50 - INFO - Blink -   lambda_NIL: 0.2
+11/26/2022 15:59:50 - INFO - Blink -   use_men_only_score_ft
+11/26/2022 16:28:29 - INFO - Blink -   Eval accuracy: 0.00407
+11/26/2022 16:28:29 - INFO - Blink -   nb_pred_examples_in_KB: 1960
+11/26/2022 16:28:29 - INFO - Blink -   nb_pred_examples_NIL: 7
+11/26/2022 16:28:29 - INFO - Blink -   tp_all: 8 tp_in_KB: 5 tp_NIL: 3
+11/26/2022 16:28:29 - INFO - Blink -   eval_prec_rec_f1_in_KB: 0.00255 0.00283 0.00268
+11/26/2022 16:28:29 - INFO - Blink -   eval_prec_rec_f1_NIL: 0.42857 0.01493 0.02885
+11/26/2022 16:28:29 - INFO - Blink -   nb_eval_all: 1967 in_KB: 1766 NIL: 201
+11/26/2022 16:28:29 - INFO - Blink -   Starting training
+11/26/2022 16:28:29 - INFO - Blink -   device: cuda n_gpu: 1, distributed training: False
+11/26/2022 16:28:29 - INFO - Blink -    Num optimization steps = 24788
+11/26/2022 16:28:29 - INFO - Blink -    Num warmup steps = 2478
+11/26/2022 16:33:13 - INFO - Blink -   Step 99 - epoch 0 average loss: 4.06734718799591
+
+11/26/2022 16:37:56 - INFO - Blink -   Step 199 - epoch 0 average loss: 3.7203226590156557
+
+11/26/2022 16:42:29 - INFO - Blink -   Step 299 - epoch 0 average loss: 3.0362122762203216
+
+11/26/2022 16:46:20 - INFO - Blink -   Step 399 - epoch 0 average loss: 2.4396889930963517
+
+11/26/2022 16:50:25 - INFO - Blink -   Step 499 - epoch 0 average loss: 2.2915101630985735
+
+11/26/2022 16:54:29 - INFO - Blink -   Step 599 - epoch 0 average loss: 2.16310936331749
+
+11/26/2022 16:58:33 - INFO - Blink -   Step 699 - epoch 0 average loss: 1.6609537526220084
+
+11/26/2022 17:02:19 - INFO - Blink -   Step 799 - epoch 0 average loss: 1.498781118839979
+
+11/26/2022 17:05:39 - INFO - Blink -   Step 899 - epoch 0 average loss: 1.3661946226097643
+
+11/26/2022 17:08:59 - INFO - Blink -   Step 999 - epoch 0 average loss: 1.4486804485879838
+
+11/26/2022 17:12:21 - INFO - Blink -   Step 1099 - epoch 0 average loss: 1.3850750174745918
+
+11/26/2022 17:15:43 - INFO - Blink -   Step 1199 - epoch 0 average loss: 1.0733612469676883
+
+11/26/2022 17:19:04 - INFO - Blink -   Step 1299 - epoch 0 average loss: 1.0644883934408427
+
+11/26/2022 17:22:26 - INFO - Blink -   Step 1399 - epoch 0 average loss: 1.2398682103306056
+
+11/26/2022 17:25:46 - INFO - Blink -   Step 1499 - epoch 0 average loss: 1.2053329385630787
+
+11/26/2022 17:29:07 - INFO - Blink -   Step 1599 - epoch 0 average loss: 0.8351158755272627
+
+11/26/2022 17:32:52 - INFO - Blink -   Step 1699 - epoch 0 average loss: 1.577023929990828
+
+11/26/2022 17:37:03 - INFO - Blink -   Step 1799 - epoch 0 average loss: 1.2579433905333282
+
+11/26/2022 17:41:08 - INFO - Blink -   Step 1899 - epoch 0 average loss: 0.9717288835905492
+
+11/26/2022 17:45:17 - INFO - Blink -   Step 1999 - epoch 0 average loss: 1.6704697372508235
+
+11/26/2022 17:45:19 - INFO - Blink -   Evaluation on the development dataset
+11/26/2022 18:17:44 - INFO - Blink -   Eval accuracy: 0.73716
+11/26/2022 18:17:44 - INFO - Blink -   nb_pred_examples_in_KB: 1723
+11/26/2022 18:17:44 - INFO - Blink -   nb_pred_examples_NIL: 244
+11/26/2022 18:17:44 - INFO - Blink -   tp_all: 1450 tp_in_KB: 1352 tp_NIL: 98
+11/26/2022 18:17:44 - INFO - Blink -   eval_prec_rec_f1_in_KB: 0.78468 0.76557 0.77501
+11/26/2022 18:17:44 - INFO - Blink -   eval_prec_rec_f1_NIL: 0.40164 0.48756 0.44045
+11/26/2022 18:17:44 - INFO - Blink -   nb_eval_all: 1967 in_KB: 1766 NIL: 201
+11/26/2022 18:17:44 - INFO - Blink -   ***** Saving fine - tuned model *****
+11/26/2022 18:17:46 - INFO - Blink -   
+
+11/26/2022 18:22:32 - INFO - Blink -   Step 2099 - epoch 0 average loss: 0.9813590082526207
+
+11/26/2022 18:26:41 - INFO - Blink -   Step 2199 - epoch 0 average loss: 0.7538784601073713
+
+11/26/2022 18:30:38 - INFO - Blink -   Step 2299 - epoch 0 average loss: 1.2805139115080237
+
+11/26/2022 18:34:36 - INFO - Blink -   Step 2399 - epoch 0 average loss: 1.5906092011928559
+
+11/26/2022 18:38:34 - INFO - Blink -   Step 2499 - epoch 0 average loss: 1.2161803808808327
+
+11/26/2022 18:42:52 - INFO - Blink -   Step 2599 - epoch 0 average loss: 1.0642359686922283
+
+11/26/2022 18:47:34 - INFO - Blink -   Step 2699 - epoch 0 average loss: 0.8229100547358393
+
+11/26/2022 18:52:13 - INFO - Blink -   Step 2799 - epoch 0 average loss: 0.941515605058521
+
+11/26/2022 18:56:53 - INFO - Blink -   Step 2899 - epoch 0 average loss: 0.5652246452309191
+
+11/26/2022 19:01:31 - INFO - Blink -   Step 2999 - epoch 0 average loss: 0.9229664688371122
+
+11/26/2022 19:06:10 - INFO - Blink -   Step 3099 - epoch 0 average loss: 0.9834646244812757
+
+11/26/2022 19:10:53 - INFO - Blink -   Step 3199 - epoch 0 average loss: 1.1317192696500569
+
+11/26/2022 19:15:35 - INFO - Blink -   Step 3299 - epoch 0 average loss: 1.1046790244057774
+
+11/26/2022 19:20:19 - INFO - Blink -   Step 3399 - epoch 0 average loss: 0.8644761488656514
+
+11/26/2022 19:25:01 - INFO - Blink -   Step 3499 - epoch 0 average loss: 1.4176739246025682
+
+11/26/2022 19:29:46 - INFO - Blink -   Step 3599 - epoch 0 average loss: 0.7555373064056039
+
+11/26/2022 19:34:26 - INFO - Blink -   Step 3699 - epoch 0 average loss: 1.3661661431053653
+
+11/26/2022 19:39:09 - INFO - Blink -   Step 3799 - epoch 0 average loss: 1.0204829762130976
+
+11/26/2022 19:43:51 - INFO - Blink -   Step 3899 - epoch 0 average loss: 0.6554066081903875
+
+11/26/2022 19:48:34 - INFO - Blink -   Step 3999 - epoch 0 average loss: 0.7897447704896331
+
+11/26/2022 19:48:35 - INFO - Blink -   Evaluation on the development dataset
+11/26/2022 20:18:27 - INFO - Blink -   Eval accuracy: 0.77936
+11/26/2022 20:18:27 - INFO - Blink -   nb_pred_examples_in_KB: 1597
+11/26/2022 20:18:27 - INFO - Blink -   nb_pred_examples_NIL: 370
+11/26/2022 20:18:27 - INFO - Blink -   tp_all: 1533 tp_in_KB: 1380 tp_NIL: 153
+11/26/2022 20:18:27 - INFO - Blink -   eval_prec_rec_f1_in_KB: 0.86412 0.78143 0.82070
+11/26/2022 20:18:27 - INFO - Blink -   eval_prec_rec_f1_NIL: 0.41351 0.76119 0.53590
+11/26/2022 20:18:27 - INFO - Blink -   nb_eval_all: 1967 in_KB: 1766 NIL: 201
+11/26/2022 20:18:27 - INFO - Blink -   ***** Saving fine - tuned model *****
+11/26/2022 20:18:29 - INFO - Blink -   
+
+11/26/2022 20:22:27 - INFO - Blink -   Step 4099 - epoch 0 average loss: 0.5970654154568911
+
+11/26/2022 20:26:27 - INFO - Blink -   Step 4199 - epoch 0 average loss: 0.8856044517457485
+
+11/26/2022 20:30:28 - INFO - Blink -   Step 4299 - epoch 0 average loss: 0.8845611455850303
+
+11/26/2022 20:34:29 - INFO - Blink -   Step 4399 - epoch 0 average loss: 0.9683065648004413
+
+11/26/2022 20:38:31 - INFO - Blink -   Step 4499 - epoch 0 average loss: 0.8505688899382949
+
+11/26/2022 20:42:32 - INFO - Blink -   Step 4599 - epoch 0 average loss: 0.6407431504689157
+
+11/26/2022 20:46:34 - INFO - Blink -   Step 4699 - epoch 0 average loss: 0.8159892986156047
+
+11/26/2022 20:50:34 - INFO - Blink -   Step 4799 - epoch 0 average loss: 0.7967029815167188
+
+11/26/2022 20:54:35 - INFO - Blink -   Step 4899 - epoch 0 average loss: 1.0986351969093084
+
+11/26/2022 20:58:36 - INFO - Blink -   Step 4999 - epoch 0 average loss: 0.9195100766792893
+
+11/26/2022 21:02:37 - INFO - Blink -   Step 5099 - epoch 0 average loss: 0.7671346347220243
+
+11/26/2022 21:06:38 - INFO - Blink -   Step 5199 - epoch 0 average loss: 0.5461307859793305
+
+11/26/2022 21:10:39 - INFO - Blink -   Step 5299 - epoch 0 average loss: 0.8472364419139922
+
+11/26/2022 21:14:39 - INFO - Blink -   Step 5399 - epoch 0 average loss: 0.7270917374454439
+
+11/26/2022 21:18:39 - INFO - Blink -   Step 5499 - epoch 0 average loss: 0.6015858074650169
+
+11/26/2022 21:22:36 - INFO - Blink -   Step 5599 - epoch 0 average loss: 0.465591146312654
+
+11/26/2022 21:26:34 - INFO - Blink -   Step 5699 - epoch 0 average loss: 0.5354489586502313
+
+11/26/2022 21:30:31 - INFO - Blink -   Step 5799 - epoch 0 average loss: 0.5127652968652546
+
+11/26/2022 21:34:28 - INFO - Blink -   Step 5899 - epoch 0 average loss: 0.39567516863346097
+
+11/26/2022 21:38:26 - INFO - Blink -   Step 5999 - epoch 0 average loss: 0.6958315703237895
+
+11/26/2022 21:38:27 - INFO - Blink -   Evaluation on the development dataset
+11/26/2022 22:05:54 - INFO - Blink -   Eval accuracy: 0.83427
+11/26/2022 22:05:54 - INFO - Blink -   nb_pred_examples_in_KB: 1765
+11/26/2022 22:05:54 - INFO - Blink -   nb_pred_examples_NIL: 202
+11/26/2022 22:05:54 - INFO - Blink -   tp_all: 1641 tp_in_KB: 1510 tp_NIL: 131
+11/26/2022 22:05:54 - INFO - Blink -   eval_prec_rec_f1_in_KB: 0.85552 0.85504 0.85528
+11/26/2022 22:05:54 - INFO - Blink -   eval_prec_rec_f1_NIL: 0.64851 0.65174 0.65012
+11/26/2022 22:05:54 - INFO - Blink -   nb_eval_all: 1967 in_KB: 1766 NIL: 201
+11/26/2022 22:05:54 - INFO - Blink -   ***** Saving fine - tuned model *****
+11/26/2022 22:05:56 - INFO - Blink -   
+
+11/26/2022 22:10:19 - INFO - Blink -   Step 6099 - epoch 0 average loss: 1.0125570099055767
+
+11/26/2022 22:14:58 - INFO - Blink -   ***** Saving fine - tuned model *****
+11/26/2022 22:47:28 - INFO - Blink -   Eval accuracy: 0.82257
+11/26/2022 22:47:28 - INFO - Blink -   nb_pred_examples_in_KB: 1684
+11/26/2022 22:47:28 - INFO - Blink -   nb_pred_examples_NIL: 283
+11/26/2022 22:47:28 - INFO - Blink -   tp_all: 1618 tp_in_KB: 1457 tp_NIL: 161
+11/26/2022 22:47:28 - INFO - Blink -   eval_prec_rec_f1_in_KB: 0.86520 0.82503 0.84464
+11/26/2022 22:47:28 - INFO - Blink -   eval_prec_rec_f1_NIL: 0.56890 0.80100 0.66529
+11/26/2022 22:47:28 - INFO - Blink -   nb_eval_all: 1967 in_KB: 1766 NIL: 201
+11/26/2022 22:47:28 - INFO - Blink -   
+
+11/26/2022 22:51:59 - INFO - Blink -   Step 99 - epoch 1 average loss: 0.7770343988807872
+
+11/26/2022 22:56:37 - INFO - Blink -   Step 199 - epoch 1 average loss: 0.724825331652537
+
+11/26/2022 23:01:09 - INFO - Blink -   Step 299 - epoch 1 average loss: 0.48047164086252453
+
+11/26/2022 23:05:43 - INFO - Blink -   Step 399 - epoch 1 average loss: 0.4814833416976035
+
+11/26/2022 23:10:19 - INFO - Blink -   Step 499 - epoch 1 average loss: 0.45731079652905465
+
+11/26/2022 23:14:53 - INFO - Blink -   Step 599 - epoch 1 average loss: 0.8816782138124108
+
+11/26/2022 23:19:29 - INFO - Blink -   Step 699 - epoch 1 average loss: 0.5997038624621928
+
+11/26/2022 23:24:02 - INFO - Blink -   Step 799 - epoch 1 average loss: 0.4547554695582949
+
+11/26/2022 23:28:38 - INFO - Blink -   Step 899 - epoch 1 average loss: 1.0673671686276793
+
+11/26/2022 23:32:34 - INFO - Blink -   Step 999 - epoch 1 average loss: 0.34514349095523356
+
+11/26/2022 23:35:08 - INFO - Blink -   Step 1099 - epoch 1 average loss: 0.5703138387575746
+
+11/26/2022 23:38:03 - INFO - Blink -   Step 1199 - epoch 1 average loss: 0.5690968373976648
+
+11/26/2022 23:41:14 - INFO - Blink -   Step 1299 - epoch 1 average loss: 0.673555314950645
+
+11/26/2022 23:44:28 - INFO - Blink -   Step 1399 - epoch 1 average loss: 0.3447490604966879
+
+11/26/2022 23:47:42 - INFO - Blink -   Step 1499 - epoch 1 average loss: 0.8611909125000239
+
+11/26/2022 23:50:54 - INFO - Blink -   Step 1599 - epoch 1 average loss: 0.5285019744746386
+
+11/26/2022 23:54:07 - INFO - Blink -   Step 1699 - epoch 1 average loss: 0.4374816394969821
+
+11/26/2022 23:57:21 - INFO - Blink -   Step 1799 - epoch 1 average loss: 0.8518050880357623
+
+11/27/2022 00:00:33 - INFO - Blink -   Step 1899 - epoch 1 average loss: 0.38029047587886455
+
+11/27/2022 00:03:46 - INFO - Blink -   Step 1999 - epoch 1 average loss: 0.4590240211226046
+
+11/27/2022 00:03:47 - INFO - Blink -   Evaluation on the development dataset
+11/27/2022 00:26:19 - INFO - Blink -   Eval accuracy: 0.83427
+11/27/2022 00:26:19 - INFO - Blink -   nb_pred_examples_in_KB: 1749
+11/27/2022 00:26:19 - INFO - Blink -   nb_pred_examples_NIL: 218
+11/27/2022 00:26:19 - INFO - Blink -   tp_all: 1641 tp_in_KB: 1512 tp_NIL: 129
+11/27/2022 00:26:19 - INFO - Blink -   eval_prec_rec_f1_in_KB: 0.86449 0.85617 0.86031
+11/27/2022 00:26:19 - INFO - Blink -   eval_prec_rec_f1_NIL: 0.59174 0.64179 0.61575
+11/27/2022 00:26:19 - INFO - Blink -   nb_eval_all: 1967 in_KB: 1766 NIL: 201
+11/27/2022 00:26:19 - INFO - Blink -   ***** Saving fine - tuned model *****
+11/27/2022 00:26:20 - INFO - Blink -   
+
+11/27/2022 00:29:35 - INFO - Blink -   Step 2099 - epoch 1 average loss: 0.449479460233415
+
+11/27/2022 00:32:52 - INFO - Blink -   Step 2199 - epoch 1 average loss: 0.6472479208291042
+
+11/27/2022 00:36:08 - INFO - Blink -   Step 2299 - epoch 1 average loss: 0.24229796677827836
+
+11/27/2022 00:39:24 - INFO - Blink -   Step 2399 - epoch 1 average loss: 0.5757948610931635
+
+11/27/2022 00:42:41 - INFO - Blink -   Step 2499 - epoch 1 average loss: 0.8211252139136195
+
+11/27/2022 00:45:58 - INFO - Blink -   Step 2599 - epoch 1 average loss: 0.6181452652439475
+
+11/27/2022 00:49:15 - INFO - Blink -   Step 2699 - epoch 1 average loss: 0.41884594146162274
+
+11/27/2022 00:52:32 - INFO - Blink -   Step 2799 - epoch 1 average loss: 0.5800388440489769
+
+11/27/2022 00:55:49 - INFO - Blink -   Step 2899 - epoch 1 average loss: 0.5773903702385723
+
+11/27/2022 00:59:08 - INFO - Blink -   Step 2999 - epoch 1 average loss: 0.675293342396617
+
+11/27/2022 01:02:24 - INFO - Blink -   Step 3099 - epoch 1 average loss: 0.7843321058899164
+
+11/27/2022 01:05:41 - INFO - Blink -   Step 3199 - epoch 1 average loss: 0.5561241749487817
+
+11/27/2022 01:08:57 - INFO - Blink -   Step 3299 - epoch 1 average loss: 0.4856910319067538
+
+11/27/2022 01:12:14 - INFO - Blink -   Step 3399 - epoch 1 average loss: 0.4989086462929845
+
+11/27/2022 01:15:31 - INFO - Blink -   Step 3499 - epoch 1 average loss: 0.4554481977317482
+
+11/27/2022 01:18:47 - INFO - Blink -   Step 3599 - epoch 1 average loss: 0.6698730654269457
+
+11/27/2022 01:22:03 - INFO - Blink -   Step 3699 - epoch 1 average loss: 0.43783136053010824
+
+11/27/2022 01:25:19 - INFO - Blink -   Step 3799 - epoch 1 average loss: 0.4201182035729289
+
+11/27/2022 01:28:27 - INFO - Blink -   Step 3899 - epoch 1 average loss: 0.4133756832778454
+
+11/27/2022 01:31:25 - INFO - Blink -   Step 3999 - epoch 1 average loss: 0.688116497695446
+
+11/27/2022 01:31:26 - INFO - Blink -   Evaluation on the development dataset
+11/27/2022 01:59:32 - INFO - Blink -   Eval accuracy: 0.82054
+11/27/2022 01:59:32 - INFO - Blink -   nb_pred_examples_in_KB: 1667
+11/27/2022 01:59:32 - INFO - Blink -   nb_pred_examples_NIL: 300
+11/27/2022 01:59:32 - INFO - Blink -   tp_all: 1614 tp_in_KB: 1467 tp_NIL: 147
+11/27/2022 01:59:32 - INFO - Blink -   eval_prec_rec_f1_in_KB: 0.88002 0.83069 0.85465
+11/27/2022 01:59:32 - INFO - Blink -   eval_prec_rec_f1_NIL: 0.49000 0.73134 0.58683
+11/27/2022 01:59:32 - INFO - Blink -   nb_eval_all: 1967 in_KB: 1766 NIL: 201
+11/27/2022 01:59:32 - INFO - Blink -   ***** Saving fine - tuned model *****
+11/27/2022 01:59:33 - INFO - Blink -   
+
+11/27/2022 02:03:36 - INFO - Blink -   Step 4099 - epoch 1 average loss: 0.3981839231401682
+
+11/27/2022 02:08:01 - INFO - Blink -   Step 4199 - epoch 1 average loss: 0.26740082815289495
+
+11/27/2022 02:12:27 - INFO - Blink -   Step 4299 - epoch 1 average loss: 0.37876117110252383
+
+11/27/2022 02:16:38 - INFO - Blink -   Step 4399 - epoch 1 average loss: 0.2728355804271996
+
+11/27/2022 02:20:56 - INFO - Blink -   Step 4499 - epoch 1 average loss: 0.4672067956626415
+
+11/27/2022 02:25:22 - INFO - Blink -   Step 4599 - epoch 1 average loss: 0.5152286244928836
+
+11/27/2022 02:29:47 - INFO - Blink -   Step 4699 - epoch 1 average loss: 0.5051433543674648
+
+11/27/2022 02:33:41 - INFO - Blink -   Step 4799 - epoch 1 average loss: 0.4625979625433683
+
+11/27/2022 02:37:17 - INFO - Blink -   Step 4899 - epoch 1 average loss: 0.6368918347917497
+
+11/27/2022 02:40:50 - INFO - Blink -   Step 4999 - epoch 1 average loss: 0.4555129389837384
+
+11/27/2022 02:44:27 - INFO - Blink -   Step 5099 - epoch 1 average loss: 0.40251222234219314
+
+11/27/2022 02:46:54 - INFO - Blink -   Step 5199 - epoch 1 average loss: 0.4159121412970126
+
+11/27/2022 02:48:59 - INFO - Blink -   Step 5299 - epoch 1 average loss: 0.5599913809634746
+
+11/27/2022 02:51:05 - INFO - Blink -   Step 5399 - epoch 1 average loss: 0.34086936796084044
+
+11/27/2022 02:53:10 - INFO - Blink -   Step 5499 - epoch 1 average loss: 0.3369707132875919
+
+11/27/2022 02:55:15 - INFO - Blink -   Step 5599 - epoch 1 average loss: 0.5110877028293908
+
+11/27/2022 02:57:20 - INFO - Blink -   Step 5699 - epoch 1 average loss: 0.7663894135318696
+
+11/27/2022 02:59:26 - INFO - Blink -   Step 5799 - epoch 1 average loss: 0.8671595419570803
+
+11/27/2022 03:01:32 - INFO - Blink -   Step 5899 - epoch 1 average loss: 0.5794536190479994
+
+11/27/2022 03:03:37 - INFO - Blink -   Step 5999 - epoch 1 average loss: 0.5214694978483021
+
+11/27/2022 03:03:38 - INFO - Blink -   Evaluation on the development dataset
+11/27/2022 03:17:53 - INFO - Blink -   Eval accuracy: 0.82867
+11/27/2022 03:17:53 - INFO - Blink -   nb_pred_examples_in_KB: 1813
+11/27/2022 03:17:53 - INFO - Blink -   nb_pred_examples_NIL: 154
+11/27/2022 03:17:53 - INFO - Blink -   tp_all: 1630 tp_in_KB: 1514 tp_NIL: 116
+11/27/2022 03:17:53 - INFO - Blink -   eval_prec_rec_f1_in_KB: 0.83508 0.85730 0.84605
+11/27/2022 03:17:53 - INFO - Blink -   eval_prec_rec_f1_NIL: 0.75325 0.57711 0.65352
+11/27/2022 03:17:53 - INFO - Blink -   nb_eval_all: 1967 in_KB: 1766 NIL: 201
+11/27/2022 03:17:53 - INFO - Blink -   ***** Saving fine - tuned model *****
+11/27/2022 03:17:54 - INFO - Blink -   
+
+11/27/2022 03:20:00 - INFO - Blink -   Step 6099 - epoch 1 average loss: 0.509327153544873
+
+11/27/2022 03:22:03 - INFO - Blink -   ***** Saving fine - tuned model *****
+11/27/2022 03:34:50 - INFO - Blink -   Eval accuracy: 0.82816
+11/27/2022 03:34:50 - INFO - Blink -   nb_pred_examples_in_KB: 1713
+11/27/2022 03:34:50 - INFO - Blink -   nb_pred_examples_NIL: 254
+11/27/2022 03:34:50 - INFO - Blink -   tp_all: 1629 tp_in_KB: 1481 tp_NIL: 148
+11/27/2022 03:34:50 - INFO - Blink -   eval_prec_rec_f1_in_KB: 0.86457 0.83862 0.85139
+11/27/2022 03:34:50 - INFO - Blink -   eval_prec_rec_f1_NIL: 0.58268 0.73632 0.65055
+11/27/2022 03:34:50 - INFO - Blink -   nb_eval_all: 1967 in_KB: 1766 NIL: 201
+11/27/2022 03:34:50 - INFO - Blink -   
+
+11/27/2022 03:36:44 - INFO - Blink -   Step 99 - epoch 2 average loss: 0.24478468727320432
+
+11/27/2022 03:38:37 - INFO - Blink -   Step 199 - epoch 2 average loss: 0.3743825788423419
+
+11/27/2022 03:40:28 - INFO - Blink -   Step 299 - epoch 2 average loss: 0.48648536585271357
+
+11/27/2022 03:42:18 - INFO - Blink -   Step 399 - epoch 2 average loss: 0.4966628863662481
+
+11/27/2022 03:44:06 - INFO - Blink -   Step 499 - epoch 2 average loss: 0.24873014729470014
+
+11/27/2022 03:45:55 - INFO - Blink -   Step 599 - epoch 2 average loss: 0.28965088924393056
+
+11/27/2022 03:47:43 - INFO - Blink -   Step 699 - epoch 2 average loss: 0.2698775776475668
+
+11/27/2022 03:49:16 - INFO - Blink -   Step 799 - epoch 2 average loss: 0.3673731184564531
+
+11/27/2022 03:50:45 - INFO - Blink -   Step 899 - epoch 2 average loss: 0.27216876367107035
+
+11/27/2022 03:52:44 - INFO - Blink -   Step 999 - epoch 2 average loss: 0.4157575703784823
+
+11/27/2022 03:54:47 - INFO - Blink -   Step 1099 - epoch 2 average loss: 0.288295076508075
+
+11/27/2022 03:56:49 - INFO - Blink -   Step 1199 - epoch 2 average loss: 0.3138703323714435
+
+11/27/2022 03:58:51 - INFO - Blink -   Step 1299 - epoch 2 average loss: 0.4506524599157274
+
+11/27/2022 04:00:55 - INFO - Blink -   Step 1399 - epoch 2 average loss: 0.2615069642476737
+
+11/27/2022 04:02:57 - INFO - Blink -   Step 1499 - epoch 2 average loss: 0.3664210006408393
+
+11/27/2022 04:04:59 - INFO - Blink -   Step 1599 - epoch 2 average loss: 0.5801725601777434
+
+11/27/2022 04:07:03 - INFO - Blink -   Step 1699 - epoch 2 average loss: 0.38276768904179337
+
+11/27/2022 04:09:06 - INFO - Blink -   Step 1799 - epoch 2 average loss: 0.33386634558439254
+
+11/27/2022 04:11:10 - INFO - Blink -   Step 1899 - epoch 2 average loss: 0.36813234467059375
+
+11/27/2022 04:13:12 - INFO - Blink -   Step 1999 - epoch 2 average loss: 0.38624701634049413
+
+11/27/2022 04:13:12 - INFO - Blink -   Evaluation on the development dataset
+11/27/2022 04:29:52 - INFO - Blink -   Eval accuracy: 0.83681
+11/27/2022 04:29:52 - INFO - Blink -   nb_pred_examples_in_KB: 1621
+11/27/2022 04:29:52 - INFO - Blink -   nb_pred_examples_NIL: 346
+11/27/2022 04:29:52 - INFO - Blink -   tp_all: 1646 tp_in_KB: 1479 tp_NIL: 167
+11/27/2022 04:29:52 - INFO - Blink -   eval_prec_rec_f1_in_KB: 0.91240 0.83749 0.87334
+11/27/2022 04:29:52 - INFO - Blink -   eval_prec_rec_f1_NIL: 0.48266 0.83085 0.61060
+11/27/2022 04:29:52 - INFO - Blink -   nb_eval_all: 1967 in_KB: 1766 NIL: 201
+11/27/2022 04:29:52 - INFO - Blink -   ***** Saving fine - tuned model *****
+11/27/2022 04:29:54 - INFO - Blink -   
+
+11/27/2022 04:32:38 - INFO - Blink -   Step 2099 - epoch 2 average loss: 0.2200383640639484
+
+11/27/2022 04:35:25 - INFO - Blink -   Step 2199 - epoch 2 average loss: 0.36614234233275056
+
+11/27/2022 04:38:07 - INFO - Blink -   Step 2299 - epoch 2 average loss: 0.23935727644711732
+
+11/27/2022 04:40:55 - INFO - Blink -   Step 2399 - epoch 2 average loss: 0.24370127078145742
+
+11/27/2022 04:43:39 - INFO - Blink -   Step 2499 - epoch 2 average loss: 0.3595697024092078
+
+11/27/2022 04:46:26 - INFO - Blink -   Step 2599 - epoch 2 average loss: 0.31423574874177573
+
+11/27/2022 04:49:09 - INFO - Blink -   Step 2699 - epoch 2 average loss: 0.3311561089754105
+
+11/27/2022 04:51:57 - INFO - Blink -   Step 2799 - epoch 2 average loss: 0.48100451547652484
+
+11/27/2022 04:54:41 - INFO - Blink -   Step 2899 - epoch 2 average loss: 0.30929466178640724
+
+11/27/2022 04:57:29 - INFO - Blink -   Step 2999 - epoch 2 average loss: 0.26068893732503057
+
+11/27/2022 05:00:15 - INFO - Blink -   Step 3099 - epoch 2 average loss: 0.3471514921449125
+
+11/27/2022 05:03:03 - INFO - Blink -   Step 3199 - epoch 2 average loss: 0.27542771738022565
+
+11/27/2022 05:05:46 - INFO - Blink -   Step 3299 - epoch 2 average loss: 0.3305672296509147
+
+11/27/2022 05:08:33 - INFO - Blink -   Step 3399 - epoch 2 average loss: 0.3428962012566626
+
+11/27/2022 05:11:16 - INFO - Blink -   Step 3499 - epoch 2 average loss: 0.26832046881318095
+
+11/27/2022 05:14:04 - INFO - Blink -   Step 3599 - epoch 2 average loss: 0.43567816345021126
+
+11/27/2022 05:16:37 - INFO - Blink -   Step 3699 - epoch 2 average loss: 0.25392260156571866
+
+11/27/2022 05:18:43 - INFO - Blink -   Step 3799 - epoch 2 average loss: 0.3537806843407452
+
+11/27/2022 05:20:48 - INFO - Blink -   Step 3899 - epoch 2 average loss: 0.3798186557367444
+
+11/27/2022 05:22:54 - INFO - Blink -   Step 3999 - epoch 2 average loss: 0.26485491964966057
+
+11/27/2022 05:22:54 - INFO - Blink -   Evaluation on the development dataset
+11/27/2022 05:37:10 - INFO - Blink -   Eval accuracy: 0.84596
+11/27/2022 05:37:10 - INFO - Blink -   nb_pred_examples_in_KB: 1711
+11/27/2022 05:37:10 - INFO - Blink -   nb_pred_examples_NIL: 256
+11/27/2022 05:37:10 - INFO - Blink -   tp_all: 1664 tp_in_KB: 1511 tp_NIL: 153
+11/27/2022 05:37:10 - INFO - Blink -   eval_prec_rec_f1_in_KB: 0.88311 0.85561 0.86914
+11/27/2022 05:37:10 - INFO - Blink -   eval_prec_rec_f1_NIL: 0.59766 0.76119 0.66958
+11/27/2022 05:37:10 - INFO - Blink -   nb_eval_all: 1967 in_KB: 1766 NIL: 201
+11/27/2022 05:37:10 - INFO - Blink -   ***** Saving fine - tuned model *****
+11/27/2022 05:37:12 - INFO - Blink -   
+
+11/27/2022 05:39:16 - INFO - Blink -   Step 4099 - epoch 2 average loss: 0.16832415953278543
+
+11/27/2022 05:41:21 - INFO - Blink -   Step 4199 - epoch 2 average loss: 0.36885362477041783
+
+11/27/2022 05:43:27 - INFO - Blink -   Step 4299 - epoch 2 average loss: 0.1936755434423685
+
+11/27/2022 05:45:33 - INFO - Blink -   Step 4399 - epoch 2 average loss: 0.36971861934289335
+
+11/27/2022 05:47:38 - INFO - Blink -   Step 4499 - epoch 2 average loss: 0.2069983945414424
+
+11/27/2022 05:49:43 - INFO - Blink -   Step 4599 - epoch 2 average loss: 0.21460814394056796
+
+11/27/2022 05:51:49 - INFO - Blink -   Step 4699 - epoch 2 average loss: 0.24696589658036827
+
+11/27/2022 05:53:55 - INFO - Blink -   Step 4799 - epoch 2 average loss: 0.4110581776127219
+
+11/27/2022 05:56:03 - INFO - Blink -   Step 4899 - epoch 2 average loss: 0.4814732856675982
+
+11/27/2022 05:58:09 - INFO - Blink -   Step 4999 - epoch 2 average loss: 0.34183726551011206
+
+11/27/2022 06:00:15 - INFO - Blink -   Step 5099 - epoch 2 average loss: 0.1901776535436511
+
+11/27/2022 06:02:22 - INFO - Blink -   Step 5199 - epoch 2 average loss: 0.4176709508895874
+
+11/27/2022 06:04:26 - INFO - Blink -   Step 5299 - epoch 2 average loss: 0.5226769242063165
+
+11/27/2022 06:06:33 - INFO - Blink -   Step 5399 - epoch 2 average loss: 0.2310536974761635
+
+11/27/2022 06:08:38 - INFO - Blink -   Step 5499 - epoch 2 average loss: 0.32931812286551576
+
+11/27/2022 06:10:44 - INFO - Blink -   Step 5599 - epoch 2 average loss: 0.3589201182406396
+
+11/27/2022 06:12:49 - INFO - Blink -   Step 5699 - epoch 2 average loss: 0.5113645084621384
+
+11/27/2022 06:14:55 - INFO - Blink -   Step 5799 - epoch 2 average loss: 0.4917018800415099
+
+11/27/2022 06:17:00 - INFO - Blink -   Step 5899 - epoch 2 average loss: 0.4617501455359161
+
+11/27/2022 06:19:05 - INFO - Blink -   Step 5999 - epoch 2 average loss: 0.27653100978583095
+
+11/27/2022 06:19:06 - INFO - Blink -   Evaluation on the development dataset
+11/27/2022 06:33:24 - INFO - Blink -   Eval accuracy: 0.84799
+11/27/2022 06:33:24 - INFO - Blink -   nb_pred_examples_in_KB: 1780
+11/27/2022 06:33:24 - INFO - Blink -   nb_pred_examples_NIL: 187
+11/27/2022 06:33:24 - INFO - Blink -   tp_all: 1668 tp_in_KB: 1538 tp_NIL: 130
+11/27/2022 06:33:24 - INFO - Blink -   eval_prec_rec_f1_in_KB: 0.86404 0.87089 0.86746
+11/27/2022 06:33:24 - INFO - Blink -   eval_prec_rec_f1_NIL: 0.69519 0.64677 0.67010
+11/27/2022 06:33:24 - INFO - Blink -   nb_eval_all: 1967 in_KB: 1766 NIL: 201
+11/27/2022 06:33:24 - INFO - Blink -   ***** Saving fine - tuned model *****
+11/27/2022 06:33:25 - INFO - Blink -   
+
+11/27/2022 06:35:30 - INFO - Blink -   Step 6099 - epoch 2 average loss: 0.2299917277134955
+
+11/27/2022 06:37:34 - INFO - Blink -   ***** Saving fine - tuned model *****
+11/27/2022 06:51:58 - INFO - Blink -   Eval accuracy: 0.85155
+11/27/2022 06:51:58 - INFO - Blink -   nb_pred_examples_in_KB: 1751
+11/27/2022 06:51:58 - INFO - Blink -   nb_pred_examples_NIL: 216
+11/27/2022 06:51:58 - INFO - Blink -   tp_all: 1675 tp_in_KB: 1527 tp_NIL: 148
+11/27/2022 06:51:58 - INFO - Blink -   eval_prec_rec_f1_in_KB: 0.87207 0.86467 0.86835
+11/27/2022 06:51:58 - INFO - Blink -   eval_prec_rec_f1_NIL: 0.68519 0.73632 0.70983
+11/27/2022 06:51:58 - INFO - Blink -   nb_eval_all: 1967 in_KB: 1766 NIL: 201
+11/27/2022 06:51:58 - INFO - Blink -   
+
+11/27/2022 06:54:00 - INFO - Blink -   Step 99 - epoch 3 average loss: 0.20163381788879634
+
+11/27/2022 06:56:05 - INFO - Blink -   Step 199 - epoch 3 average loss: 0.34813590286299584
+
+11/27/2022 06:58:50 - INFO - Blink -   Step 299 - epoch 3 average loss: 0.20379864502698183
+
+11/27/2022 07:01:32 - INFO - Blink -   Step 399 - epoch 3 average loss: 0.25795775014907124
+
+11/27/2022 07:04:17 - INFO - Blink -   Step 499 - epoch 3 average loss: 0.16318477729335426
+
+11/27/2022 07:06:59 - INFO - Blink -   Step 599 - epoch 3 average loss: 0.17476135026663542
+
+11/27/2022 07:09:44 - INFO - Blink -   Step 699 - epoch 3 average loss: 0.27190441358834505
+
+11/27/2022 07:12:26 - INFO - Blink -   Step 799 - epoch 3 average loss: 0.38168730098754167
+
+11/27/2022 07:15:11 - INFO - Blink -   Step 899 - epoch 3 average loss: 0.17618711244314908
+
+11/27/2022 07:17:53 - INFO - Blink -   Step 999 - epoch 3 average loss: 0.18373194105923177
+
+11/27/2022 07:20:39 - INFO - Blink -   Step 1099 - epoch 3 average loss: 0.16263393107801677
+
+11/27/2022 07:23:20 - INFO - Blink -   Step 1199 - epoch 3 average loss: 0.2812812031060457
+
+11/27/2022 07:26:01 - INFO - Blink -   Step 1299 - epoch 3 average loss: 0.2367101415619254
+
+11/27/2022 07:28:46 - INFO - Blink -   Step 1399 - epoch 3 average loss: 0.16030502935871482
+
+11/27/2022 07:31:28 - INFO - Blink -   Step 1499 - epoch 3 average loss: 0.3062185986712575
+
+11/27/2022 07:34:13 - INFO - Blink -   Step 1599 - epoch 3 average loss: 0.1611762396246195
+
+11/27/2022 07:36:56 - INFO - Blink -   Step 1699 - epoch 3 average loss: 0.19417944625020028
+
+11/27/2022 07:39:43 - INFO - Blink -   Step 1799 - epoch 3 average loss: 0.2936662803962827
+
+11/27/2022 07:42:25 - INFO - Blink -   Step 1899 - epoch 3 average loss: 0.162094187438488
+
+11/27/2022 07:45:08 - INFO - Blink -   Step 1999 - epoch 3 average loss: 0.24254597082734108
+
+11/27/2022 07:45:09 - INFO - Blink -   Evaluation on the development dataset
+11/27/2022 07:59:14 - INFO - Blink -   Eval accuracy: 0.83782
+11/27/2022 07:59:14 - INFO - Blink -   nb_pred_examples_in_KB: 1669
+11/27/2022 07:59:14 - INFO - Blink -   nb_pred_examples_NIL: 298
+11/27/2022 07:59:14 - INFO - Blink -   tp_all: 1648 tp_in_KB: 1483 tp_NIL: 165
+11/27/2022 07:59:14 - INFO - Blink -   eval_prec_rec_f1_in_KB: 0.88856 0.83975 0.86346
+11/27/2022 07:59:14 - INFO - Blink -   eval_prec_rec_f1_NIL: 0.55369 0.82090 0.66132
+11/27/2022 07:59:14 - INFO - Blink -   nb_eval_all: 1967 in_KB: 1766 NIL: 201
+11/27/2022 07:59:14 - INFO - Blink -   ***** Saving fine - tuned model *****
+11/27/2022 07:59:15 - INFO - Blink -   
+
+11/27/2022 08:00:39 - INFO - Blink -   Step 2099 - epoch 3 average loss: 0.20419467885047196
+
+11/27/2022 08:02:02 - INFO - Blink -   Step 2199 - epoch 3 average loss: 0.20793727761134506
+
+11/27/2022 08:03:25 - INFO - Blink -   Step 2299 - epoch 3 average loss: 0.5150082911550998
+
+11/27/2022 08:04:49 - INFO - Blink -   Step 2399 - epoch 3 average loss: 0.18802384819835424
+
+11/27/2022 08:06:09 - INFO - Blink -   Step 2499 - epoch 3 average loss: 0.36638050647452475
+
+11/27/2022 08:07:32 - INFO - Blink -   Step 2599 - epoch 3 average loss: 0.2731394998729229
+
+11/27/2022 08:08:56 - INFO - Blink -   Step 2699 - epoch 3 average loss: 0.157281135879457
+
+11/27/2022 08:10:19 - INFO - Blink -   Step 2799 - epoch 3 average loss: 0.18828939482569695
+
+11/27/2022 08:11:43 - INFO - Blink -   Step 2899 - epoch 3 average loss: 0.17106933107599617
+
+11/27/2022 08:13:06 - INFO - Blink -   Step 2999 - epoch 3 average loss: 0.36325853602960706
+
+11/27/2022 08:14:29 - INFO - Blink -   Step 3099 - epoch 3 average loss: 0.3410146336816251
+
+11/27/2022 08:15:53 - INFO - Blink -   Step 3199 - epoch 3 average loss: 0.17882555833086372
+
+11/27/2022 08:17:16 - INFO - Blink -   Step 3299 - epoch 3 average loss: 0.3876501457206905
+
+11/27/2022 08:18:39 - INFO - Blink -   Step 3399 - epoch 3 average loss: 0.29108794366940854
+
+11/27/2022 08:20:03 - INFO - Blink -   Step 3499 - epoch 3 average loss: 0.22366334492340684
+
+11/27/2022 08:21:26 - INFO - Blink -   Step 3599 - epoch 3 average loss: 0.18617646129801868
+
+11/27/2022 08:22:49 - INFO - Blink -   Step 3699 - epoch 3 average loss: 0.251054519712925
+
+11/27/2022 08:24:13 - INFO - Blink -   Step 3799 - epoch 3 average loss: 0.2172600558027625
+
+11/27/2022 08:25:36 - INFO - Blink -   Step 3899 - epoch 3 average loss: 0.1800755624100566
+
+11/27/2022 08:26:59 - INFO - Blink -   Step 3999 - epoch 3 average loss: 0.4993931292369962
+
+11/27/2022 08:27:00 - INFO - Blink -   Evaluation on the development dataset
+11/27/2022 08:36:15 - INFO - Blink -   Eval accuracy: 0.84087
+11/27/2022 08:36:15 - INFO - Blink -   nb_pred_examples_in_KB: 1697
+11/27/2022 08:36:15 - INFO - Blink -   nb_pred_examples_NIL: 270
+11/27/2022 08:36:15 - INFO - Blink -   tp_all: 1654 tp_in_KB: 1501 tp_NIL: 153
+11/27/2022 08:36:15 - INFO - Blink -   eval_prec_rec_f1_in_KB: 0.88450 0.84994 0.86688
+11/27/2022 08:36:15 - INFO - Blink -   eval_prec_rec_f1_NIL: 0.56667 0.76119 0.64968
+11/27/2022 08:36:15 - INFO - Blink -   nb_eval_all: 1967 in_KB: 1766 NIL: 201
+11/27/2022 08:36:15 - INFO - Blink -   ***** Saving fine - tuned model *****
+11/27/2022 08:36:16 - INFO - Blink -   
+
+11/27/2022 08:37:39 - INFO - Blink -   Step 4099 - epoch 3 average loss: 0.1585107813216746
+
+11/27/2022 08:39:03 - INFO - Blink -   Step 4199 - epoch 3 average loss: 0.362968745008111
+
+11/27/2022 08:40:27 - INFO - Blink -   Step 4299 - epoch 3 average loss: 0.3744172625988722
+
+11/27/2022 08:41:50 - INFO - Blink -   Step 4399 - epoch 3 average loss: 0.1855125019326806
+
+11/27/2022 08:43:13 - INFO - Blink -   Step 4499 - epoch 3 average loss: 0.24606654105708003
+
+11/27/2022 08:44:37 - INFO - Blink -   Step 4599 - epoch 3 average loss: 0.17599796798080206
+
+11/27/2022 08:46:00 - INFO - Blink -   Step 4699 - epoch 3 average loss: 0.1574538715556264
+
+11/27/2022 08:47:24 - INFO - Blink -   Step 4799 - epoch 3 average loss: 0.25321442790329457
+
+11/27/2022 08:48:47 - INFO - Blink -   Step 4899 - epoch 3 average loss: 0.1995294538512826
+
+11/27/2022 08:50:10 - INFO - Blink -   Step 4999 - epoch 3 average loss: 0.3300088785588741
+
+11/27/2022 08:51:33 - INFO - Blink -   Step 5099 - epoch 3 average loss: 0.19040992626920342
+
+11/27/2022 08:52:57 - INFO - Blink -   Step 5199 - epoch 3 average loss: 0.16119847847148777
+
+11/27/2022 08:54:20 - INFO - Blink -   Step 5299 - epoch 3 average loss: 0.19358683951199054
+
+11/27/2022 08:55:43 - INFO - Blink -   Step 5399 - epoch 3 average loss: 0.19652686523273588
+
+11/27/2022 08:57:07 - INFO - Blink -   Step 5499 - epoch 3 average loss: 0.17231291597709059
+
+11/27/2022 08:58:30 - INFO - Blink -   Step 5599 - epoch 3 average loss: 0.15934271804988384
+
+11/27/2022 08:59:54 - INFO - Blink -   Step 5699 - epoch 3 average loss: 0.15923114204779268
+
+11/27/2022 09:01:17 - INFO - Blink -   Step 5799 - epoch 3 average loss: 0.24895057771354914
+
+11/27/2022 09:02:41 - INFO - Blink -   Step 5899 - epoch 3 average loss: 0.19117577455937862
+
+11/27/2022 09:04:04 - INFO - Blink -   Step 5999 - epoch 3 average loss: 0.22868135046213867
+
+11/27/2022 09:04:05 - INFO - Blink -   Evaluation on the development dataset
+11/27/2022 09:13:33 - INFO - Blink -   Eval accuracy: 0.84037
+11/27/2022 09:13:33 - INFO - Blink -   nb_pred_examples_in_KB: 1670
+11/27/2022 09:13:33 - INFO - Blink -   nb_pred_examples_NIL: 297
+11/27/2022 09:13:33 - INFO - Blink -   tp_all: 1653 tp_in_KB: 1490 tp_NIL: 163
+11/27/2022 09:13:33 - INFO - Blink -   eval_prec_rec_f1_in_KB: 0.89222 0.84371 0.86729
+11/27/2022 09:13:33 - INFO - Blink -   eval_prec_rec_f1_NIL: 0.54882 0.81095 0.65462
+11/27/2022 09:13:33 - INFO - Blink -   nb_eval_all: 1967 in_KB: 1766 NIL: 201
+11/27/2022 09:13:33 - INFO - Blink -   ***** Saving fine - tuned model *****
+11/27/2022 09:13:35 - INFO - Blink -   
+
+11/27/2022 09:15:23 - INFO - Blink -   Step 6099 - epoch 3 average loss: 0.15028530372306703
+
+11/27/2022 09:17:29 - INFO - Blink -   ***** Saving fine - tuned model *****
+11/27/2022 09:31:34 - INFO - Blink -   Eval accuracy: 0.84037
+11/27/2022 09:31:34 - INFO - Blink -   nb_pred_examples_in_KB: 1670
+11/27/2022 09:31:34 - INFO - Blink -   nb_pred_examples_NIL: 297
+11/27/2022 09:31:34 - INFO - Blink -   tp_all: 1653 tp_in_KB: 1490 tp_NIL: 163
+11/27/2022 09:31:34 - INFO - Blink -   eval_prec_rec_f1_in_KB: 0.89222 0.84371 0.86729
+11/27/2022 09:31:34 - INFO - Blink -   eval_prec_rec_f1_NIL: 0.54882 0.81095 0.65462
+11/27/2022 09:31:34 - INFO - Blink -   nb_eval_all: 1967 in_KB: 1766 NIL: 201
+11/27/2022 09:31:34 - INFO - Blink -   
+
+11/27/2022 09:31:34 - INFO - Blink -   The training took 1023.0881968776386 minutes
+
+11/27/2022 09:31:34 - INFO - Blink -   Best performance in epoch: 2

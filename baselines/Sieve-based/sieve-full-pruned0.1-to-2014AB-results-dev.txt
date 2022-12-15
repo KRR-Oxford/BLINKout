@@ -1,0 +1,15 @@
+*********************
+Total Names: 2112
+True Normalizations: 1539
+False Normalizations: 573
+Accuracy: 0.7286931818181818
+*********************
+all entities:
+tp: 1537 num_true: 2112 num_pred: 2112 
+ prec: 0.7277462121212122 rec: 0.7277462121212122 f1: 0.7277462121212122
+in-KB entities:
+tp: 1504 num_true: 2030 num_pred: 1663 
+ prec: 0.9043896572459411 rec: 0.7408866995073892 f1: 0.8145139453019224
+NIL entities:
+tp: 33 num_true: 82 num_pred: 447 
+ prec: 0.0738255033557047 rec: 0.4024390243902439 f1: 0.12476370510396977
