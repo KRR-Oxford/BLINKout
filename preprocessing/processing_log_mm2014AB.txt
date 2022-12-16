@@ -1,0 +1,321 @@
+../ontologies/UMLS2014AB_with_NIL_syn_attr.jsonl : 35399
+../ontologies/UMLS2017AA_with_NIL.jsonl : 39325
+trng NIL mentions:
+	 C0004238 -> NIL : (69, 'Atrial fibrillation;AF;AF;atrial fibrillation;atrial fibrillation;Atrial Fibrillation;atrial fibrillation;AF;AF;AF;AF;AF;Atrial Fibrillation;atrial fibrillation;nonvalvular atrial fibrillation;atrial fibrillation;atrial fibrillation;AF;clinical AF;Atrial fibrillation;AF;AF;AF;AF;Atrial Fibrillation;atrial fibrillation;AF;AF;AF;AF;AF;AF;AF;atrial fibrillation;atrial fibrillation;atrial fibrillation;atrial fibrillation;atrial fibrillation;non-valvular atrial fibrillation;Atrial Fibrillation;Atrial fibrillation;AF;AF;AF;AF;AF;AF;AF;AF;AF;atrial fibrillation;atrial fibrillation;AF;AF;AF;AF;AF;AF;AF;AF;atrial fibrillation;atrial fibrillation;AF;AF;atrial fibrillation;atrial fibrillation;AF;AF;AF')
+	 C0041834 -> NIL : (3, 'redness;erythematous;erythema')
+	 C0026205 -> NIL : (1, 'pupil constriction')
+	 C0018965 -> NIL : (2, 'hematuria;hematuria')
+	 C0040034 -> NIL : (5, 'thrombocytopenia;thrombocytopenia;thrombocytopenia;thrombocytopaenia;thrombocytopenia')
+	 C0151699 -> NIL : (1, 'intracranial hemorrhage')
+	 C4302339 -> NIL : (3, 'Invasive Haemophilus influenzae type b (Hib) disease;invasive Hib disease;invasive Hib disease')
+	 C0024421 -> NIL : (1, 'macroglossia')
+	 C0032290 -> NIL : (2, 'aspiration pneumonia;aspiration pneumonia')
+	 C0007820 -> NIL : (4, 'cerebrovascular diseases;cerebrovascular disease;cerebro;cerebrovascular disease')
+	 C0267456 -> NIL : (1, 'villous atrophy')
+	 C4303092 -> NIL : (4, 'Cystic Echinococcosis;Cystic Echinococcosis;CE;CE')
+	 C1955779 -> NIL : (10, 'coronary chronic total occlusion;coronary chronic total occlusion;CTO;CTO;CTO;CTO;CTO;CTO;Chronic Total Occlusion;chronic total occlusion')
+	 C3875321 -> NIL : (2, 'inflammatory skin disease;inflammatory skin disease')
+	 C0042514 -> NIL : (20, 'ventricular tachyarrhythmias;ventricular tachyarrhythmias;ventricular tachyarrhythmias;ventricular tachyarrhythmias;ventricular tachyarrhythmias;ventricular tachyarrhythmias;ventricular tachycardia;VT;VT;VT;VT;ventricular tachycardia;ventricular tachycardia;Ventricular tachycardia;ventricular tachycardia;VT;VT;VT;VT;VT')
+	 C1561643 -> NIL : (13, 'CKD;chronic kidney disease;Chronic Kidney Disease;Chronic kidney disease;CKD;chronic kidney disease;CKD;chronic kidney disease;chronic kidney disease;CKD;CKD;CKD;chronic kidney disease')
+	 C4076240 -> NIL : (1, 'CKD-MBD')
+	 C4302087 -> NIL : (1, 'silent infarct')
+	 C0745754 -> NIL : (1, 'liver')
+	 C0085612 -> NIL : (13, 'Ventricular Arrhythmia;ventricular arrhythmia;ventricular arrhythmia;ventricular arrhythmia;arrhythmias;arrhythmia;Ventricular Arrhythmias;arrhythmic;ventricular arrhythmia;arrhythmia;ventricular arrhythmia;arrhythmic;ventricular arrhythmia')
+	 C4082974 -> NIL : (4, "Dupuytren;Dupuytren disease;Dupuytren disease;Dupuytren's disease")
+	 C0030554 -> NIL : (3, 'paresthesia;Paraesthesia;paraesthesia')
+	 C0029191 -> NIL : (1, 'orchitis')
+	 C4275242 -> NIL : (5, 'Sudden sensorineural hearing loss;sudden sensorineural hearing loss;SSNHL;SSNHL;SSNHL')
+	 C1527225 -> NIL : (1, 'radiation-induced CVD')
+	 C3853962 -> NIL : (5, 'EV71;EV71;EV71;EV71;EV71')
+	 C0850666 -> NIL : (5, 'Helicobacter pylori infection;H. pylori infection;H. pylori infection;H. pylori infection;H. pylori infection')
+	 C4076184 -> NIL : (2, 'Metastatic Spinal Cord Compression;Metastatic spinal cord compression')
+	 C0543888 -> NIL : (1, 'epileptic encephalopathy')
+	 C3839736 -> NIL : (2, 'sensitisation;sensitisation')
+	 C0002170 -> NIL : (2, 'alopecia;alopecia')
+	 C3266262 -> NIL : (1, 'multiple chronic diseases')
+	 C1302690 -> NIL : (1, 'retinal thickening')
+	 C4302240 -> NIL : (1, 'Bloating')
+	 C0497156 -> NIL : (2, 'enlarged lymph node;lymphadenomegaly')
+	 C0948162 -> NIL : (2, 'bone marrow lesions;bone marrow lesions')
+	 C0035305 -> NIL : (1, 'retinal detachment')
+	 C0154971 -> NIL : (1, 'presenile cataracts')
+	 C1384666 -> NIL : (1, 'hearing impairment')
+	 C0041582 -> NIL : (9, 'ulcer;ulcers;ulcer;ulcerations;ulcers;ulcers;ulcerative;ulcers;ulcers')
+	 C0019322 -> NIL : (1, 'umbilical (47) hernias')
+	 C1262313 -> NIL : (7, 'Invasive fungal infections;invasive fungal infections;IFI;IFI;IFI;IFI;IFI')
+	 C2218504 -> NIL : (2, 'right eye retinal detachment;detached retina')
+	 C0265101 -> NIL : (1, 'carotid artery occlusion')
+	 C0020452 -> NIL : (2, 'hyperemia;hyperemic')
+	 C4076657 -> NIL : (2, 'hazelnut allergy;hazelnut')
+	 C0020625 -> NIL : (10, 'hyponatremia;hyponatremia;hyponatremia;Hyponatremia;hyponatremia;hyponatremia;hyponatremia;hyponatremia;hyponatremia;hyponatremia')
+	 C0085606 -> NIL : (1, 'urinary urgency')
+	 C0848558 -> NIL : (8, 'hypospadias;hypospadias;hypospadias;hypospadias;hypospadias;hypospadias;hypospadias;hypospadias')
+	 C3887709 -> NIL : (1, 'optic neuropathy')
+	 C0020598 -> NIL : (7, 'Hypocalcemia;hypocalcemia;hypocalcemia;hypocalcemia;hypocalcemia;hypocalcemia;hypocalcemia')
+	 C4255374 -> NIL : (6, 'Frontal Fibrosing Alopecia;Frontal fibrosing alopecia;FFA;FFA;FFA;FFA')
+	 C2902031 -> NIL : (7, 'osteonecrosis of the jaw;DRONJ;osteonecrosis;DRONJ;DRONJ;DRONJ;DRONJ')
+	 C3872815 -> NIL : (7, 'combined pulmonary fibrosis emphysema syndrome;combined pulmonary fibrosis emphysema syndrome;CPFES;CPFES;CPFES;CPFES;CPFES')
+	 C3489393 -> NIL : (1, 'hiatal hernia')
+	 C0024636 -> NIL : (2, 'malocclusions;malocclusions')
+	 C1882989 -> NIL : (2, 'Secondary caries;secondary caries')
+	 C0342257 -> NIL : (1, 'diabetic complications')
+	 C0010273 -> NIL : (1, 'Crouzon syndrome')
+	 C0266030 -> NIL : (5, 'mesiodens;Mesiodens;mesiodens;mesiodens;mesiodens')
+	 C0948245 -> NIL : (1, 'cytokines release')
+	 C0235982 -> NIL : (1, 'bile duct stricture')
+	 C3694279 -> NIL : (8, 'Middle East Respiratory Syndrome;Middle East respiratory syndrome;MERS;Middle East respiratory syndrome;MERS;MERS;MERS;MERS')
+	 C0001889 -> NIL : (1, 'akinetic mutism')
+	 C0865681 -> NIL : (13, 'chronic myocarditis;MCpEF;chronic myocarditis;MC;MCpEF;MCpEF;suspected MCpEF;MCpEF;MCpEF;MCpEF;MCpEF;suspected chronic myocarditis;MCpEF')
+	 C3875332 -> NIL : (2, 'chronic cyclosporine nephropathy;CsA-Nx')
+dev NIL mentions:
+	 C1561643 -> NIL : (22, 'chronic kidney disease;CKD;CKD;CKD;CKD;CKD;chronic kidney disease;CKD;CKD;CKD;CKD;CKD;CKD;CKD;CKD;chronic kidney disease;CKD;CKD;CKD;chronic kidney disease;chronic kidney disease;CKD')
+	 C0004238 -> NIL : (6, 'atrial fibrillation;Atrial fibrillation;atrial fibrillation;Atrial Fibrillation;Atrial Fibrillation;atrial fibrillation')
+	 C0745754 -> NIL : (1, 'hepatic granulomas')
+	 C4303164 -> NIL : (2, 'type I autoimmune hepatitis;type I AIH')
+	 C3875265 -> NIL : (3, 'febrile urinary tract infections;UTIs;febrile UTIs')
+	 C0342257 -> NIL : (2, 'diabetes complications;diabetes complications')
+	 C3872816 -> NIL : (7, 'Verruciform Xanthoma;Verruciform xanthoma;VX;VX;VX;VX;VX')
+	 C4302185 -> NIL : (6, 'atypical parkinsonism;atypical parkinsonism;atypical parkinsonism;AP;AP;AP')
+	 C0020452 -> NIL : (2, 'hyperaemia;hyperaemia')
+	 C4274287 -> NIL : (2, 'trochlear dysplasia;trochlear dysplasia')
+	 C0085606 -> NIL : (3, 'urgency;urgency;urgency')
+	 C0151699 -> NIL : (5, 'Intracranial Hemorrhage;intracranial hemorrhages;intracranial hemorrhage;intracranial hemorrhage;intracranial bleeding')
+	 C0155760 -> NIL : (1, 'rupture of the decidual artery')
+	 C4302401 -> NIL : (2, 'radiation-induced optic neuropathy;radiation-induced optic neuropathy')
+	 C4303544 -> NIL : (5, 'adhesions of fimbrial parts;fimbrial adhesion;adhesion;adhesive tubes;adhesions of the fimbrial parts')
+	 C0085293 -> NIL : (1, 'viral hepatitis E')
+	 C0041582 -> NIL : (3, 'ulcer;ulcer;ulcers')
+	 C0028961 -> NIL : (1, 'oliguria')
+	 C0040034 -> NIL : (2, 'thrombocytopenia;thrombocytopenia')
+	 C4082298 -> NIL : (1, 'apical periodontitis')
+	 C0002170 -> NIL : (1, 'alopecia')
+	 C0035305 -> NIL : (2, 'retinal detachment;retinal detachment')
+	 C4275242 -> NIL : (2, 'refractory severe sudden sensorineural hearing loss;sensorineural hearing loss')
+test NIL mentions:
+	 C0004238 -> NIL : (19, 'atrial fibrillation;atrial fibrillation;Atrial fibrillation;AF;AF;AF;atrial tachypacing-induced AF;AF;AF;AF;AF;AF;atrial fibrillation;atrial fibrillation;atrial fibrillation;atrial fibrillation;Atrial fibrillation;AF;atrial fibrillation')
+	 C1561643 -> NIL : (20, 'chronic kidney disease;chronic kidney disease;chronic kidney disease;Chronic Kidney Disease;chronic kidney disease;CKD;CKD;CKD;CKD;CKD;CKD;CKD;CKD;chronic renal disease;Chronic Kidney Disease;chronic kidney disease;CKD;CKD;CKD;CKD')
+	 C0020557 -> NIL : (1, 'hypertriglyceridemia')
+	 C0020452 -> NIL : (6, 'engorgement;hyperemia;hyperemia;hyperemia;hyperemia;hyperemia')
+	 C0040034 -> NIL : (1, 'thrombocytopenia')
+	 C0497156 -> NIL : (3, 'lymphadenopathy;lymphadenopathy;lymphadenopathy')
+	 C3887709 -> NIL : (1, 'optic neuropathy')
+	 C0342257 -> NIL : (1, 'diabetic complications')
+	 C0020625 -> NIL : (2, 'hyponatremia;hyponatremia')
+	 C1761613 -> NIL : (1, 'conjunctival hyperemia')
+	 C4304723 -> NIL : (3, 'seasonal;Seasonal influenza;seasonal')
+	 C4304383 -> NIL : (2, 'Pandemic influenza;pandemic influenza')
+	 C0856687 -> NIL : (4, 'Trichinella infection;Trichinella infection;Trichinella infection;Trichinella infection')
+	 C0085612 -> NIL : (8, 'Ventricular arrhythmia;ventricular arrhythmia;ventricular arrhythmias;ventricular arrhythmias;ventricular arrhythmias;ventricular arrhythmias;ventricular arrhythmias;ventricular arrhythmias')
+	 C0023182 -> NIL : (3, 'cerebrospinal fluid leakage;cerebrospinal fluid leakage;cerebrospinal fluid leakage')
+	 C0041834 -> NIL : (2, 'Erythema;erythema')
+	 C0020598 -> NIL : (2, 'syndrome-associated hypocalcaemia;hypocalcemia')
+	 C0002170 -> NIL : (2, 'baldness;baldness')
+	 C3266262 -> NIL : (1, 'multiple chronic conditions')
+	 C0085606 -> NIL : (1, 'urgency and frequent urination')
+	 C0007820 -> NIL : (9, 'cerebrovascular disease;cerebrovascular disease;cerebrovascular disease;cerebrovascular disease;cerebrovascular disease;cerebrovascular disease;cerebrovascular disease;cerebrovascular disease;cerebrovascular disease')
+	 C0018965 -> NIL : (1, 'hematuria')
+	 C0042514 -> NIL : (1, 'ventricular tachycardia')
+	 C0795915 -> NIL : (8, 'Curry-Jones syndrome;Curry-Jones syndrome;CJS;CJS;CJS;CJS;CJS;CJS')
+	 C0042267 -> NIL : (1, 'vaginitis')
+training data:2635 docs, 307/6181 NILs/mentions
+validation data:878 docs, 82/2112 NILs/mentions
+testing data:879 docs, 103/1988 NILs/mentions
+NIL concept created from ori concept: C0004238 mention as atrial fibrillation not in 2014AB
+NIL concept created from ori concept: C0041834 mention as erythema not in 2014AB
+NIL concept created from ori concept: C0029453 mention as bone loss not in 2014AB
+	 C0029453 retired, prev: C1968854
+NIL concept created from ori concept: C0026205 mention as pupil constriction not in 2014AB
+NIL concept created from ori concept: C0852036 mention as gestational hypertensive disorders not in 2014AB
+	 C0852036 retired, prev: C0340274
+NIL concept created from ori concept: C0018965 mention as hematuria not in 2014AB
+NIL concept created from ori concept: C0040034 mention as thrombocytopenia not in 2014AB
+NIL concept created from ori concept: C0151699 mention as intracranial bleeding not in 2014AB
+NIL concept created from ori concept: C4302339 mention as invasive Hib disease not in 2014AB
+NIL concept created from ori concept: C0024421 mention as macroglossia not in 2014AB
+NIL concept created from ori concept: C0032290 mention as aspiration pneumonia not in 2014AB
+NIL concept created from ori concept: C0007820 mention as cerebrovascular disease not in 2014AB
+NIL concept created from ori concept: C0267456 mention as villous atrophy not in 2014AB
+NIL concept created from ori concept: C4303092 mention as CE not in 2014AB
+NIL concept created from ori concept: C1955779 mention as chronic total occlusion not in 2014AB
+NIL concept created from ori concept: C3875321 mention as inflammatory skin disease not in 2014AB
+NIL concept created from ori concept: C0042514 mention as ventricular tachycardia not in 2014AB
+NIL concept created from ori concept: C1561643 mention as CKD not in 2014AB
+NIL concept created from ori concept: C4076240 mention as CKD-MBD not in 2014AB
+NIL concept created from ori concept: C4302087 mention as silent infarct not in 2014AB
+NIL concept created from ori concept: C0745754 mention as hepatic granulomas not in 2014AB
+NIL concept created from ori concept: C0085612 mention as ventricular arrhythmias not in 2014AB
+NIL concept created from ori concept: C4082974 mention as Dupuytren's disease not in 2014AB
+NIL concept created from ori concept: C0030554 mention as paraesthesia not in 2014AB
+NIL concept created from ori concept: C0029191 mention as orchitis not in 2014AB
+NIL concept created from ori concept: C4275242 mention as sensorineural hearing loss not in 2014AB
+NIL concept created from ori concept: C0024003 mention as lordosis not in 2014AB
+	 C0024003 retired, prev: C1846834
+NIL concept created from ori concept: C1527225 mention as radiation-induced CVD not in 2014AB
+NIL concept created from ori concept: C3853962 mention as EV71 not in 2014AB
+NIL concept created from ori concept: C0850666 mention as H. pylori infection not in 2014AB
+NIL concept created from ori concept: C4076184 mention as Metastatic spinal cord compression not in 2014AB
+NIL concept created from ori concept: C0543888 mention as epileptic encephalopathy not in 2014AB
+NIL concept created from ori concept: C0917799 mention as hypersomnia not in 2014AB
+	 C0917799 retired, prev: C0748844
+NIL concept created from ori concept: C3839736 mention as sensitisation not in 2014AB
+NIL concept created from ori concept: C0021294 mention as prematurity not in 2014AB
+	 C0021294 retired, prev: C1709651
+NIL concept created from ori concept: C0002170 mention as baldness not in 2014AB
+NIL concept created from ori concept: C2362324 mention as childhood obesity not in 2014AB
+	 C2362324 retired, prev: C3645710,C3658279
+NIL concept created from ori concept: C3266262 mention as multiple chronic conditions not in 2014AB
+NIL concept created from ori concept: C1302690 mention as retinal thickening not in 2014AB
+NIL concept created from ori concept: C4302240 mention as Bloating not in 2014AB
+NIL concept created from ori concept: C0497156 mention as lymphadenopathy not in 2014AB
+NIL concept created from ori concept: C0948162 mention as bone marrow lesions not in 2014AB
+NIL concept created from ori concept: C0035305 mention as retinal detachment not in 2014AB
+NIL concept created from ori concept: C0154971 mention as presenile cataracts not in 2014AB
+NIL concept created from ori concept: C1384666 mention as hearing impairment not in 2014AB
+NIL concept created from ori concept: C3534585 mention as Norovirus infections not in 2014AB
+	 C3534585 retired, prev: C3534576
+NIL concept created from ori concept: C0041582 mention as ulcers not in 2014AB
+NIL concept created from ori concept: C0019322 mention as umbilical (47) hernias not in 2014AB
+NIL concept created from ori concept: C1262313 mention as IFI not in 2014AB
+NIL concept created from ori concept: C2218504 mention as detached retina not in 2014AB
+NIL concept created from ori concept: C0265101 mention as carotid artery occlusion not in 2014AB
+NIL concept created from ori concept: C0020452 mention as hyperemia not in 2014AB
+NIL concept created from ori concept: C4076657 mention as hazelnut not in 2014AB
+NIL concept created from ori concept: C0020625 mention as hyponatremia not in 2014AB
+NIL concept created from ori concept: C0085606 mention as urgency and frequent urination not in 2014AB
+NIL concept created from ori concept: C0848558 mention as hypospadias not in 2014AB
+NIL concept created from ori concept: C3887709 mention as optic neuropathy not in 2014AB
+NIL concept created from ori concept: C0020598 mention as hypocalcemia not in 2014AB
+NIL concept created from ori concept: C4255374 mention as FFA not in 2014AB
+NIL concept created from ori concept: C2902031 mention as DRONJ not in 2014AB
+NIL concept created from ori concept: C3872815 mention as CPFES not in 2014AB
+NIL concept created from ori concept: C3489393 mention as hiatal hernia not in 2014AB
+NIL concept created from ori concept: C0024636 mention as malocclusions not in 2014AB
+NIL concept created from ori concept: C1882989 mention as secondary caries not in 2014AB
+NIL concept created from ori concept: C1848519 mention as Waardenburg syndrome type IV not in 2014AB
+	 C1848519 retired, prev: C2751154,C3469510
+NIL concept created from ori concept: C0342257 mention as diabetic complications not in 2014AB
+NIL concept created from ori concept: C0010273 mention as Crouzon syndrome not in 2014AB
+NIL concept created from ori concept: C0266030 mention as mesiodens not in 2014AB
+NIL concept created from ori concept: C0948245 mention as cytokines release not in 2014AB
+NIL concept created from ori concept: C0235982 mention as bile duct stricture not in 2014AB
+NIL concept created from ori concept: C3694279 mention as MERS not in 2014AB
+NIL concept created from ori concept: C0001889 mention as akinetic mutism not in 2014AB
+NIL concept created from ori concept: C0865681 mention as MCpEF not in 2014AB
+NIL concept created from ori concept: C3875332 mention as CsA-Nx not in 2014AB
+NIL concept created from ori concept: C4303164 mention as type I AIH not in 2014AB
+NIL concept created from ori concept: C0860207 mention as DILI not in 2014AB
+	 C0860207 retired, prev: C1960180
+NIL concept created from ori concept: C3875265 mention as febrile UTIs not in 2014AB
+NIL concept created from ori concept: C3872816 mention as VX not in 2014AB
+NIL concept created from ori concept: C4302185 mention as AP not in 2014AB
+NIL concept created from ori concept: C0011351 mention as LEH not in 2014AB
+	 C0011351 retired, prev: C1849736
+NIL concept created from ori concept: C4274287 mention as trochlear dysplasia not in 2014AB
+NIL concept created from ori concept: C0155760 mention as rupture of the decidual artery not in 2014AB
+NIL concept created from ori concept: C4302401 mention as radiation-induced optic neuropathy not in 2014AB
+NIL concept created from ori concept: C4303544 mention as adhesions of the fimbrial parts not in 2014AB
+NIL concept created from ori concept: C0085293 mention as viral hepatitis E not in 2014AB
+NIL concept created from ori concept: C0028961 mention as oliguria not in 2014AB
+NIL concept created from ori concept: C4082298 mention as apical periodontitis not in 2014AB
+NIL concept created from ori concept: C0020557 mention as hypertriglyceridemia not in 2014AB
+NIL concept created from ori concept: C1761613 mention as conjunctival hyperemia not in 2014AB
+NIL concept created from ori concept: C4304723 mention as seasonal not in 2014AB
+NIL concept created from ori concept: C4304383 mention as pandemic influenza not in 2014AB
+NIL concept created from ori concept: C0856687 mention as Trichinella infection not in 2014AB
+NIL concept created from ori concept: C0023182 mention as cerebrospinal fluid leakage not in 2014AB
+NIL concept created from ori concept: C3501848 mention as congenital nephrosis not in 2014AB
+	 C3501848 retired, prev: C0268713
+NIL concept created from ori concept: C0795915 mention as CJS not in 2014AB
+NIL concept created from ori concept: C0042267 mention as vaginitis not in 2014AB
+NIL concept created from ori concept: C1861783 mention as median arcuate ligament syndrome not in 2014AB
+	 C1861783 retired, prev: C0152098
+ratio_not_in_source: 0.0 (0/97)
+ratio_sty_change: 0.0 (0/97)
+ratio_cui_ret: 0.1237113400786481 (12/97)
+ratio_concept_drift: 0.0 (0/85)
+Filtered list of NILs identified in _2014AB_vs_2017AAfiltered:
+C0004238 atrial fibrillation
+C0041834 erythema
+C0026205 pupil constriction
+C0018965 hematuria
+C0040034 thrombocytopenia
+C0151699 intracranial bleeding
+C4302339 invasive hib disease
+C0024421 macroglossia
+C0032290 aspiration pneumonia
+C0007820 cerebrovascular disease
+C0267456 villous atrophy
+C4303092 ce
+C1955779 chronic total occlusion
+C3875321 inflammatory skin disease
+C0042514 ventricular tachycardia
+C1561643 ckd
+C4076240 ckd-mbd
+C4302087 silent infarct
+C0745754 hepatic granulomas
+C0085612 ventricular arrhythmias
+C4082974 dupuytren's disease
+C0030554 paraesthesia
+C0029191 orchitis
+C4275242 sensorineural hearing loss
+C1527225 radiation-induced cvd
+C3853962 ev71
+C0850666 h. pylori infection
+C4076184 metastatic spinal cord compression
+C0543888 epileptic encephalopathy
+C3839736 sensitisation
+C0002170 baldness
+C3266262 multiple chronic conditions
+C1302690 retinal thickening
+C4302240 bloating
+C0497156 lymphadenopathy
+C0948162 bone marrow lesions
+C0035305 retinal detachment
+C0154971 presenile cataracts
+C1384666 hearing impairment
+C0041582 ulcers
+C0019322 umbilical (47) hernias
+C1262313 ifi
+C2218504 detached retina
+C0265101 carotid artery occlusion
+C0020452 hyperemia
+C4076657 hazelnut
+C0020625 hyponatremia
+C0085606 urgency and frequent urination
+C0848558 hypospadias
+C3887709 optic neuropathy
+C0020598 hypocalcemia
+C4255374 ffa
+C2902031 dronj
+C3872815 cpfes
+C3489393 hiatal hernia
+C0024636 malocclusions
+C1882989 secondary caries
+C0342257 diabetic complications
+C0010273 crouzon syndrome
+C0266030 mesiodens
+C0948245 cytokines release
+C0235982 bile duct stricture
+C3694279 mers
+C0001889 akinetic mutism
+C0865681 mcpef
+C3875332 csa-nx
+C4303164 type i aih
+C3875265 febrile utis
+C3872816 vx
+C4302185 ap
+C4274287 trochlear dysplasia
+C0155760 rupture of the decidual artery
+C4302401 radiation-induced optic neuropathy
+C4303544 adhesions of the fimbrial parts
+C0085293 viral hepatitis e
+C0028961 oliguria
+C4082298 apical periodontitis
+C0020557 hypertriglyceridemia
+C1761613 conjunctival hyperemia
+C4304723 seasonal
+C4304383 pandemic influenza
+C0856687 trichinella infection
+C0023182 cerebrospinal fluid leakage
+C0795915 cjs
+C0042267 vaginitis
