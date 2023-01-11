@@ -5,7 +5,8 @@
 
 ## also added preprocessing for tigerchen52/Biomedical-Entity-Linking (Chen et al., 2021)
 
-# TODO: add the mining of synonyms from MRCONSO.RRF
+# input: the UMLS folder (e.g. UMLS2017AA) containing MRCONSO.RRF, MRDEF.RRF, and MRSTY.RRF
+# output: preprocessed ontology files
 
 '''
 output format: each line is 
