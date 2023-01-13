@@ -1,8 +1,6 @@
 # transform the format from medmentions to BLINK
 # automated NIL generation
 
-## (REMOVED) also added preprocessing for tigerchen52/Biomedical-Entity-Linking (Chen et al., 2021)
-
 from pubtator_loader import PubTatorCorpusReader
 from tqdm import tqdm
 import json

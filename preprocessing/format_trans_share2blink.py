@@ -1,16 +1,7 @@
 # transform the format from share/clef to blink
 # added further preprocessing: tokenisation
-## (REMOVED) formatting the dataset for training mode (tr_mode, by setting for_training as True): added 'label' and 'label_title' fields for training data - need to run get_all_UMLS_entities.py first
-
-## (REMOVED) the same dataset has two different formats for training and for inference, controlled by for_training boolean variable. We now use loop to generate both settings. 
 
 # avoid same mentions of NIL appear in the test set as those in the training data - just filter them out when they apear.
-
-## (REMOVED) also added preprocessing for tigerchen52/Biomedical-Entity-Linking (Chen et al., 2021)
-
-# TODO: (i) allow train_full to be the same as full data when setting new_NIL_mention_only_for_eval as True
-#       so far this is done by copying the _ori train_full data
-#       (ii) use UMLS2011AA instead of UMLS2012AB
 
 import os
 import math
