@@ -13,10 +13,10 @@ export CUDA_VISIBLE_DEVICES=1
 #  --use_NIL_desc_tag  corresponds to "NIL-tag-descWtag" (all above)
 
 # pipeline as script
-dataset=share_clef #share_clef or mm (which is medmentions)
+dataset=mm #share_clef or mm (which is medmentions)
 mm_data_setting=full # for mm only, full or st21pv (only tested full to ensure a larger number of mentions and NILs)
-mm_onto_ver_model_mark=2017AA_pruned0.1 # for mm only, 2017AA_pruned0.1 or 2017AA_pruned0.2, 2014AB, 2015AB
-mm_onto_ver=2017AA_pruned0.1 # for mm only, 2017AA_pruned0.1 or 2017AA_pruned0.2, 2014AB, 2015AB
+mm_onto_ver_model_mark=2014AB # for mm only, 2017AA_pruned0.1 or 2017AA_pruned0.2, 2014AB, 2015AB
+mm_onto_ver=2014AB # for mm only, 2017AA_pruned0.1 or 2017AA_pruned0.2, 2014AB, 2015AB
 
 if [ "$dataset" = share_clef ]
 then
@@ -350,6 +350,7 @@ then
     --out_dim 1  \
     --use_ori_classification \
     ${arg_dynamic_emb_extra_ft_baseline} \
+    --fix_seeds \      
     --NIL_ent_ind $NIL_ent_ind \
     --save_model_epoch_parts \
     ${arg_optimize_NIL}

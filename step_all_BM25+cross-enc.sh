@@ -263,6 +263,7 @@ then
     --add_linear  \
     --out_dim 1  \
     --use_ori_classification \
+    --fix_seeds \
     --NIL_ent_ind $NIL_ent_ind \
     --save_model_epoch_parts \
     ${arg_optimize_NIL}

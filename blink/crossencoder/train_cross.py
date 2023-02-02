@@ -301,10 +301,11 @@ def get_scheduler(params, optimizer, len_train_data, logger):
 
 def main(params):
     # Fix the random seeds (part 1)
-    seed = params["seed"]
-    random.seed(seed)
-    np.random.seed(seed)
-    torch.manual_seed(seed)
+    if params["fix_seeds"]:
+        seed = params["seed"]
+        random.seed(seed)
+        np.random.seed(seed)
+        torch.manual_seed(seed)
     
     model_output_path = params["output_path"]
     if not os.path.exists(model_output_path):
@@ -339,9 +340,10 @@ def main(params):
 
     device = reranker.device
     n_gpu = reranker.n_gpu
-    # Fix the random seeds (part 2)
-    if n_gpu > 0:
-        torch.cuda.manual_seed_all(seed)
+    if params["fix_seeds"]:
+        # Fix the random seeds (part 2)
+        if n_gpu > 0:
+            torch.cuda.manual_seed_all(seed)
 
     if params["gradient_accumulation_steps"] < 1:
         raise ValueError(

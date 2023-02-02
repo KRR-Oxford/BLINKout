@@ -29,8 +29,8 @@ then
   cross_enc_epoch_name='' #'/epoch_3' #''
   further_result_mark='' #'last-epoch' #'' #'-rerun'
   th1=0.00
-  th2=0.95 #bert
-  #th2=0.95 #sapbert
+  #th2=0.95 #bert
+  th2=0.95 #sapbert
 fi
 
 if [ "$dataset" = mm ]
@@ -44,16 +44,16 @@ then
     NIL_ent_ind_w_syn=126188
     NIL_ent_ind=35392
     th1=0.00
-    th2=0.80 #bert
-    #th2=0.80 #sapbert
+    #th2=0.80 #bert
+    th2=0.80 #sapbert
   fi
   if [ "$onto_ver" = 2017AA_pruned0.2 ]
   then
     NIL_ent_ind_w_syn=112097
     NIL_ent_ind=31460
     th1=0.00
-    th2=0.95 #bert
-    #th2=0.80 #sapbert
+    #th2=0.95 #bert
+    th2=0.80 #sapbert
   fi
   if [ "$onto_ver" = 2015AB ]
   then
@@ -67,19 +67,19 @@ then
     NIL_ent_ind_w_syn=124132
     NIL_ent_ind=35398
     th1=0.00
-    th2=0.55 #bert
-    #th2=0.60 #sapbert
+    #th2=0.55 #bert
+    th2=0.60 #sapbert
   fi
   cross_enc_epoch_name='' #'/epoch_3' #''
   further_result_mark='' #'last-epoch' #'' #'-rerun'  
 fi
 
 use_synonyms=true
-bi_enc_model_size=large
-#bi_enc_model_size=base
-bi_enc_bertmodel=bert-${bi_enc_model_size}-uncased
+#bi_enc_model_size=large
+bi_enc_model_size=base
+#bi_enc_bertmodel=bert-${bi_enc_model_size}-uncased
 #bi_enc_bertmodel=bionlp/bluebert_pubmed_mimic_uncased_L-24_H-1024_A-16
-#bi_enc_bertmodel=cambridgeltl/SapBERT-from-PubMedBERT-fulltext
+bi_enc_bertmodel=cambridgeltl/SapBERT-from-PubMedBERT-fulltext
 lowercase=true
 train_bi=false
 rep_ents=false
@@ -95,14 +95,14 @@ use_NIL_desc_tag=false
 inference=true
 top_k_cross=10
 crossencoder_model_size=base #vs. large
-cross_enc_bertmodel=bert-${crossencoder_model_size}-uncased
+#cross_enc_bertmodel=bert-${crossencoder_model_size}-uncased
 #cross_enc_bertmodel=bionlp/bluebert_pubmed_mimic_uncased_L-12_H-768_A-12
-#cross_enc_bertmodel=cambridgeltl/SapBERT-from-PubMedBERT-fulltext
+cross_enc_bertmodel=cambridgeltl/SapBERT-from-PubMedBERT-fulltext
 use_debug_inference=false
 NIL_param_tuning=true
-further_model_mark=''
+#further_model_mark=''
 #further_model_mark='-bluebert'
-#further_model_mark='-sapbert'
+further_model_mark='-sapbert'
 
 if [ "$lowercase" = true ]
 then
@@ -300,6 +300,7 @@ then
       --save_topk_result \
       --top_k $top_k_cross \
       ${arg_lowercase} \
+      --fix_seeds \      
       --NIL_ent_ind $NIL_ent_ind \
       ${arg_syn} \
       ${arg_debug_for_cross} \
