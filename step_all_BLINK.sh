@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # setting for original BLINK - w/ or w/o NIL handling
+# added BLINK w/ SapBERT
 
 source activate blink37
 
@@ -15,8 +16,8 @@ export CUDA_VISIBLE_DEVICES=1 # '' means not using GPU, or specifying GPU ID as 
 # pipeline as script
 dataset=mm #share_clef or mm (which is medmentions)
 mm_data_setting=full # for mm only, full or st21pv (only tested full to ensure a larger number of mentions and NILs)
-mm_onto_ver_model_mark=2017AA_pruned0.1 # for mm only, 2017AA_pruned0.1 or 2017AA_pruned0.2, 2014AB, 2015AB
-mm_onto_ver=2017AA_pruned0.1 # for mm only, 2017AA_pruned0.1 or 2017AA_pruned0.2, 2014AB, 2015AB
+mm_onto_ver_model_mark=2017AA_pruned0.2 # for mm only, 2017AA_pruned0.1 or 2017AA_pruned0.2, 2014AB, 2015AB
+mm_onto_ver=2017AA_pruned0.2 # for mm only, 2017AA_pruned0.1 or 2017AA_pruned0.2, 2014AB, 2015AB
 if [ "$dataset" = share_clef ]
 then
   data_name_w_syn=share_clef_2013_preprocessed_ori_syn_full
@@ -28,7 +29,8 @@ then
   cross_enc_epoch_name='' #'/epoch_3' #''
   further_result_mark='' #'last-epoch' #'' #'-rerun'
   th1=0.00
-  th2=0.95
+  th2=0.95 #bert
+  #th2=0.95 #sapbert
 fi
 
 if [ "$dataset" = mm ]
@@ -42,28 +44,31 @@ then
     NIL_ent_ind_w_syn=126188
     NIL_ent_ind=35392
     th1=0.00
-    th2=0.80
+    th2=0.80 #bert
+    #th2=0.95 #sapbert
   fi
   if [ "$onto_ver" = 2017AA_pruned0.2 ]
   then
     NIL_ent_ind_w_syn=112097
     NIL_ent_ind=31460
     th1=0.00
-    th2=0.95
+    th2=0.95 #bert
+    #th2=0.70 #sapbert
   fi
   if [ "$onto_ver" = 2015AB ]
   then
     NIL_ent_ind_w_syn=128974
     NIL_ent_ind=36907
     th1=0.00
-    th2=0.80
+    th2=0.80 #bert
   fi
   if [ "$onto_ver" = 2014AB ]
   then
     NIL_ent_ind_w_syn=124132
     NIL_ent_ind=35398
     th1=0.00
-    th2=0.55
+    th2=0.55 #bert
+    #th2=0.95 #sapbert
   fi
   cross_enc_epoch_name='' #'/epoch_3' #''
   further_result_mark='' #'last-epoch' #'' #'-rerun'  
@@ -71,8 +76,10 @@ fi
 
 use_synonyms=true
 bi_enc_model_size=large
+#bi_enc_model_size=base
 bi_enc_bertmodel=bert-${bi_enc_model_size}-uncased
 #bi_enc_bertmodel=bionlp/bluebert_pubmed_mimic_uncased_L-24_H-1024_A-16
+#bi_enc_bertmodel=cambridgeltl/SapBERT-from-PubMedBERT-fulltext
 lowercase=true
 train_bi=false
 rep_ents=false
@@ -90,10 +97,12 @@ top_k_cross=10
 crossencoder_model_size=base #vs. large
 cross_enc_bertmodel=bert-${crossencoder_model_size}-uncased
 #cross_enc_bertmodel=bionlp/bluebert_pubmed_mimic_uncased_L-12_H-768_A-12
+#cross_enc_bertmodel=cambridgeltl/SapBERT-from-PubMedBERT-fulltext
 use_debug_inference=false
-NIL_param_tuning=false
+NIL_param_tuning=true
 further_model_mark=''
 #further_model_mark='-bluebert'
+#further_model_mark='-sapbert'
 
 if [ "$lowercase" = true ]
 then

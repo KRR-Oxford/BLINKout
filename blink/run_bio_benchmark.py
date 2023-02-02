@@ -124,14 +124,14 @@ if data == 'share_clef':
     #print("entity_catalogue_postfix in run_bio_benchmark:",entity_catalogue_postfix)    
     if args_keyed_in.debug:
         DATASETS = [
-            # {
-            #     "name": "Share-CLEF_eHealth2013-valid",
-            #     "filename": "data/share_clef_2013_preprocessed/valid.jsonl", 
-            # },
             {
-                "name": "Share-CLEF_eHealth2013-ori-sampled-test",
-                "filename": "data/share_clef_2013_preprocessed_ori_sampled_100/test.jsonl", 
+                "name": "Share-CLEF_eHealth2013-ori-valid",
+                "filename": "data/share_clef_2013_preprocessed_ori/valid.jsonl", 
             },
+            # {
+            #     "name": "Share-CLEF_eHealth2013-ori-sampled-test",
+            #     "filename": "data/share_clef_2013_preprocessed_ori_sampled_100/test.jsonl", 
+            # },
         ]    
     else:
         DATASETS = [
@@ -185,18 +185,18 @@ elif data[:2] == 'mm':
         entity_catalogue_postfix = "_with_NIL" + entity_catalogue_postfix
     if args_keyed_in.debug:
         DATASETS = [
-            # {
-            #     "name": "mm-%s-dev" % onto_ver, #TODO test data from another onto_ver
-            #     "filename": "data/MedMentions-preprocessed/full-%s/valid.jsonl" % onto_ver, 
-            # },
+            {
+                "name": "mm-%s-dev" % onto_ver, #TODO test data from another onto_ver
+                "filename": "data/MedMentions-preprocessed/full-%s/valid.jsonl" % onto_ver, 
+            },
             # {
             #     "name": "mm-%s-dev-sample" % onto_ver,
             #     "filename": "data/MedMentions-preprocessed/full-%s/full_dev_%s_vs_2017AAfiltered_sample100.jsonl" % (onto_ver, onto_ver), 
             # },
-            {
-                "name": "mm-%s-test-sample" % onto_ver,
-                "filename": "data/MedMentions-preprocessed/full-%s/full_test_%s_vs_2017AAfiltered_sample100.jsonl" % (onto_ver, onto_ver), 
-            },
+            # {
+            #     "name": "mm-%s-test-sample" % onto_ver,
+            #     "filename": "data/MedMentions-preprocessed/full-%s/full_test_%s_vs_2017AAfiltered_sample100.jsonl" % (onto_ver, onto_ver), 
+            # },
         ]    
 
     else:    
