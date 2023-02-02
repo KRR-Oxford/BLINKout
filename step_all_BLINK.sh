@@ -45,7 +45,7 @@ then
     NIL_ent_ind=35392
     th1=0.00
     th2=0.80 #bert
-    #th2=0.95 #sapbert
+    #th2=0.80 #sapbert
   fi
   if [ "$onto_ver" = 2017AA_pruned0.2 ]
   then
@@ -53,7 +53,7 @@ then
     NIL_ent_ind=31460
     th1=0.00
     th2=0.95 #bert
-    #th2=0.70 #sapbert
+    #th2=0.80 #sapbert
   fi
   if [ "$onto_ver" = 2015AB ]
   then
@@ -68,7 +68,7 @@ then
     NIL_ent_ind=35398
     th1=0.00
     th2=0.55 #bert
-    #th2=0.95 #sapbert
+    #th2=0.60 #sapbert
   fi
   cross_enc_epoch_name='' #'/epoch_3' #''
   further_result_mark='' #'last-epoch' #'' #'-rerun'  
