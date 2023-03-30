@@ -213,14 +213,14 @@ elif data == 'share_clef':
                 "name": "Share-CLEF_eHealth2013-test",
                 "filename": "data/share_clef_2013_preprocessed/test.jsonl", 
             },
-            {
-                "name": "Share-CLEF_eHealth2013-ori-test-ZS",
-                "filename": "data/share_clef_2013_preprocessed_ori-ZS/test.jsonl", 
-            },            
-            {
-                "name": "Share-CLEF_eHealth2013-test-ZS",
-                "filename": "data/share_clef_2013_preprocessed-ZS/test.jsonl", 
-            },
+            # {
+            #     "name": "Share-CLEF_eHealth2013-ori-test-ZS",
+            #     "filename": "data/share_clef_2013_preprocessed_ori-ZS/test.jsonl", 
+            # },            
+            # {
+            #     "name": "Share-CLEF_eHealth2013-test-ZS",
+            #     "filename": "data/share_clef_2013_preprocessed-ZS/test.jsonl", 
+            # },
             # {
             #     "name": "Share-CLEF_eHealth2013-ori-test-preprocessed",
             #     "filename": "data/share_clef_2013_preprocessed_ori/test_preprocessed.jsonl", 
@@ -288,14 +288,14 @@ elif data[:2] == 'mm':
                 "name": "mm-%s-test" % onto_ver,
                 "filename": "data/MedMentions-preprocessed/full-%s/test.jsonl" % onto_ver, 
             },
-            {
-                "name": "mm-%s-dev-ZS" % onto_ver,
-                "filename": "data/MedMentions-preprocessed/full-%s-ZS/valid.jsonl" % onto_ver, 
-            },
-            {
-                "name": "mm-%s-test-ZS" % onto_ver,
-                "filename": "data/MedMentions-preprocessed/full-%s-ZS/test.jsonl" % onto_ver, 
-            },           
+            # {
+            #     "name": "mm-%s-dev-ZS" % onto_ver,
+            #     "filename": "data/MedMentions-preprocessed/full-%s-ZS/valid.jsonl" % onto_ver, 
+            # },
+            # {
+            #     "name": "mm-%s-test-ZS" % onto_ver,
+            #     "filename": "data/MedMentions-preprocessed/full-%s-ZS/test.jsonl" % onto_ver, 
+            # },           
         ]    
 
 #the key parameters here
