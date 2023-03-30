@@ -13,8 +13,11 @@ See `step_all_BM25+cross-enc.sh` for all BM25+BERT models.
 # Data Sources
 * ShARe/CLEF 2013 dataset is from https://physionet.org/content/shareclefehealth2013/1.0/
 * MedMention dataset is from https://github.com/chanzuckerberg/MedMentions
-* UMLS is from https://www.nlm.nih.gov/research/umls/index.html
-* SNOMED CT is from https://www.nlm.nih.gov/healthit/snomedct/index.html
+* UMLS (versions 2012AB, 2014AB, 2017AA) is from https://www.nlm.nih.gov/research/umls/index.html
+* SNOMED CT (corresponding versions) is from https://www.nlm.nih.gov/healthit/snomedct/index.html
+
+* NILK dataset is from https://zenodo.org/record/6607514
+* WikiData 2017 dump is from https://archive.org/download/enwiki-20170220/enwiki-20170220-pages-articles.xml.bz2
 
 # Data Scripts
 
