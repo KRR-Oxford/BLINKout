@@ -384,14 +384,13 @@ def main(params):
         params["top_k"],
         params.get("zeshel", None),
         save_results,
-        add_NIL=params["add_NIL_to_bi_enc_pred"], ## add NIL to the last element of the biencoder predicted entity indicies, if NIL was not predicted
+        add_NIL=params["add_NIL_to_bi_enc_pred"], # add NIL to the last element of the biencoder predicted entity indicies, if NIL was not predicted
         NIL_ent_id=params["NIL_ent_ind"],
         use_BM25=params["use_BM25"],
         candidate_pool_for_BM25=candidate_pool_for_BM25,
         get_is_men_str_mat_fts=params["use_extra_features"],
         index_title_special_token=index_title_special_token,
-        aggregating_factor=20,
-        #TODO - here might need another candidate_encoding with syn [syn]-concated 
+        aggregating_factor=params["aggregating_factor"],
     )
     #print('new_data:',new_data)
 

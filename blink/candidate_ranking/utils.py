@@ -21,18 +21,19 @@ from blink.candidate_ranking.bert_reranking import BertReranker
 from blink.biencoder.biencoder import BiEncoderRanker
 
 
-def read_dataset(dataset_name, preprocessed_json_data_parent_folder, debug=False):
+def read_dataset(dataset_name, preprocessed_json_data_parent_folder, limit_by_max_lines=False, max_lines=300000, debug=False):
     file_name = "{}.jsonl".format(dataset_name)
     txt_file_path = os.path.join(preprocessed_json_data_parent_folder, file_name)
 
     samples = []
 
     with io.open(txt_file_path, mode="r", encoding="utf-8-sig") as file: # changed from utf-8 to utf-8-sig when needed
-        for line in file:
+        for ind, line in enumerate(file):
             samples.append(json.loads(line.strip()))
-            if debug and len(samples) > 200:
+            if debug and ind == 199:
                 break
-
+            if limit_by_max_lines and ind == max_lines - 1:
+                break
     return samples
 
 

@@ -166,7 +166,7 @@ def main(params):
     grad_acc_steps = params["gradient_accumulation_steps"]
 
     # Load train data
-    train_samples = utils.read_dataset("train%s%s" % ('_full' if params["use_full_training_data"] else '', '_preprocessed' if params["use_preprocessed_data"] else ''), params["data_path"])
+    train_samples = utils.read_dataset("train%s%s" % ('_full' if params["use_full_training_data"] else '', '_preprocessed' if params["use_preprocessed_data"] else ''), params["data_path"], limit_by_max_lines=params["limit_by_max_lines"], max_lines=params["max_number_of_train_size"])
     logger.info("Read %d train samples." % len(train_samples))
 
     train_data, train_tensor_data = data.process_mention_data(
@@ -256,9 +256,16 @@ def main(params):
         if params["silent"]:
             iter_ = train_dataloader
         else:
-            iter_ = tqdm(train_dataloader, desc="Batch")
-
+            if params["limit_by_train_steps"]:
+                iter_ = tqdm(train_dataloader, 
+                         desc="Batch", 
+                         total=min(len(train_dataloader),params["max_num_train_steps"]))
+            else:
+                iter_ = tqdm(train_dataloader, 
+                         desc="Batch")
         for step, batch in enumerate(iter_):
+            if params["limit_by_train_steps"] and step == params["max_num_train_steps"]:
+                break
             batch = tuple(t.to(device) for t in batch)
             #context_input, candidate_input, _, _, _ = batch # this is probably for zero shot el - to be checked later
             _, context_input, candidate_input, _, tensor_is_label_NIL = batch

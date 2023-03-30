@@ -486,10 +486,17 @@ def main(params):
         if params["silent"]:
             iter_ = train_dataloader
         else:
-            iter_ = tqdm(train_dataloader, desc="Batch")
-
+            if params["limit_by_train_steps"]:
+                iter_ = tqdm(train_dataloader, 
+                         desc="Batch", 
+                         total=min(len(train_dataloader),params["max_num_train_steps"]))
+            else:
+                iter_ = tqdm(train_dataloader, 
+                         desc="Batch")
         part = 0
         for step, batch in enumerate(iter_):
+            if params["limit_by_train_steps"] and step == params["max_num_train_steps"]:
+                break
             batch = tuple(t.to(device) for t in batch)
             context_input = batch[0] 
             label_input = batch[1]

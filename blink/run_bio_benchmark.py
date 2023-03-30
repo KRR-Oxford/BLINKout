@@ -18,6 +18,9 @@ parser = argparse.ArgumentParser(description="setting thresholds to detect out-o
 parser.add_argument('--data', type=str,
                     help="name of the dataset, which is also used in the model names: share_clef or mm",
                     default='share_clef')
+parser.add_argument('--onto_name', type=str,
+                    help="main name of the ontology, UMLS for share_clef and mm; and WikiData for NILK", 
+                    default='UMLS')
 parser.add_argument('--onto_ver', type=str,
                     help="UMLS version. For share/clef: 2012AB. For mm, pruned or prev: using 2017AA_pruned0.1, 2017AA_pruned0.2, or 2014AB, 2015AB for \'full\' data_setting; 2015AB/active, 2017AA/active for st21pv", 
                     default='2012AB')
@@ -32,6 +35,12 @@ parser.add_argument('--biencoder_model_name', type=str,
 parser.add_argument('--biencoder_model_size',type=str,
                     help="bi-encoder model size, base or large",
                     default='large')
+parser.add_argument('--max_cand_length',type=str,
+                    help="max candidate length used in training and testing",
+                    default='128')
+parser.add_argument('--eval_batch_size',type=str,
+                    help="evaluation batch size for bi-encoder and cross-encoder",
+                    default='32')
 parser.add_argument('--use_synonyms',
                     help="whether using synonyms for candidate representation", action='store_true')  
 parser.add_argument('--NIL_enc_mark', type=str,
@@ -39,6 +48,8 @@ parser.add_argument('--NIL_enc_mark', type=str,
                     default='_w_NIL_syn_tag')                    
 parser.add_argument('-top_k','--top_k', type=int,
                     help="top_k for candidate generation", default=100)
+parser.add_argument('--aggregating_factor', type=int,
+                    help="aggregating factor for top-k*prediction", default=20)
 parser.add_argument("--crossencoder_bert_model",type=str,
                     help="the type of the bert model, as specified in the huggingface model hub.",
                     default='bert_base_uncased')
@@ -84,9 +95,66 @@ parser.add_argument('--no_cuda',
 args_keyed_in = parser.parse_args()
 
 data = args_keyed_in.data
-#data == 'mm17AA0.1'
 
-if data == 'share_clef':
+if data == 'nilk':
+    bienc_model_name = args_keyed_in.biencoder_model_name
+    biencoder_model_size = args_keyed_in.biencoder_model_size
+    NIL_enc_mark = args_keyed_in.NIL_enc_mark
+    cross_model_setting = args_keyed_in.cross_model_setting
+    with_NIL_ent_enc = True
+    cross_model_name = data + '/' + cross_model_setting
+    crossencoder_model_size = args_keyed_in.cross_model_size
+    onto_name = args_keyed_in.onto_name #"WikiData"
+    onto_ver = args_keyed_in.onto_ver # here is empty string ''
+    onto_ver_prefix = onto_ver.split('_')[0] # here is empty string ''
+    if not (NIL_enc_mark == ""):
+        entity_catalogue_postfix = '_'.join(NIL_enc_mark.replace("_w_","_with_").replace("-","_").split('_')[:5]) # from 
+        list_filter_postfix = ['_blink','_tag','_cand','_sapbert'] # adjust the list_filter_postfix_if there is an error in looking for the entity catalogue file
+        # remove the filter_postix and later strings introduced in step_all_BLINK.sh (and step_all_BM25+cross-enc.sh) 
+        for filter_postfix in list_filter_postfix:
+            if filter_postfix in entity_catalogue_postfix:
+                entity_catalogue_postfix = entity_catalogue_postfix[:entity_catalogue_postfix.find(filter_postfix)]
+        print('entity_catalogue_postfix:',entity_catalogue_postfix)
+        # if '_blink' in entity_catalogue_postfix:
+        #     entity_catalogue_postfix = entity_catalogue_postfix[:entity_catalogue_postfix.find('_blink')] # remove "_blink" and later strings introduced in step_all_BLINK.sh and step_all_BM25+cross-enc.sh
+        # if '_tag' in entity_catalogue_postfix:
+        #     entity_catalogue_postfix = entity_catalogue_postfix[:entity_catalogue_postfix.find('_tag')] # remove "_tag" and later strings introduced in step_all_BLINK.sh
+        # if '_cand' in entity_catalogue_postfix:
+        #     entity_catalogue_postfix = entity_catalogue_postfix[:entity_catalogue_postfix.find('_cand')] # remove "_cand" and later strings introduced in step_all_BLINK.sh
+        # if '_sapbert' in entity_catalogue_postfix:
+        #     entity_catalogue_postfix = entity_catalogue_postfix[:entity_catalogue_postfix.find('_sapbert')] # remove "_sapbert" and later strings introduced in step_all_BLINK.sh  
+    else:
+        entity_catalogue_postfix = NIL_enc_mark
+    if not "_with_NIL" in entity_catalogue_postfix:
+        entity_catalogue_postfix = "_with_NIL" + entity_catalogue_postfix
+    #print("entity_catalogue_postfix in run_bio_benchmark:",entity_catalogue_postfix)    
+    if args_keyed_in.debug:
+        DATASETS = [
+            # {
+            #     "name": "nilk-valid-sampled",
+            #     "filename": "data/NILK-preprocessed-0.001/syn_attr/valid_sample100.jsonl", 
+            # },
+            # {
+            #     "name": "nilk-test-sampled",
+            #     "filename": "data/NILK-preprocessed-0.001/syn_attr/test_sample100.jsonl", 
+            # },
+            {
+                "name": "nilk-valid",
+                "filename": "data/NILK-preprocessed-0.001/syn_attr/valid.jsonl", 
+            },
+        ]    
+    else:
+        DATASETS = [
+            {
+                "name": "nilk-valid",
+                "filename": "data/NILK-preprocessed-0.001/syn_attr/valid.jsonl", 
+            },
+            {
+                "name": "nilk-test",
+                "filename": "data/NILK-preprocessed-0.001/syn_attr/test.jsonl", 
+            },
+        ]
+elif data == 'share_clef':
     #use_NIL_tag = False
     # if not args_keyed_in.use_NIL_tag:
     #     #bienc_model_name = data.replace('_','-') + '-ce-22Jul'
@@ -108,15 +176,16 @@ if data == 'share_clef':
     with_NIL_ent_enc = True
     cross_model_name = data + '/' + cross_model_setting
     crossencoder_model_size = args_keyed_in.cross_model_size
+    onto_name = args_keyed_in.onto_name
     onto_ver = args_keyed_in.onto_ver # '2012AB'
     onto_ver_prefix = onto_ver.split('_')[0]
     if not (NIL_enc_mark == ""):
-        entity_catalogue_postfix = '_'.join(NIL_enc_mark.replace("_w_","_with_").split('_')[:5]) # from 
+        entity_catalogue_postfix = '_'.join(NIL_enc_mark.replace("_w_","_with_").replace("-","_").split('_')[:5]) # from 
+        list_filter_postfix = ['_blink','_tag','_cand'] # adjust the list_filter_postfix_if there is an error in looking for the entity catalogue file
+        for filter_postfix in list_filter_postfix:
+            if filter_postfix in entity_catalogue_postfix:
+                entity_catalogue_postfix = entity_catalogue_postfix[:entity_catalogue_postfix.find(filter_postfix)]
         print('entity_catalogue_postfix:',entity_catalogue_postfix)
-        if '_blink' in entity_catalogue_postfix:
-            entity_catalogue_postfix = entity_catalogue_postfix[:entity_catalogue_postfix.find('_blink')] # remove "_blink" and later strings introduced in step_all_BLINK.sh and step_all_BM25+cross-enc.sh
-        if '_tag' in entity_catalogue_postfix:
-            entity_catalogue_postfix = entity_catalogue_postfix[:entity_catalogue_postfix.find('_tag')] # remove "_tag" and later strings introduced in step_all_BLINK.sh
     else:
         entity_catalogue_postfix = NIL_enc_mark
     if not "_with_NIL" in entity_catalogue_postfix:
@@ -143,6 +212,14 @@ if data == 'share_clef':
             {
                 "name": "Share-CLEF_eHealth2013-test",
                 "filename": "data/share_clef_2013_preprocessed/test.jsonl", 
+            },
+            {
+                "name": "Share-CLEF_eHealth2013-ori-test-ZS",
+                "filename": "data/share_clef_2013_preprocessed_ori-ZS/test.jsonl", 
+            },            
+            {
+                "name": "Share-CLEF_eHealth2013-test-ZS",
+                "filename": "data/share_clef_2013_preprocessed-ZS/test.jsonl", 
             },
             # {
             #     "name": "Share-CLEF_eHealth2013-ori-test-preprocessed",
@@ -171,32 +248,34 @@ elif data[:2] == 'mm':
     with_NIL_ent_enc = True
     cross_model_name = data + '/' + cross_model_setting
     crossencoder_model_size = args_keyed_in.cross_model_size
+    onto_name = args_keyed_in.onto_name
     onto_ver = args_keyed_in.onto_ver #'2017AA_pruned0.1'
     onto_ver_prefix = onto_ver.split('_')[0]
     if not (NIL_enc_mark == ""):
-        entity_catalogue_postfix = '_'.join(NIL_enc_mark.replace("_w_","_with_").split('_')[:5]) # from 
-        if '_blink' in entity_catalogue_postfix:
-            entity_catalogue_postfix = entity_catalogue_postfix[:entity_catalogue_postfix.find('_blink')] # remove "_blink" and later strings introduced in step_all_BLINK.sh and step_all_BM25+cross-enc.sh
-        if '_tag' in entity_catalogue_postfix:
-            entity_catalogue_postfix = entity_catalogue_postfix[:entity_catalogue_postfix.find('_tag')] # remove "_tag" and later strings introduced in step_all_BLINK.sh    
+        entity_catalogue_postfix = '_'.join(NIL_enc_mark.replace("_w_","_with_").replace("-","_").split('_')[:5]) # from 
+        list_filter_postfix = ['_blink','_tag','_cand'] # adjust the list_filter_postfix_if there is an error in looking for the entity catalogue file
+        for filter_postfix in list_filter_postfix:
+            if filter_postfix in entity_catalogue_postfix:
+                entity_catalogue_postfix = entity_catalogue_postfix[:entity_catalogue_postfix.find(filter_postfix)]
+        print('entity_catalogue_postfix:',entity_catalogue_postfix)
     else:
         entity_catalogue_postfix = NIL_enc_mark
     if not "_with_NIL" in entity_catalogue_postfix:
         entity_catalogue_postfix = "_with_NIL" + entity_catalogue_postfix
     if args_keyed_in.debug:
         DATASETS = [
+            # {
+            #     "name": "mm-%s-dev" % onto_ver, #TODO test data from another onto_ver
+            #     "filename": "data/MedMentions-preprocessed/full-%s/valid.jsonl" % onto_ver, 
+            # },
             {
-                "name": "mm-%s-dev" % onto_ver, #TODO test data from another onto_ver
-                "filename": "data/MedMentions-preprocessed/full-%s/valid.jsonl" % onto_ver, 
+                "name": "mm-%s-dev-sample" % onto_ver,
+                "filename": "data/MedMentions-preprocessed/full-%s/full_valid_%s_vs_2017AAfiltered_sample100.jsonl" % (onto_ver, onto_ver), 
             },
-            # {
-            #     "name": "mm-%s-dev-sample" % onto_ver,
-            #     "filename": "data/MedMentions-preprocessed/full-%s/full_dev_%s_vs_2017AAfiltered_sample100.jsonl" % (onto_ver, onto_ver), 
-            # },
-            # {
-            #     "name": "mm-%s-test-sample" % onto_ver,
-            #     "filename": "data/MedMentions-preprocessed/full-%s/full_test_%s_vs_2017AAfiltered_sample100.jsonl" % (onto_ver, onto_ver), 
-            # },
+            {
+                "name": "mm-%s-test-sample" % onto_ver,
+                "filename": "data/MedMentions-preprocessed/full-%s/full_test_%s_vs_2017AAfiltered_sample100.jsonl" % (onto_ver, onto_ver), 
+            },
         ]    
 
     else:    
@@ -208,7 +287,15 @@ elif data[:2] == 'mm':
             {
                 "name": "mm-%s-test" % onto_ver,
                 "filename": "data/MedMentions-preprocessed/full-%s/test.jsonl" % onto_ver, 
-            },       
+            },
+            {
+                "name": "mm-%s-dev-ZS" % onto_ver,
+                "filename": "data/MedMentions-preprocessed/full-%s-ZS/valid.jsonl" % onto_ver, 
+            },
+            {
+                "name": "mm-%s-test-ZS" % onto_ver,
+                "filename": "data/MedMentions-preprocessed/full-%s-ZS/test.jsonl" % onto_ver, 
+            },           
         ]    
 
 #the key parameters here
@@ -226,20 +313,21 @@ PARAMETERS = {
     #"biencoder_model": "models/biencoder/epoch_2/pytorch_model.bin", # re-trained
     "biencoder_config": "models/biencoder_custom_%s.json" % biencoder_model_size,
     #"biencoder_config": "models/biencoder_custom_base.json",
-    "entity_catalogue": "ontologies/UMLS%s%s.jsonl" % (onto_ver,entity_catalogue_postfix), # a four-element entity data structure: text (or definition), idx (or url), title (or name of the entity), entity (canonical name)
+    "entity_catalogue": "ontologies/%s%s%s.jsonl" % (onto_name,onto_ver,entity_catalogue_postfix), # a four-element entity data structure: text (or definition), idx (or url), title (or name of the entity), entity (canonical name)
     #*here we use the version with_NIL*, which added a general NIL or out-of-KB ("CUI-less") entity in the entity catagolue. The original version is UMLS2012AB.jsonl.
     #"entity_ids": "preprocessing/saved_cand_ids_umls%s_w_NIL_re_tr.pt" % onto_ver,
-    "entity_ids": "preprocessing/saved_cand_ids_umls%s%s_re_tr.pt" % (onto_ver, NIL_enc_mark),
+    "entity_ids": "preprocessing/saved_cand_ids_%s%s%s_re_tr.pt" % (onto_name.lower(),onto_ver, NIL_enc_mark),
     #"entity_encoding": "models/UMLS2012AB_ent_enc/UMLS2012AB_ent_enc.t7", # a torch7 file # get this using script/generate_cand_ids.py and script/generate_candidates_blink.py, derived/pre-computed from UMLS2012AB.jsonl (the one *without* the NIL entity) and the bi-encoder model. # this one needs to be re-generated with new biencoder model
     #"entity_encoding": "models/UMLS%s_ent_enc_re_tr/UMLS%s_ent_enc_re_tr.t7" % (onto_ver,onto_ver), #re-trained
-    "entity_encoding": "models/UMLS%s_ent_enc_re_tr/UMLS%s%s_ent_enc_re_tr.t7" % (onto_ver_prefix,onto_ver, NIL_enc_mark if with_NIL_ent_enc else ''), # re-trained, with NIL
+    "entity_encoding": "models/%s%s_ent_enc_re_tr/%s%s%s_ent_enc_re_tr.t7" % (onto_name,onto_ver_prefix,onto_name,onto_ver, NIL_enc_mark if with_NIL_ent_enc else ''), # re-trained, with NIL
     #"crossencoder_bert_model": cross_enc_bert_model,
     #"crossencoder_model": "models/crossencoder_wiki_large.bin", # this one needs to be re-trained
     #"crossencoder_config": "models/crossencoder_wiki_large.json",
     #"crossencoder_model": "models/crossencoder/pytorch_model.bin", # re-trained
     #"crossencoder_model": "models/crossencoder/share_clef/original/pytorch_model.bin", # re-trained with "NIL" rep
     "crossencoder_model": "models/crossencoder/%s/pytorch_model.bin" % cross_model_name, # re-trained w/o "NIL" rep
-    "crossencoder_config": "models/crossencoder_%s_%s.json" % ('custom' if data[:2] != 'mm' else 'medmention',crossencoder_model_size), # use bert-base for cross-encoder 
+    #"crossencoder_config": "models/crossencoder_%s_%s.json" % ('custom' if data[:2] != 'mm' else 'medmention',crossencoder_model_size), # use bert-base for cross-encoder 
+    "crossencoder_config": "models/crossencoder_custom_%s.json" % crossencoder_model_size, # use bert-base for cross-encoder 
     #"crossencoder_config": "models/crossencoder_custom_large.json",
     "output_path": "output",
     "fast": False,

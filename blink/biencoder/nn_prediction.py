@@ -60,14 +60,10 @@ def get_is_men_str_matchable_features(list_mention_input,list_2d_label_input,ind
     mention_matched_fuzzy = 0
     mention_matched_fuzzy_w_desc = 0
     for label_sub_token_list in list_2d_label_input:
-        # clean label ids
-        label_sub_token_list = label_sub_token_list[1:-1]
-        # get the position of title mark 
-        pos_title_mark = label_sub_token_list.index(index_title_special_token)
-        # get title sub tokens as a list
-        label_tit_sub_token_list = label_sub_token_list[:pos_title_mark]
-        # get desc sub tokens as a list
-        #label_desc_sub_token_list = label_sub_token_list[pos_title_mark+1:]
+        # get list of *title* sub token ids 
+        label_tit_sub_token_list = get_title_ids_from_label_sub_token_list(
+                                        label_sub_token_list,
+                                        index_title_special_token=index_title_special_token)
         
         # exact matching
         if mention_matched_exact < 2:
@@ -116,12 +112,14 @@ def _normalise_to_ori_local_id(local_id,local_id2wikipedia_id,wikipedia_id2origi
 
 def _aggregating_indices_synonyms(indicies_per_datum,local_id2wikipedia_id,wikipedia_id2local_id,top_k):
     #aggregating indicies of synonyms (by maximum)
+    indicies_per_datum_ori = indicies_per_datum[:]
     #normalise the indicies to those of the canonical names (not synonyms).
     indicies_per_datum = [_normalise_local_id(int(indice),local_id2wikipedia_id,wikipedia_id2local_id) for indice in indicies_per_datum]
     #remove duplicates in normalised indicies
     indicies_per_datum = list(dict.fromkeys(indicies_per_datum))[:top_k]    
     if len(indicies_per_datum) != top_k:
         print('indicies_per_datum:',len(indicies_per_datum),'top_k:',top_k)
+        print('ori->new indicies_per_datum:',indicies_per_datum_ori,'->',indicies_per_datum)
     indicies_per_datum = np.array(indicies_per_datum)
     return indicies_per_datum
 
@@ -156,21 +154,48 @@ def _aggregating_indices_synonyms_ave(indicies_per_datum,scores_per_datum,local_
     indicies_per_datum = np.array(indicies_per_datum)
     return indicies_per_datum
 
+def get_title_ids_from_label_sub_token_list(label_sub_token_list,index_title_special_token=3):
+    label_sub_token_list = label_sub_token_list[1:-1]
+    # get the position of title mark 
+    if index_title_special_token in label_sub_token_list:
+        pos_title_mark = label_sub_token_list.index(index_title_special_token)
+    else:
+        # no title mark, thus everything is in title
+        print('get_is_men_str_matchable_features(): no title mark found for ', label_sub_token_list)
+        pos_title_mark = len(label_sub_token_list) 
+    # get title sub tokens as a list
+    label_tit_sub_token_list = label_sub_token_list[:pos_title_mark]
+    # get desc sub tokens as a list
+    #label_desc_sub_token_list = label_sub_token_list[pos_title_mark+1:]
+    return label_tit_sub_token_list
+
+# def get_list_2d_title_ids_from_candidate_pool(list_2d_canditate_pool,index_title_special_token=3):
+#     list_2d_candidate_title_ids = []
+#     for label_sub_token_list in list_2d_canditate_pool:
+#         label_tit_sub_token_list = get_title_ids_from_label_sub_token_list(label_sub_token_list)
+#         list_2d_candidate_title_ids.append(label_tit_sub_token_list)
+#     return list_2d_candidate_title_ids
+
 # get ranking indices with BM25
-def get_ranking_indices_w_BM25(list_mention_input,list_2d_canditate_pool,topn=100,index_title_special_token=3):
+def get_ranking_indices_w_BM25(list_mention_input,list_2d_candidate_title_ids,topn=100,index_title_special_token=3):
     #clean the ids by removing special token ids and padding ids
     mention_sub_token_list = [sub_token_id for sub_token_id in list_mention_input if sub_token_id >= 3]
-    list_2d_candidate_title_ids = []
-    for label_sub_token_list in list_2d_canditate_pool:
-        # clean label ids
-        label_sub_token_list = label_sub_token_list[1:-1]
-        # get the position of title mark 
-        pos_title_mark = label_sub_token_list.index(index_title_special_token)
-        # get title sub tokens as a list
-        label_tit_sub_token_list = label_sub_token_list[:pos_title_mark]
-        # get desc sub tokens as a list
-        #label_desc_sub_token_list = label_sub_token_list[pos_title_mark+1:]
-        list_2d_candidate_title_ids.append(label_tit_sub_token_list)
+    # list_2d_candidate_title_ids = []
+    # for label_sub_token_list in list_2d_canditate_pool:
+    #     # clean label ids
+    #     label_sub_token_list = label_sub_token_list[1:-1]
+    #     # get the position of title mark 
+    #     if index_title_special_token in label_sub_token_list:
+    #         pos_title_mark = label_sub_token_list.index(index_title_special_token)
+    #     else:
+    #         # no title mark, thus everything is in title
+    #         print('get_ranking_indices_w_BM25(): no title mark found for ', label_sub_token_list)
+    #         pos_title_mark = len(label_sub_token_list) 
+    #     # get title sub tokens as a list
+    #     label_tit_sub_token_list = label_sub_token_list[:pos_title_mark]
+    #     # get desc sub tokens as a list
+    #     #label_desc_sub_token_list = label_sub_token_list[pos_title_mark+1:]
+    #     list_2d_candidate_title_ids.append(label_tit_sub_token_list)
     label_tit_sub_word_id_bm25 = BM25Okapi(list_2d_candidate_title_ids)
     scores = label_tit_sub_word_id_bm25.get_scores(mention_sub_token_list)
     topn_indicies = np.argsort(scores)[::-1][:topn]
@@ -232,6 +257,12 @@ def get_topk_predictions(
         candidate_pool_for_BM25 = [candidate_pool_for_BM25]
         cand_encode_list = [cand_encode_list]
 
+    # process candidate_pool_for_BM25
+    if use_BM25:
+        list_2d_canditate_pool = candidate_pool_for_BM25[0].cpu().tolist()
+        # by list comprehension (instead of get_list_2d_title_ids_from_candidate_pool())
+        list_2d_candidate_title_ids = [get_title_ids_from_label_sub_token_list(label_sub_token_list,index_title_special_token=index_title_special_token) for label_sub_token_list in list_2d_canditate_pool]
+        
     logger.info("World size : %d" % world_size)
     #print('candidate_pool:',candidate_pool)
     #print('candidate_pool:',candidate_pool,len(candidate_pool),candidate_pool[0].size())
@@ -284,8 +315,10 @@ def get_topk_predictions(
             )
             values, indicies = scores.topk(top_k*aggregating_factor)
             indicies = indicies.data.cpu().numpy()
+            #print('indicies before aggregation:',indicies)
             # aggregating results
             indicies = np.array([_aggregating_indices_synonyms(indicies_per_datum,local_id2wikipedia_id,wikipedia_id2local_id,top_k) for indicies_per_datum in indicies])
+            #print('indicies after aggregation:',indicies)
             # add NIL to the end
             if add_NIL:
                 for ind, indices_per_datum in enumerate(indicies):
@@ -305,7 +338,7 @@ def get_topk_predictions(
             
             if use_BM25:
                 # get indicies through BM25 - the candidate pool (sub-tokens, w or w/o synonyms, according to the input) is used to match with mention sub-tokens
-                inds, _ = get_ranking_indices_w_BM25(mention_input[i].cpu().tolist(),candidate_pool_for_BM25[0].cpu().tolist(),topn=top_k*aggregating_factor,
+                inds, _ = get_ranking_indices_w_BM25(mention_input[i].cpu().tolist(),list_2d_candidate_title_ids,topn=top_k*aggregating_factor,
                 index_title_special_token=index_title_special_token)
                 # aggregating results
                 inds = np.array(_aggregating_indices_synonyms(inds,local_id2wikipedia_id,wikipedia_id2local_id,top_k))

@@ -164,6 +164,9 @@ class CrossEncoderRanker(torch.nn.Module):
         )
 
         # here it does all the bert process + linear layer (and also concatenating with extra features if chosen too)
+        #print('token_idx_ctxt:',token_idx_ctxt.size())
+        #print('segment_idx_ctxt:',segment_idx_ctxt.size())
+        #print('mask_ctxt:',mask_ctxt.size())
         embedding_ctxt = self.model(token_idx_ctxt, segment_idx_ctxt, mask_ctxt,)
         #print('embedding_ctxt:',embedding_ctxt.size()) # embedding_ctxt: torch.Size([100])
         return embedding_ctxt.view(-1, num_cand)
@@ -173,7 +176,13 @@ class CrossEncoderRanker(torch.nn.Module):
         scores_mean = torch.mean(scores_all_ents,dim=1).view(1,-1)
         scores_max = torch.max(scores_all_ents,dim=1).values.view(1,-1)
         scores_min = torch.min(scores_all_ents,dim=1).values.view(1,-1)
+        scores_all_ents = scores_all_ents.view(1,-1)
+        print('scores_all_ents:',scores_all_ents.size())
+        print('scores_mean:',scores_mean.size())
+        print('scores_max:',scores_max.size())
+        print('scores_all_ents:',scores_min.size())
         scores_all_ents_w_pooling = torch.cat((scores_all_ents,scores_mean,scores_max,scores_min),dim=1)
+        #scores_all_ents_w_pooling = scores_all_ents_w_pooling.view(-1,1)
         return scores_all_ents_w_pooling
 
     #get mention only score from the mention embedding    

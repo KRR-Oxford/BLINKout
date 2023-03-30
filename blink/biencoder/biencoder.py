@@ -169,7 +169,6 @@ class BiEncoderRanker(torch.nn.Module):
         # TODO: why do we need cpu here?
         # return embedding_cands
 
-    # to understand more - HD 8 Apr 22
     # Score candidates given context input and label input
     # If cand_encs is provided (pre-computed), cand_ves is ignored
     def score_candidate(

@@ -27,6 +27,7 @@ import json
 import sys
 import os
 from tqdm import tqdm
+from tqdm.contrib import tzip
 
 import argparse
 
@@ -37,6 +38,7 @@ def encode_candidate(
     encode_batch_size,
     silent,
     logger,
+    stack_by_k=5,
 ):
     reranker.model.eval()
     device = reranker.device
@@ -50,18 +52,19 @@ def encode_candidate(
         iter_ = data_loader
     else:
         iter_ = tqdm(data_loader)
-
-    cand_encode_list = None
+    cand_encoding_all = None
+    cand_encoding_list = []
     for step, batch in enumerate(iter_):
         cands = batch
         cands = cands.to(device)
-        cand_encode = reranker.encode_candidate(cands)
-        if cand_encode_list is None:
-            cand_encode_list = cand_encode
-        else:
-            cand_encode_list = torch.cat((cand_encode_list, cand_encode))
-
-    return cand_encode_list
+        cand_encoding = reranker.encode_candidate(cands)
+        # if cand_encoding_all is None:
+        #     cand_encoding_all = cand_encoding
+        # else:
+        #     cand_encoding_all = torch.cat((cand_encoding_all, cand_encoding))
+        cand_encoding_list.append(cand_encoding)
+    cand_encoding_all = torch.cat(cand_encoding_list)  
+    return cand_encoding_all
 
 
 def load_candidate_pool(
@@ -97,8 +100,8 @@ parser.add_argument('--compare_saved_embeds', type=str, help='compare against th
 
 parser.add_argument('--batch_size', type=int, default=512, help='batch size for encoding candidate vectors (default 512)')
 
-# processing every 100
-parser.add_argument('--chunk_every_k', type=int, default=100, help='every k data items (or chunks) to be preprocessed, this replaces the original --chunk_start and --chunk_end below')
+# # processing every 100
+# parser.add_argument('--chunk_every_k', type=int, default=100, help='every k data items (or chunks) to be preprocessed, this replaces the original --chunk_start and --chunk_end below')
 
 #parser.add_argument('--chunk_start', type=int, default=0, help='example idx to start encoding at (for parallelizing encoding process)')
 #parser.add_argument('--chunk_end', type=int, default=-1, help='example idx to stop encoding at (for parallelizing encoding process)')
@@ -128,6 +131,7 @@ biencoder_params["data_parallel"] = True
 biencoder_params["no_cuda"] = False
 biencoder_params["max_context_length"] = 32
 biencoder_params["encode_batch_size"] = args.batch_size
+biencoder_params["silent"] = False
 
 saved_cand_ids = getattr(args, 'saved_cand_ids', None)
 encoding_save_file_dir = args.encoding_save_file_dir
@@ -151,24 +155,31 @@ print('number of candidates in candidate_pool:',number_of_cands)
 if args.test:
     candidate_pool = candidate_pool[:10]
 
-cand_encoding_all = None
-# loop over every k rows
-for chunk_start,chunk_end in tqdm(zip(range(0,number_of_cands,args.chunk_every_k),range(args.chunk_every_k,number_of_cands+args.chunk_every_k,args.chunk_every_k))):
-    candidate_encoding = encode_candidate(
-        biencoder,
-        candidate_pool[chunk_start:chunk_end],
-        biencoder_params["encode_batch_size"],
-        biencoder_params["silent"],
-        logger,
-    )
+cand_encoding_all = encode_candidate(
+    biencoder,
+    candidate_pool,
+    biencoder_params["encode_batch_size"],
+    biencoder_params["silent"],
+    logger,
+)
+# # loop over every k rows
+# cand_encoding_all = None
+# for chunk_start,chunk_end in tzip(range(0,number_of_cands,args.chunk_every_k),range(args.chunk_every_k,number_of_cands+args.chunk_every_k,args.chunk_every_k)):
+#     ≈ = encode_candidate(
+#         biencoder,
+#         candidate_pool[chunk_start:chunk_end],
+#         biencoder_params["encode_batch_size"],
+#         biencoder_params["silent"],
+#         logger,
+#     )
 
-    # concatenate the chunks together
-    if cand_encoding_all is None:
-        cand_encoding_all = candidate_encoding
-    else:   
-        cand_encoding_all = torch.cat((cand_encoding_all, candidate_encoding))
+#     # concatenate the chunks together
+#     if cand_encoding_all is None:
+#         cand_encoding_all = candidate_encoding
+#     else:   
+#         cand_encoding_all = torch.cat((cand_encoding_all, candidate_encoding))
 
-    #print(cand_encoding_all.shape)    
+#     #print(cand_encoding_all.shape)    
 
 # save the encoding
 save_file = None

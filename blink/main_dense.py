@@ -474,6 +474,9 @@ def load_models(args, logger=None):
         biencoder_params["path_to_model"] = args.biencoder_model
         biencoder_params["bert_model"] = args.biencoder_bert_model # this updates the bert_model used (overwrites the one in the biencoder_config).
         biencoder_params["lowercase"] = args.lowercase
+        biencoder_params["max_cand_length"] = int(args.max_cand_length)
+        biencoder_params["max_seq_length"] = biencoder_params["max_context_length"] + biencoder_params["max_cand_length"]
+        biencoder_params["eval_batch_size"] = int(args.eval_batch_size)
         print("biencoder bert model:", biencoder_params["bert_model"])
     biencoder = load_biencoder(biencoder_params)
 
@@ -489,6 +492,9 @@ def load_models(args, logger=None):
             crossencoder_params["path_to_model"] = args.crossencoder_model
             crossencoder_params["bert_model"] = args.crossencoder_bert_model # this updates the bert_model used (overwrites the one in the crossencoder_config).
             crossencoder_params["lowercase"] = args.lowercase
+            crossencoder_params["max_cand_length"] = int(args.max_cand_length)
+            crossencoder_params["max_seq_length"] = crossencoder_params["max_context_length"] + crossencoder_params["max_cand_length"]
+            crossencoder_params["eval_batch_size"] = 1 #int(args.eval_batch_size)
             print("crossencoder bert model:", crossencoder_params["bert_model"])
         crossencoder = load_crossencoder(crossencoder_params)
 
@@ -709,7 +715,7 @@ def run(
         top_k = args.top_k
         if not args.use_BM25:
             labels, nns, scores = _run_biencoder(
-                biencoder, dataloader, candidate_encoding, local_id2wikipedia_id, wikipedia_id2local_id,top_k,aggregating_factor=20,indexer=faiss_indexer,
+                biencoder, dataloader, candidate_encoding, local_id2wikipedia_id, wikipedia_id2local_id,top_k,aggregating_factor=args.aggregating_factor,indexer=faiss_indexer,
             )
         else:
             # get candidate ids (candidate_pool)
@@ -722,7 +728,7 @@ def run(
             labels, nns, scores = _run_BM25(
                 dataloader,candidate_pool,local_id2wikipedia_id,wikipedia_id2local_id,top_k,
                 index_title_special_token=index_title_special_token,
-                aggregating_factor=20,
+                aggregating_factor=args.aggregating_factor,
             )
         
         # save candidate generation results to .jsonl file
@@ -934,7 +940,7 @@ def run(
         print('id2synonyms:', str(len(id2synonyms)) + ' ' + str(list(id2synonyms.items())[:5]) if id2synonyms else 'None')#;sys.exit(0)
         context_input, candidate_input, label_input, nns_filtered, tensor_is_NIL_labels = prepare_crossencoder_data(
             crossencoder.tokenizer, samples, labels, nns, id2title, id2synonyms, 
-            id2text, ori_local_id2wikipedia_id, local_id2wikipedia_id, topk=top_k, keep_all=keep_all, filter_within=filter_within, NIL_ent_id=label_id_NIL, test_NIL_label_only=None, use_NIL_tag=args.use_NIL_tag, use_NIL_desc=args.use_NIL_desc, use_NIL_desc_tag=args.use_NIL_desc_tag,use_synonyms=args.use_synonyms,
+            id2text, ori_local_id2wikipedia_id, local_id2wikipedia_id, max_cand_length=crossencoder_params["max_cand_length"], topk=top_k, keep_all=keep_all, filter_within=filter_within, NIL_ent_id=label_id_NIL, test_NIL_label_only=None, use_NIL_tag=args.use_NIL_tag, use_NIL_desc=args.use_NIL_desc, use_NIL_desc_tag=args.use_NIL_desc_tag,use_synonyms=args.use_synonyms,
             #test_NIL_label_only as None here
         )
 
@@ -973,7 +979,7 @@ def run(
             assert nb_eval_examples == len(samples) # check whether the denominator in cross-encoder is the same as the number of samples/mentions in the data - this should be correct after using all data in the cross-encoder stage (i.e. no filtering based on bi-encoder results, but keeping them as -1 when passed to cross-encoder.)
 
         #print('accuracy:',accuracy)
-        print('index_array:',len(index_array),len(index_array[0]),type(index_array[0]),index_array)
+        #print('index_array:',len(index_array),len(index_array[0]),type(index_array[0]),index_array)
         #print('unsorted_scores:',len(unsorted_scores),len(unsorted_scores[0]),type(unsorted_scores[0]),unsorted_scores) # these are logits.
         
         if args.interactive:

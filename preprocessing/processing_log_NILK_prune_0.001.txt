@@ -1,0 +1,2083 @@
+../ontologies/WikiData_with_NIL_syn_attr.jsonl : 14593339
+dict_CUI_syn: 14593339
+shuffling mention/row indicies for prunning
+0 pruned, go next
+1 pruned, go next
+2 pruned, go next
+3 pruned, go next
+4 pruned, go next
+5 pruned, go next
+6 pruned, go next
+7 pruned, go next
+8 pruned, go next
+9 pruned, go next
+10 pruned, go next
+11 pruned, go next
+12 pruned, go next
+13 pruned, go next
+14 pruned, go next
+15 pruned, go next
+16 pruned, go next
+17 pruned, go next
+18 pruned, go next
+19 pruned, go next
+20 pruned, go next
+21 pruned, go next
+22 pruned, go next
+23 pruned, go next
+24 pruned, go next
+25 pruned, go next
+26 pruned, go next
+27 pruned, go next
+28 pruned, go next
+29 pruned, go next
+30 pruned, go next
+31 pruned, go next
+32 pruned, go next
+33 pruned, go next
+34 pruned, go next
+35 pruned, go next
+36 pruned, go next
+37 pruned, go next
+38 pruned, go next
+39 pruned, go next
+40 pruned, go next
+41 pruned, go next
+42 pruned, go next
+43 pruned, go next
+44 pruned, go next
+45 pruned, go next
+46 pruned, go next
+47 pruned, go next
+48 pruned, go next
+49 pruned, go next
+50 pruned, go next
+51 pruned, go next
+52 pruned, go next
+53 pruned, go next
+54 pruned, go next
+55 pruned, go next
+56 pruned, go next
+57 pruned, go next
+58 pruned, go next
+59 pruned, go next
+60 pruned, go next
+61 pruned, go next
+62 pruned, go next
+63 pruned, go next
+64 pruned, go next
+65 pruned, go next
+66 pruned, go next
+67 pruned, go next
+68 pruned, go next
+69 pruned, go next
+70 pruned, go next
+71 pruned, go next
+72 pruned, go next
+73 pruned, go next
+74 pruned, go next
+75 pruned, go next
+76 pruned, go next
+77 pruned, go next
+78 pruned, go next
+79 pruned, go next
+80 pruned, go next
+81 pruned, go next
+82 pruned, go next
+83 pruned, go next
+84 pruned, go next
+85 pruned, go next
+86 pruned, go next
+87 pruned, go next
+88 pruned, go next
+89 pruned, go next
+90 pruned, go next
+91 pruned, go next
+92 pruned, go next
+93 pruned, go next
+94 pruned, go next
+95 pruned, go next
+96 pruned, go next
+97 pruned, go next
+98 pruned, go next
+99 pruned, go next
+row 2385986 left context len 148 beyond 128
+row 5086232 right context len 133 beyond 128
+row 7378839 right context len 150 beyond 128
+row 8745737 right context len 161 beyond 128
+row 9225260 right context len 132 beyond 128
+row 13202528 left context len 228 beyond 128
+row 13202528 right context len 216 beyond 128
+row 14605280 right context len 145 beyond 128
+row 16178691 right context len 139 beyond 128
+row 16424489 left context len 131 beyond 128
+row 16678716 left context len 136 beyond 128
+row 16678716 right context len 132 beyond 128
+row 16903322 right context len 134 beyond 128
+row 17373810 right context len 129 beyond 128
+row 17405969 left context len 192 beyond 128
+row 17405969 right context len 199 beyond 128
+label non-exist in the entity catalogue: Q16866944
+row 21614447 right context len 131 beyond 128
+label non-exist in the entity catalogue: Q21610407
+row 24095941 right context len 130 beyond 128
+row 24964345 right context len 129 beyond 128
+row 25821286 left context len 135 beyond 128
+row 25825362 right context len 143 beyond 128
+row 25825909 left context len 144 beyond 128
+row 25829766 left context len 138 beyond 128
+row 25829771 right context len 145 beyond 128
+label non-exist in the entity catalogue: Q19001884
+row 27372232 left context len 141 beyond 128
+row 27372232 right context len 189 beyond 128
+row 27456225 left context len 156 beyond 128
+row 27507803 left context len 133 beyond 128
+row 27507803 right context len 141 beyond 128
+row 27749817 left context len 157 beyond 128
+row 27930121 left context len 135 beyond 128
+row 29208006 left context len 150 beyond 128
+row 29563311 right context len 137 beyond 128
+row 31949261 left context len 167 beyond 128
+row 32831080 left context len 179 beyond 128
+row 32831080 right context len 147 beyond 128
+row 33977800 left context len 130 beyond 128
+row 34695217 right context len 131 beyond 128
+row 34859610 left context len 145 beyond 128
+row 34859610 right context len 147 beyond 128
+row 36076253 left context len 149 beyond 128
+row 36076253 right context len 151 beyond 128
+row 36098199 left context len 130 beyond 128
+row 36098199 right context len 143 beyond 128
+row 36236932 right context len 151 beyond 128
+row 36294173 right context len 139 beyond 128
+row 36732743 right context len 152 beyond 128
+row 36779492 right context len 147 beyond 128
+row 38012131 left context len 134 beyond 128
+row 38012476 left context len 137 beyond 128
+row 38012476 right context len 135 beyond 128
+row 38361809 right context len 131 beyond 128
+row 39313132 left context len 202 beyond 128
+row 39467908 left context len 129 beyond 128
+row 39731158 right context len 131 beyond 128
+row 39768749 left context len 139 beyond 128
+row 40333431 right context len 206 beyond 128
+row 40644557 left context len 129 beyond 128
+row 41218600 left context len 151 beyond 128
+row 41218600 right context len 137 beyond 128
+row 42127205 left context len 254 beyond 128
+row 42127205 right context len 201 beyond 128
+row 42287510 right context len 135 beyond 128
+row 42905523 left context len 135 beyond 128
+row 43197453 right context len 144 beyond 128
+row 43861776 right context len 130 beyond 128
+row 44297126 left context len 143 beyond 128
+row 45702943 right context len 159 beyond 128
+row 45830971 right context len 131 beyond 128
+row 46496668 left context len 135 beyond 128
+row 46496668 right context len 142 beyond 128
+row 46756135 right context len 146 beyond 128
+row 47016608 left context len 134 beyond 128
+row 48100209 left context len 144 beyond 128
+row 48100209 right context len 133 beyond 128
+row 49517458 right context len 134 beyond 128
+row 49769703 right context len 131 beyond 128
+label non-exist in the entity catalogue: Q206032
+row 50720066 left context len 135 beyond 128
+row 50720066 right context len 147 beyond 128
+row 50881051 right context len 135 beyond 128
+label non-exist in the entity catalogue: Q19001884
+row 53294919 right context len 140 beyond 128
+row 53439416 right context len 134 beyond 128
+row 53708717 right context len 134 beyond 128
+row 53870470 right context len 156 beyond 128
+row 54146710 left context len 138 beyond 128
+row 54146710 right context len 138 beyond 128
+row 54862692 right context len 226 beyond 128
+row 54863904 left context len 234 beyond 128
+row 54863904 right context len 219 beyond 128
+row 54908822 left context len 149 beyond 128
+row 55072515 left context len 129 beyond 128
+row 55072515 right context len 138 beyond 128
+row 55690491 left context len 129 beyond 128
+row 56907437 right context len 135 beyond 128
+row 57296493 left context len 141 beyond 128
+row 57655615 left context len 133 beyond 128
+row 57655615 right context len 147 beyond 128
+row 57703460 right context len 132 beyond 128
+row 57819957 right context len 246 beyond 128
+row 58960286 left context len 136 beyond 128
+row 58960286 right context len 135 beyond 128
+row 58989968 left context len 152 beyond 128
+row 58989968 right context len 145 beyond 128
+row 59932560 left context len 260 beyond 128
+row 60233367 left context len 134 beyond 128
+label non-exist in the entity catalogue: Q16282028
+label non-exist in the entity catalogue: Q19001884
+row 61787992 left context len 141 beyond 128
+row 62670043 left context len 133 beyond 128
+row 62670043 right context len 137 beyond 128
+row 64204450 left context len 144 beyond 128
+row 64204450 right context len 149 beyond 128
+row 64319465 left context len 140 beyond 128
+label non-exist in the entity catalogue: Q2300748
+row 65058400 right context len 131 beyond 128
+row 65692737 left context len 252 beyond 128
+row 65692737 right context len 240 beyond 128
+row 66064890 left context len 200 beyond 128
+row 66194181 left context len 212 beyond 128
+row 66194181 right context len 240 beyond 128
+row 66300734 left context len 211 beyond 128
+row 66300734 right context len 242 beyond 128
+row 68337981 right context len 356 beyond 128
+row 68488828 left context len 152 beyond 128
+row 68488828 right context len 152 beyond 128
+label non-exist in the entity catalogue: Q737094
+row 70281802 right context len 132 beyond 128
+row 70586672 right context len 142 beyond 128
+row 71379770 left context len 137 beyond 128
+row 71715488 left context len 140 beyond 128
+row 73098781 right context len 138 beyond 128
+row 74059491 left context len 147 beyond 128
+row 74059491 right context len 149 beyond 128
+row 74059642 left context len 158 beyond 128
+row 74059642 right context len 154 beyond 128
+row 74063439 right context len 139 beyond 128
+row 74768197 left context len 130 beyond 128
+row 74990538 right context len 211 beyond 128
+row 75061024 right context len 143 beyond 128
+row 75251797 right context len 170 beyond 128
+row 75581199 left context len 135 beyond 128
+row 76505341 left context len 132 beyond 128
+row 76505341 right context len 130 beyond 128
+row 76560741 left context len 257 beyond 128
+row 76560741 right context len 268 beyond 128
+row 76894385 right context len 137 beyond 128
+row 77253115 left context len 133 beyond 128
+row 77852956 right context len 160 beyond 128
+row 78108443 left context len 248 beyond 128
+row 78108443 right context len 159 beyond 128
+row 78303367 left context len 132 beyond 128
+row 78303367 right context len 132 beyond 128
+row 78325386 left context len 142 beyond 128
+row 79305498 left context len 144 beyond 128
+row 79305498 right context len 157 beyond 128
+row 79942780 left context len 228 beyond 128
+row 79942780 right context len 255 beyond 128
+row 80195622 right context len 151 beyond 128
+row 80291615 left context len 144 beyond 128
+row 80291615 right context len 143 beyond 128
+row 80421017 left context len 148 beyond 128
+row 80421017 right context len 145 beyond 128
+row 80555687 left context len 141 beyond 128
+row 80555687 right context len 134 beyond 128
+row 80555688 left context len 133 beyond 128
+row 80555688 right context len 131 beyond 128
+row 81108386 left context len 138 beyond 128
+row 81332125 left context len 341 beyond 128
+row 81332125 right context len 372 beyond 128
+row 81672275 right context len 130 beyond 128
+label non-exist in the entity catalogue: Q16335324
+row 82021438 left context len 131 beyond 128
+row 82021438 right context len 142 beyond 128
+row 82166519 left context len 147 beyond 128
+row 82166519 right context len 157 beyond 128
+row 82320350 left context len 138 beyond 128
+row 82320350 right context len 148 beyond 128
+row 82458448 left context len 149 beyond 128
+row 83122505 left context len 226 beyond 128
+row 83122505 right context len 255 beyond 128
+row 83342280 left context len 148 beyond 128
+row 83483982 right context len 137 beyond 128
+row 83539916 left context len 140 beyond 128
+row 83554190 left context len 133 beyond 128
+row 83554190 right context len 129 beyond 128
+row 83762620 left context len 211 beyond 128
+row 83762620 right context len 216 beyond 128
+row 84024147 left context len 132 beyond 128
+row 84031819 left context len 185 beyond 128
+row 84031819 right context len 183 beyond 128
+row 84066020 left context len 136 beyond 128
+row 84080916 right context len 130 beyond 128
+row 84330724 right context len 216 beyond 128
+row 84654713 left context len 144 beyond 128
+row 84654713 right context len 147 beyond 128
+row 84860004 left context len 174 beyond 128
+row 84883373 right context len 195 beyond 128
+row 85427085 left context len 142 beyond 128
+label non-exist in the entity catalogue: Q11913660
+label non-exist in the entity catalogue: Q28091125
+row 86321059 left context len 141 beyond 128
+train NIL mentions:
+	 Q13053464 -> NIL : (1, 'Armenia–Spain relations')
+	 Q28793894 -> NIL : (1, 'Patricia J. Adams')
+	 Q29833482 -> NIL : (1, 'Max Fried')
+	 Q2697132 -> NIL : (1, 'Haren-South')
+	 Q48724157 -> NIL : (1, 'Menk')
+	 Q55605427 -> NIL : (1, 'Bigg Boss')
+	 Q47016463 -> NIL : (2, 'Columbia Basin;Columbia Basin')
+	 Q56540141 -> NIL : (1, 'Păcuraru')
+	 Q61646528 -> NIL : (1, 'Makhanda')
+	 Q12844800 -> NIL : (2, 'Ghaznavids;Ghaznavid')
+	 Q3125978 -> NIL : (4, 'Bali;Bali;Bali;Bali')
+	 Q92780341 -> NIL : (1, 'Jaime Moreno')
+	 Q95186828 -> NIL : (1, 'Rothmans')
+	 Q17249231 -> NIL : (1, 'Portulaca lutea')
+	 Q21509353 -> NIL : (1, 'Batt')
+	 Q6081267 -> NIL : (2, 'Novo Brdo;Novo Brdo')
+	 Q52067300 -> NIL : (1, 'John McCracken')
+	 Q106046371 -> NIL : (1, 'Salerno, Joseph T.')
+	 Q12765554 -> NIL : (1, 'Eurymenes')
+	 Q162062 -> NIL : (1, 'Pentateuch')
+	 Q42852153 -> NIL : (1, 'Cavendish College')
+	 Q97497061 -> NIL : (1, 'Season of Glass')
+	 Q15490167 -> NIL : (1, 'Magnolia fistulosa')
+	 Q189266 -> NIL : (3, 'Eastern Front of World War II;Eastern Front;Eastern Front')
+	 Q45313082 -> NIL : (1, 'Dairy Queen')
+	 Q56064585 -> NIL : (1, 'East Suffolk')
+	 Q24952630 -> NIL : (1, 'Earl of Devonshire')
+	 Q320401 -> NIL : (1, 'Loris Azzaro')
+	 Q56291395 -> NIL : (1, "''Brederode''")
+	 Q28814749 -> NIL : (1, 'Fraxinus dipetala')
+	 Q1239452 -> NIL : (1, 'Louis II of Vaud')
+	 Q22807284 -> NIL : (3, 'Thessaly;Thessaly;Thessaly')
+	 Q3522391 -> NIL : (1, 'Tom Puss')
+	 Q1317936 -> NIL : (1, 'Mesembria')
+	 Q105760465 -> NIL : (1, 'Ares Shipyard Ltd.')
+	 Q1126934 -> NIL : (1, 'Conrad N. Hilton Foundation')
+	 Q5803852 -> NIL : (1, 'Highland Holiday')
+	 Q52132465 -> NIL : (1, 'cattle tick')
+	 Q43998029 -> NIL : (1, 'Gumby')
+	 Q2613588 -> NIL : (1, 'The Untouchables')
+	 Q2172254 -> NIL : (1, 'Imperial Order of the Queen of Sheba')
+	 Q6349411 -> NIL : (2, 'Yu-Gi-Oh! Duel Monsters Expert 3;List of Yu-Gi-Oh! video games')
+	 Q2271947 -> NIL : (1, 'Dopamine transporter')
+	 Q21449019 -> NIL : (1, 'MARRS')
+	 Q17116546 -> NIL : (1, "Nobody's Baby")
+	 Q65122244 -> NIL : (1, 'FIFA Fair Play Trophy')
+	 Q47537544 -> NIL : (1, 'water mill')
+	 Q12017972 -> NIL : (1, 'Gaon')
+	 Q3128740 -> NIL : (1, 'Hawaii Five-O')
+	 Q3985655 -> NIL : (1, 'The Angel of the Studio')
+	 Q409166 -> NIL : (1, 'factors II')
+	 Q60335080 -> NIL : (1, 'Edward Hall Alderson')
+	 Q25161472 -> NIL : (4, 'Forbes;Forbes;Forbes;Forbes')
+	 Q28823927 -> NIL : (1, 'Devereux Court')
+	 Q2057736 -> NIL : (1, 'Kingwater')
+	 Q59587046 -> NIL : (1, 'junior party in government coalition')
+	 Q923853 -> NIL : (1, 'Ivančna Gorica')
+	 Q24931703 -> NIL : (1, '10th Independent Air Defence Army')
+	 Q84600105 -> NIL : (1, 'cervid')
+	 Q28494858 -> NIL : (1, 'sex doll')
+	 Q13035690 -> NIL : (1, 'Protea repens')
+	 Q77172396 -> NIL : (1, 'ice-jamming')
+	 Q65031336 -> NIL : (1, 'John Burgess')
+	 Q18642488 -> NIL : (2, 'Competition Bureau;Competition Bureau')
+	 Q251933 -> NIL : (1, 'Bill of Rights')
+	 Q55068911 -> NIL : (2, 'Müller;Max Müller')
+	 Q50345316 -> NIL : (1, 'Karen Hartman')
+	 Q56435819 -> NIL : (1, 'phenylpropene')
+	 Q92767765 -> NIL : (1, 'five-year plan')
+	 Q5853417 -> NIL : (1, 'Explorer 45')
+	 Q11878157 -> NIL : (1, 'Elias')
+	 Q65926775 -> NIL : (1, 'Vysotsky (skyscraper)')
+	 Q52816227 -> NIL : (1, 'Democratic Center Party')
+	 Q51730115 -> NIL : (1, 'Carthaginian')
+	 Q5369977 -> NIL : (1, 'Xun Xu')
+	 Q48739587 -> NIL : (2, 'Cablevision;Cablevision')
+	 Q27966312 -> NIL : (1, 'Sylvains-les-Moulins')
+	 Q24511973 -> NIL : (1, 'Cumbia')
+	 Q22393568 -> NIL : (1, 'Salmon River')
+	 Q48103755 -> NIL : (1, 'town')
+	 Q102223472 -> NIL : (1, 'Spanky McFarlane')
+	 Q105320555 -> NIL : (1, 'F-7')
+	 Q2126436 -> NIL : (1, 'Ras Al Khaimah')
+	 Q535772 -> NIL : (2, 'Trauma center;trauma center')
+	 Q73072573 -> NIL : (1, 'Chichester District Council')
+	 Q97933094 -> NIL : (1, 'Professor Sir Roger Mynors')
+	 Q28859760 -> NIL : (1, "''Godzilla'' franchise")
+	 Q16311479 -> NIL : (1, 'Nedunkilli')
+	 Q66310109 -> NIL : (1, 'Iseult of Ireland')
+	 Q171393 -> NIL : (3, 'Wallachia;Wallachia;Wallachia')
+	 Q60738780 -> NIL : (1, 'List of weapons of the United States Marine Corps')
+	 Q1196034 -> NIL : (1, '11004 Stenmark')
+	 Q65961126 -> NIL : (2, 'Honda;Honda')
+	 Q52741981 -> NIL : (1, 'Fallowfield Station')
+	 Q796212 -> NIL : (1, 'semantic')
+	 Q3030432 -> NIL : (1, 'Disney Interactive')
+	 Q30635752 -> NIL : (1, 'Guerilla marketing')
+	 Q104642105 -> NIL : (1, 'Wayne Fyvie')
+	 Q51223223 -> NIL : (1, 'Vivisector')
+	 Q2274163 -> NIL : (1, 'onmyōji')
+	 Q30077999 -> NIL : (1, 'Petrella at Q')
+	 Q3599276 -> NIL : (1, '51261 Holuša')
+	 Q10916659 -> NIL : (1, 'Sima Zhi')
+	 Q92781680 -> NIL : (2, 'caused by;counter-programming')
+	 Q3852804 -> NIL : (1, 'Mauro Del Bue')
+	 Q66004929 -> NIL : (1, 'Peerage of Scotland')
+	 Q3482453 -> NIL : (1, 'Shomin-geki')
+	 Q995284 -> NIL : (1, 'Nándor Fa')
+	 Q486672 -> NIL : (2, 'Galápagos tortoise;Galápagos tortoise')
+	 Q28086552 -> NIL : (2, 'nicotine;Nicotine')
+	 Q39491235 -> NIL : (1, "Farmers' Day")
+	 Q2843859 -> NIL : (1, 'Amor Hakkar')
+	 Q58819376 -> NIL : (1, 'U.S. Highway 31')
+	 Q32067722 -> NIL : (1, 'Miss America Magazine')
+	 Q20062305 -> NIL : (1, 'Bayonetta')
+	 Q714601 -> NIL : (1, 'Predynastic era')
+	 Q3119061 -> NIL : (1, 'Seven Against Thebes')
+	 Q30505067 -> NIL : (1, 'Patrick Whelan')
+	 Q9147481 -> NIL : (1, 'Alfons Brehm')
+	 Q97499995 -> NIL : (1, 'Mohamed Guèye')
+	 Q2909745 -> NIL : (1, 'Momo Babungu')
+	 Q1717616 -> NIL : (1, 'Jürgen Rumrich')
+	 Q24873303 -> NIL : (1, "''Occult'' (film)")
+	 Q60733758 -> NIL : (1, 'Steve Allen')
+	 Q104668578 -> NIL : (1, 'William Walker (New South Wales colonial politician)')
+	 Q10364228 -> NIL : (1, 'Romang')
+	 Q7137331 -> NIL : (1, 'Fujiwara no Chōshi')
+	 Q1753557 -> NIL : (1, 'Carry On')
+	 Q28838297 -> NIL : (1, 'Community Transit')
+	 Q92786050 -> NIL : (1, 'Samuel W. Johnson')
+	 Q30589559 -> NIL : (1, 'Shaftesbury Homes and Arethusa')
+	 Q101822088 -> NIL : (1, 'Dave Mirra Freestyle BMX')
+	 Q63928981 -> NIL : (4, 'Maserati;Maserati;Maserati;Maserati')
+	 Q63928692 -> NIL : (2, 'BMW;BMW')
+	 Q65954940 -> NIL : (4, 'Renault;Renault;Renault;Renault')
+	 Q92772398 -> NIL : (6, 'Kent;Kent;Kent;Kent;Kent;Kent')
+	 Q105105372 -> NIL : (1, 'pornographer')
+	 Q6072922 -> NIL : (1, 'Persea caerulea')
+	 Q2705066 -> NIL : (1, 'dronabinol')
+	 Q2851013 -> NIL : (1, 'Anne Cassidy')
+	 Q106152667 -> NIL : (1, 'Hang Ha Po')
+	 Q30639232 -> NIL : (1, 'Wisdom of the crowd')
+	 Q29169263 -> NIL : (1, 'anthropogenic')
+	 Q2229124 -> NIL : (1, 'Maxim Lykov')
+	 Q13363209 -> NIL : (1, 'Free French Forces')
+	 Q28147472 -> NIL : (1, 'Sergei Shemetov')
+	 Q28822983 -> NIL : (1, 'Helen Elise Smith')
+	 Q21079625 -> NIL : (1, 'Mishmi (Idu)')
+	 Q60742923 -> NIL : (1, 'Isotta Fraschini Beta')
+	 Q59587444 -> NIL : (1, 'Queen Street')
+	 Q87816991 -> NIL : (3, 'Mission: Impossible;Mission: Impossible;Mission: Impossible')
+	 Q1206048 -> NIL : (1, 'Deutsches Theater')
+	 Q30593601 -> NIL : (1, 'Reading University Boat Club')
+	 Q20050141 -> NIL : (1, 'UFC Hall of Fame')
+	 Q2790682 -> NIL : (1, 'Pillerton Priors')
+	 Q21118512 -> NIL : (1, 'WT1')
+	 Q28050556 -> NIL : (1, 'Conrad Habicht')
+	 Q2992629 -> NIL : (1, "Kirk Van Houten's")
+	 Q78603928 -> NIL : (1, 'λ Sco')
+	 Q56027930 -> NIL : (1, 'NH 87')
+	 Q55973764 -> NIL : (1, 'Joey Gibson')
+	 Q25550430 -> NIL : (2, 'Gary Gygax;Gygax, Gary')
+	 Q64103 -> NIL : (1, 'Palazzo dei Conservatori')
+	 Q27089350 -> NIL : (1, 'euxanthone')
+	 Q52153460 -> NIL : (1, 'Satomi Mitarai')
+	 Q47480967 -> NIL : (1, 'Luc Goiris')
+	 Q20029356 -> NIL : (1, 'Judit Kiss')
+	 Q21165490 -> NIL : (1, 'Charles Baring Wall')
+	 Q60617378 -> NIL : (1, 'Josian Lebon')
+	 Q47470904 -> NIL : (1, 'Marina Kuzhmar')
+	 Q17154489 -> NIL : (1, 'Rise of the Tomb Raider')
+	 Q3052189 -> NIL : (10, 'EMI;EMI;the parent company of the label for which the soundtrack was released;EMI;EMI;EMI;EMI;EMI;EMI;EMI')
+	 Q44076841 -> NIL : (1, 'Florida')
+	 Q18104273 -> NIL : (1, 'Euthochtha')
+	 Q21535235 -> NIL : (1, 'John Bingle')
+	 Q1539523 -> NIL : (1, 'Kitchigama River')
+	 Q73424775 -> NIL : (1, 'Robert Connell')
+	 Q7220353 -> NIL : (1, 'F. Brunea-Fox')
+	 Q38545920 -> NIL : (2, 'South African;South African')
+	 Q901828 -> NIL : (1, 'Camponotus ligniperda')
+	 Q1085906 -> NIL : (1, 'Ventotene')
+	 Q26451734 -> NIL : (1, 'James Pringle')
+	 Q5777680 -> NIL : (1, 'Colombitherium')
+	 Q11206095 -> NIL : (1, 'RAMSI')
+	 Q55505926 -> NIL : (1, 'distribution function')
+	 Q12737309 -> NIL : (1, 'Otto Roth')
+	 Q39052793 -> NIL : (1, 'US\xa063')
+	 Q65122136 -> NIL : (2, 'Western Massachusetts;Western Massachusetts')
+	 Q10458411 -> NIL : (1, 'Conocephalus nigropleurum')
+	 Q48966640 -> NIL : (2, 'masterclass;masterclass')
+	 Q1235661 -> NIL : (1, 'Dollar Rent-A-Car')
+	 Q20731329 -> NIL : (1, 'Cupressus atlantica')
+	 Q4850954 -> NIL : (1, 'Bálint')
+	 Q18418672 -> NIL : (1, 'Moses Oyiki')
+	 Q1702154 -> NIL : (1, 'John Wilcox')
+	 Q56244883 -> NIL : (1, 'Thomasius')
+	 Q41694256 -> NIL : (1, 'Chris McHugh')
+	 Q92767783 -> NIL : (1, 'sex appeal')
+	 Q81575466 -> NIL : (1, 'Dan Strauss')
+	 Q23988501 -> NIL : (1, 'Sigurd Lagerman')
+	 Q50845348 -> NIL : (1, 'Wulfhere')
+	 Q62035757 -> NIL : (1, 'Sonny West')
+	 Q101712 -> NIL : (1, 'Valeska Grisebach')
+	 Q15493078 -> NIL : (1, 'Pterostylis clavigera')
+	 Q67147057 -> NIL : (1, "Gotta Stop (Messin' About)")
+	 Q1361535 -> NIL : (1, 'Paul Kayser')
+	 Q424401 -> NIL : (1, 'epidermal growth factor receptor')
+	 Q494455 -> NIL : (1, 'Orville Wright')
+	 Q58449035 -> NIL : (1, 'Fram')
+	 Q60685926 -> NIL : (1, 'Luis Davila')
+	 Q5995412 -> NIL : (1, 'Rus')
+	 Q65051304 -> NIL : (1, 'Canada Lake')
+	 Q48740107 -> NIL : (1, 'Pond Eddy')
+	 Q30015167 -> NIL : (1, 'Jim Denton')
+	 Q30589355 -> NIL : (1, 'Fire Emblem Warriors')
+	 Q1662812 -> NIL : (1, 'Inge Pohmann')
+	 Q15833867 -> NIL : (1, 'Maria Bengtsson')
+	 Q97626756 -> NIL : (1, 'Bob Lueck')
+	 Q57342432 -> NIL : (1, 'Marguerite de Baugé')
+	 Q24955574 -> NIL : (1, 'Milan Mazáč')
+	 Q422269 -> NIL : (1, 'ghrelin')
+	 Q98636504 -> NIL : (1, 'big box')
+	 Q21484522 -> NIL : (1, 'Bayhaqi')
+	 Q37897647 -> NIL : (1, 'Madhan')
+	 Q20592793 -> NIL : (1, 'Niwali')
+	 Q55362601 -> NIL : (1, 'Scott Walker')
+	 Q47491878 -> NIL : (1, 'Children of a Lesser God')
+	 Q51280720 -> NIL : (1, 'Breaking the Habit')
+	 Q80134633 -> NIL : (1, 'David M. Ransom')
+	 Q1398112 -> NIL : (1, 'Yutz')
+	 Q26791893 -> NIL : (1, 'Sir Francis Henry Drake')
+	 Q43016825 -> NIL : (1, 'Baatarkhüügiin Battsetseg')
+	 Q1857801 -> NIL : (1, 'Tucker Telephone')
+	 Q328133 -> NIL : (1, 'Chris Witchhunter')
+	 Q12391356 -> NIL : (1, 'Final Fantasy')
+	 Q21114866 -> NIL : (1, 'SOX2')
+	 Q63769704 -> NIL : (1, 'Union of India')
+	 Q1048752 -> NIL : (1, 'Osgiliath')
+	 Q5480049 -> NIL : (1, 'Santeri Immonen')
+	 Q65320559 -> NIL : (1, 'Vadakkumnadhan')
+	 Q33129951 -> NIL : (1, 'David Flores')
+	 Q55639510 -> NIL : (1, "The Dead Don't Die")
+	 Q52910157 -> NIL : (1, 'hot pepper')
+	 Q23669412 -> NIL : (1, 'Huayang')
+	 Q44503454 -> NIL : (1, 'Ma Kyin Lwan')
+	 Q21790512 -> NIL : (2, 'Ireland Island;Ireland Island')
+	 Q271565 -> NIL : (1, 'Etruscan')
+	 Q29613852 -> NIL : (1, 'Changsha Datuopu Airport')
+	 Q106223230 -> NIL : (1, "There's a Flower in My Pedal")
+	 Q74757598 -> NIL : (1, 'Kenzo')
+	 Q211024 -> NIL : (1, 'Brfxxccxxmnpcccclllmmnprxvclmnckssqlbb11116')
+	 Q15450218 -> NIL : (1, 'Oplotnica')
+	 Q47459005 -> NIL : (1, 'Les Tipton')
+	 Q30074599 -> NIL : (1, 'Norfolk & Suffolk League')
+	 Q21264460 -> NIL : (1, 'Nicole Dubilier')
+	 Q55934837 -> NIL : (1, 'Belfast Corporation')
+	 Q57557208 -> NIL : (1, 'X')
+	 Q85798347 -> NIL : (1, 'Subway-Surface Trolley Route 38')
+	 Q26732202 -> NIL : (1, 'John Attwood')
+	 Q105729381 -> NIL : (1, 'Uppenna')
+	 Q66892975 -> NIL : (1, 'Mels')
+	 Q48441252 -> NIL : (1, 'Fu Sheng')
+	 Q85008915 -> NIL : (1, 'Celso Giardini')
+	 Q9098770 -> NIL : (1, 'Ângelo Antônio')
+	 Q2308761 -> NIL : (1, 'Nationalist government')
+	 Q52770458 -> NIL : (1, 'Giorgio Morbidelli')
+	 Q73990479 -> NIL : (1, 'Michael Sayers')
+	 Q60860675 -> NIL : (1, 'Qiu Jun')
+	 Q104480481 -> NIL : (1, 'James Wainwright')
+	 Q43791171 -> NIL : (2, 'seventh grade;Year 7')
+	 Q51388550 -> NIL : (1, 'Andrea Casasnovas')
+	 Q15035737 -> NIL : (1, '360072 Alcimedon')
+	 Q16265998 -> NIL : (1, 'Esencial')
+	 Q105106150 -> NIL : (1, 'Passyunk')
+	 Q7533207 -> NIL : (1, 'grade 6')
+	 Q10692485 -> NIL : (1, 'Telunka Nadu')
+	 Q75884069 -> NIL : (2, 'Crater Lake;crater lake')
+	 Q29447136 -> NIL : (1, 'Wilmot Vaughan, 3rd Viscount Lisburne')
+	 Q3242941 -> NIL : (1, 'List of food companies')
+	 Q3277588 -> NIL : (1, 'Maharani')
+	 Q57312467 -> NIL : (1, 'Cybersix')
+	 Q649505 -> NIL : (1, 'Venetia et Histria')
+	 Q7369833 -> NIL : (1, "Farmers' Organization Authority")
+	 Q56254319 -> NIL : (1, 'José Porto')
+	 Q64995229 -> NIL : (1, 'The Kids in the Hall')
+	 Q28848865 -> NIL : (1, 'Bernard Pauncefote')
+	 Q98458041 -> NIL : (1, 'Encyclopedia of Science Fiction')
+	 Q10854414 -> NIL : (1, 'ARINC')
+	 Q12521502 -> NIL : (1, 'Timezone (video arcades)')
+	 Q92801856 -> NIL : (1, 'Alf Olsen')
+	 Q38646266 -> NIL : (1, 'chayote')
+	 Q65940622 -> NIL : (1, 'Harpullia leichhardtii')
+	 Q16056012 -> NIL : (1, 'Nightflyers')
+	 Q92780453 -> NIL : (1, 'Duke of Magenta')
+	 Q21493056 -> NIL : (1, 'Hitzig')
+	 Q21492211 -> NIL : (1, 'Lewisohn')
+	 Q9086321 -> NIL : (1, 'Regional')
+	 Q3028061 -> NIL : (1, 'Dimension X')
+	 Q415976 -> NIL : (1, 'RET')
+	 Q1377862 -> NIL : (1, "Kevin O'Rourke")
+	 Q2835906 -> NIL : (1, 'Algunja (Алгуња0')
+	 Q29441098 -> NIL : (1, 'Francis Pickens Miller')
+	 Q16028180 -> NIL : (1, 'Ruth Macleod')
+	 Q29024970 -> NIL : (1, 'central India')
+	 Q92768401 -> NIL : (1, 'gold mine')
+	 Q84363423 -> NIL : (1, 'Looking for Leonard')
+	 Q410137 -> NIL : (1, 'Factor VIII')
+	 Q75387651 -> NIL : (1, 'John Grey, 2nd Viscount Lisle')
+	 Q53915914 -> NIL : (2, 'British Mandate of Palestine;British Mandate authorities')
+	 Q633869 -> NIL : (1, 'Bergwitz')
+	 Q100965171 -> NIL : (1, 'Right Back')
+	 Q106421453 -> NIL : (1, 'Radoslav')
+	 Q3442226 -> NIL : (1, 'Rosalie de Constant')
+	 Q3990734 -> NIL : (1, 'Thomas, 1st Earl Strafford')
+	 Q105082426 -> NIL : (1, 'Ryu Hyun-woo')
+	 Q9343740 -> NIL : (1, 'STAR One')
+	 Q41491926 -> NIL : (1, 'London Naval Conference')
+	 Q21448745 -> NIL : (1, 'Samter')
+	 Q64822835 -> NIL : (1, 'time control')
+	 Q42309527 -> NIL : (1, 'Valli')
+	 Q29561120 -> NIL : (1, 'Highway 838')
+	 Q58818277 -> NIL : (1, 'List of highways numbered 66')
+	 Q47016374 -> NIL : (1, 'Mahatma Gandhi University')
+	 Q12994891 -> NIL : (1, 'Kohir')
+	 Q66360865 -> NIL : (1, 'National Highway 7')
+	 Q105076364 -> NIL : (1, 'win–loss record')
+	 Q85775740 -> NIL : (1, 'lamento')
+	 Q27438133 -> NIL : (1, 'Simaethulina')
+	 Q2479177 -> NIL : (1, 'Phlegra tenella')
+	 Q2436861 -> NIL : (1, 'Aulonia')
+	 Q56760250 -> NIL : (6, 'Sony Music;Sony Music;Sony Music;Sony Music;Sony Music Indonesia;Sony Music')
+	 Q56315408 -> NIL : (1, 'monk')
+	 Q33123267 -> NIL : (1, 'rearrange')
+	 Q419576 -> NIL : (1, 'Neurotensin')
+	 Q2148932 -> NIL : (1, 'Dow Jones')
+	 Q56064413 -> NIL : (1, 'Watertown Expos')
+	 Q30303916 -> NIL : (5, 'Certifications;Certifications;Certifications;Certifications;Certifications')
+	 Q9082088 -> NIL : (1, 'Te Daría Mi Vida')
+	 Q2761803 -> NIL : (1, 'Cuenta atrás')
+	 Q60518533 -> NIL : (1, '2002')
+	 Q60310559 -> NIL : (1, 'Christopher Kapopo')
+	 Q424394 -> NIL : (2, 'recreational trail;trail')
+	 Q29987948 -> NIL : (1, 'Nole')
+	 Q60044112 -> NIL : (1, 'Manabu Murakami')
+	 Q21492133 -> NIL : (1, 'Wieniawski')
+	 Q30709648 -> NIL : (1, 'David Browne')
+	 Q16526251 -> NIL : (1, 'Tarheel Slim')
+	 Q87570765 -> NIL : (1, 'Quaglio')
+	 Q85289360 -> NIL : (1, 'All-Star Baseball 2005')
+	 Q687324 -> NIL : (1, 'Burgundy')
+	 Q57586581 -> NIL : (1, 'The Little Polar Bear')
+	 Q48770677 -> NIL : (1, 'Mongolian National Broadcaster')
+	 Q1596042 -> NIL : (1, '2003/04')
+	 Q28599187 -> NIL : (1, 'Fire bar danio')
+	 Q17329276 -> NIL : (1, 'Pterostylis vernalis')
+	 Q15489512 -> NIL : (1, 'Prasophyllum frenchii')
+	 Q59183655 -> NIL : (1, 'IAMDYNAMITE')
+	 Q893132 -> NIL : (1, 'Booth Shipping Line')
+	 Q1042400 -> NIL : (1, '1250')
+	 Q63882797 -> NIL : (1, 'Kalvari-class submarine')
+	 Q28972122 -> NIL : (1, "''8'' (Incubus album)")
+	 Q3389053 -> NIL : (1, 'Pippo Delbono')
+	 Q288388 -> NIL : (1, 'Tamás Sudár')
+	 Q13114586 -> NIL : (1, 'Ypthima striata')
+	 Q11824300 -> NIL : (1, 'Capitán Av. Juan Cochamanidis Airport')
+	 Q27902870 -> NIL : (1, 'Cecil G. Foster')
+	 Q15607977 -> NIL : (1, 'Bartonia virginica')
+	 Q66771688 -> NIL : (1, 'First Day of Summer')
+	 Q50265665 -> NIL : (1, 'insulin')
+	 Q64746331 -> NIL : (1, 'Nicolae Veştea')
+	 Q55364015 -> NIL : (1, 'Guo Wei')
+	 Q105104313 -> NIL : (1, 'PolyGram')
+	 Q1339801 -> NIL : (1, 'Manuel García')
+	 Q12276404 -> NIL : (1, 'Georgi Dimitrov')
+	 Q1402269 -> NIL : (1, 'FELDA')
+	 Q50823096 -> NIL : (1, 'Yakup Kadri Birinci')
+	 Q9046969 -> NIL : (1, 'Kaoru Takamura')
+	 Q30709349 -> NIL : (1, 'three-dimensional graph')
+	 Q95995171 -> NIL : (1, 'Kim Ok-Soon')
+	 Q2907609 -> NIL : (1, 'CTLA-4')
+	 Q8016302 -> NIL : (1, 'Warner Bros. Pictures')
+	 Q62396362 -> NIL : (1, 'Miguel Silva')
+	 Q6108035 -> NIL : (1, 'Ricardo Blanco')
+	 Q92786056 -> NIL : (1, 'Buzi')
+	 Q5682882 -> NIL : (1, '40007 Vieuxtemps')
+	 Q27917421 -> NIL : (1, 'Elizabeth Fisher')
+	 Q29532810 -> NIL : (1, 'fairy dust')
+	 Q3339301 -> NIL : (1, 'Filotex')
+	 Q60696684 -> NIL : (1, 'Sentimentale Jugend')
+	 Q104961764 -> NIL : (1, 'Knapthorpe')
+	 Q5359465 -> NIL : (1, 'Candoshi')
+	 Q2478355 -> NIL : (1, 'Izhma')
+	 Q40657867 -> NIL : (2, 'crested caracara;Crested caracara')
+	 Q55550579 -> NIL : (1, 'Joseph Morales')
+	 Q10933352 -> NIL : (1, 'Tai Sheung Tok')
+	 Q18911348 -> NIL : (1, 'William Eaton Foster')
+	 Q48780960 -> NIL : (1, 'Elaman Creek')
+	 Q824531 -> NIL : (1, 'Berneck')
+	 Q26420153 -> NIL : (1, 'Hon. William Grimston')
+	 Q11936769 -> NIL : (1, 'Mikel Antía')
+	 Q5009796 -> NIL : (1, 'CD20')
+	 Q28775762 -> NIL : (1, 'US')
+	 Q42934649 -> NIL : (1, 'Sarah Douglas')
+	 Q87758400 -> NIL : (1, 'Robert C. Good')
+	 Q2417945 -> NIL : (1, 'Theodor Leipart')
+	 Q105081679 -> NIL : (3, 'CricketArchive;CricketArchive;CricketArchive')
+	 Q1653435 -> NIL : (1, 'Margit Borg')
+	 Q63184618 -> NIL : (1, 'human chain')
+	 Q522177 -> NIL : (1, 'Eline Coene')
+	 Q3115878 -> NIL : (1, 'Grazia Barcellona')
+	 Q11824458 -> NIL : (1, 'Kamarang Airport')
+	 Q3660685 -> NIL : (1, 'Carpophorus, Exanthus, Cassius, Severinus, Secundus, and Licinius')
+	 Q21510201 -> NIL : (1, 'Pergolesi')
+	 Q14922938 -> NIL : (1, 'Buprestis viridisuturalis')
+	 Q21206855 -> NIL : (1, '2015')
+	 Q60762032 -> NIL : (1, 'Harold Holmes')
+	 Q48672485 -> NIL : (1, 'stips')
+	 Q27888090 -> NIL : (1, 'amyl nitrite')
+	 Q25678920 -> NIL : (1, 'Regina grahamii')
+	 Q9072128 -> NIL : (1, 'Xie Tieli')
+	 Q51717532 -> NIL : (1, 'Suicide of Phoebe Prince')
+	 Q89187954 -> NIL : (1, 'Bidrohini')
+	 Q96373907 -> NIL : (1, 'Brandon High School')
+	 Q60771954 -> NIL : (1, 'Heroes Against Hunger')
+	 Q58185336 -> NIL : (1, 'Everything I Am')
+	 Q44563751 -> NIL : (1, 'Hundred of Alma')
+	 Q17197929 -> NIL : (1, 'Tristeza')
+	 Q3311985 -> NIL : (1, 'Guernsey')
+	 Q48442139 -> NIL : (1, 'Tomomi Takahashi')
+	 Q48732520 -> NIL : (1, 'Jawi')
+	 Q28023828 -> NIL : (1, 'Malcolm Sinclair')
+	 Q38250764 -> NIL : (1, 'Hydro Adventures')
+	 Q22330172 -> NIL : (1, 'Port Darwin')
+	 Q30687158 -> NIL : (1, 'Palaemon ivonicus')
+	 Q1147474 -> NIL : (1, 'Litvinov')
+	 Q1236143 -> NIL : (1, 'pinnace')
+	 Q92774060 -> NIL : (1, 'I Believe to My Soul')
+	 Q28061624 -> NIL : (1, 'John Cheseman')
+	 Q67492016 -> NIL : (1, 'Machiavellianism')
+	 Q32859918 -> NIL : (1, 'Simone Henry')
+	 Q1761121 -> NIL : (1, 'normalizer')
+	 Q86837795 -> NIL : (1, 'Parthians')
+	 Q1544055 -> NIL : (1, 'Grays')
+	 Q3007752 -> NIL : (1, 'courser')
+	 Q19833183 -> NIL : (1, 'NED')
+	 Q29032629 -> NIL : (1, 'storm petrel')
+	 Q1788166 -> NIL : (1, 'Clubs')
+	 Q24786260 -> NIL : (1, 'helix-turn-helix')
+	 Q89305866 -> NIL : (1, 'Greg Lawson')
+	 Q19796363 -> NIL : (1, 'Bumiayu')
+	 Q29026254 -> NIL : (1, 'Pramod Singh')
+	 Q4964013 -> NIL : (1, 'Magdalena Lundblad')
+	 Q98069377 -> NIL : (1, 'computed tomography')
+	 Q5859790 -> NIL : (1, 'Fernando Llanos')
+	 Q58903355 -> NIL : (1, 'Global Compact')
+	 Q1636757 -> NIL : (1, 'Ethel Rosenberg')
+	 Q92767018 -> NIL : (1, 'National Executive Committee')
+	 Q12438936 -> NIL : (1, 'poliovirus')
+	 Q4388201 -> NIL : (1, 'Vyacheslav Razbegaev')
+	 Q85199646 -> NIL : (1, 'Kyaw Kyaw Bo')
+	 Q2205915 -> NIL : (1, 'MON')
+	 Q29440742 -> NIL : (1, 'adaptor protein')
+	 Q58817891 -> NIL : (1, 'List of highways numbered 75')
+	 Q65156161 -> NIL : (1, 'Jose Thiago Mangini')
+	 Q3157756 -> NIL : (1, 'Jacqueline Maillan')
+	 Q3876523 -> NIL : (1, 'Nicolás Sánchez')
+	 Q97153776 -> NIL : (1, 'John Wu')
+	 Q1067277 -> NIL : (1, 'yokozuna')
+	 Q29585760 -> NIL : (1, '1st Scottish Parliament')
+	 Q53648904 -> NIL : (1, 'Sir Thomas Wensley')
+	 Q60438981 -> NIL : (1, 'List of highways numbered 34')
+	 Q21589822 -> NIL : (1, 'Kotylio')
+	 Q2860828 -> NIL : (1, 'Arenaria pseudofrigida')
+	 Q5128485 -> NIL : (1, 'Trachylepis chimbana')
+	 Q3134543 -> NIL : (1, 'Hervé Juvin')
+	 Q60846483 -> NIL : (1, 'Langrick Bridge')
+	 Q30074594 -> NIL : (3, '1955–56;1955–56;1955–56')
+	 Q8350348 -> NIL : (1, 'Contra viento y marea')
+	 Q105534017 -> NIL : (1, 'Character')
+	 Q15618823 -> NIL : (1, 'Lightning Guns')
+	 Q3878013 -> NIL : (1, 'Cave of Outlaws')
+	 Q6067251 -> NIL : (1, 'Paul Piaget')
+	 Q62578930 -> NIL : (1, 'Digital Design')
+	 Q6351872 -> NIL : (1, 'Central American and Caribbean Games')
+	 Q1575121 -> NIL : (1, 'Hando Runnel')
+	 Q3738335 -> NIL : (1, 'Hamar')
+	 Q56070790 -> NIL : (1, 'Reginald Mengi')
+	 Q52152956 -> NIL : (3, 'Arch;arch bridge;stone arch bridge')
+	 Q62266177 -> NIL : (1, 'John J. Rooney')
+	 Q3769794 -> NIL : (1, 'Polydactylus sexfilis')
+	 Q51103215 -> NIL : (1, 'Royal Naval College, Osborne')
+	 Q85204605 -> NIL : (1, 'Godfrey Rhodes')
+	 Q12061941 -> NIL : (1, '29th Tank Corps')
+	 Q1343998 -> NIL : (1, 'Enrique Fernandez')
+	 Q5936135 -> NIL : (1, 'Jorge Toledo Albiñana')
+	 Q21113719 -> NIL : (1, 'Sirtuin 1')
+	 Q1502556 -> NIL : (1, 'Genro')
+	 Q65926529 -> NIL : (1, 'João Pedro Sousa')
+	 Q28967069 -> NIL : (1, 'Nixon Duban')
+	 Q64318293 -> NIL : (1, 'Rochester Knighthawks')
+	 Q28859377 -> NIL : (1, '1000 – Oru Note Paranja Katha')
+	 Q8554421 -> NIL : (1, 'The Range Busters')
+	 Q44521860 -> NIL : (1, 'Eva Pérez')
+	 Q47001334 -> NIL : (1, 'Trevor Taylor')
+	 Q20460052 -> NIL : (1, 'Que Haidar')
+	 Q104430166 -> NIL : (1, 'Mikkel Andersen')
+	 Q20751359 -> NIL : (1, 'Estrella Puente')
+	 Q59133782 -> NIL : (1, 'Wings of Youth')
+	 Q27075383 -> NIL : (1, 'Rufous-bellied tit')
+	 Q19931398 -> NIL : (1, 'Excuse Me')
+	 Q30348226 -> NIL : (1, 'Jo Carol Pierce')
+	 Q50346709 -> NIL : (1, 'Soegiarto Adikoesoemo')
+	 Q68491840 -> NIL : (1, 'List of World Heritage Sites')
+	 Q20039957 -> NIL : (1, 'Yugo Kochi')
+	 Q33980231 -> NIL : (1, 'Neapolitan')
+	 Q38589917 -> NIL : (2, 'DuPont;DuPont')
+	 Q41768976 -> NIL : (1, 'Finkel')
+	 Q2071346 -> NIL : (1, 'perlecan')
+	 Q55051748 -> NIL : (1, 'Wexford bridge')
+	 Q96399745 -> NIL : (1, 'Pontoon (card game)')
+	 Q15043775 -> NIL : (7, 'Arctiidae;Arctiidae;Arctiidae;Arctiidae;Arctiidae;Arctiidae;Arctiidae')
+	 Q22536819 -> NIL : (1, 'Hugh Fraser')
+	 Q92774791 -> NIL : (1, 'The Kentuckian')
+	 Q423628 -> NIL : (1, 'FYN')
+	 Q5005943 -> NIL : (1, 'C-jun')
+	 Q420267 -> NIL : (1, 'MYC')
+	 Q424374 -> NIL : (1, 'epidermal growth factor')
+	 Q41715037 -> NIL : (1, 'APMD')
+	 Q104007743 -> NIL : (1, 'Lavanya')
+	 Q48909916 -> NIL : (1, 'Marija Bulatović')
+	 Q48783076 -> NIL : (1, 'Football Championship Subdivision')
+	 Q10128543 -> NIL : (1, 'Amblyseius waltersi')
+	 Q81021661 -> NIL : (1, 'Virginia Kraft Payson')
+	 Q1051343 -> NIL : (1, 'Cattle Creek')
+	 Q45093080 -> NIL : (1, 'St. Barbe')
+	 Q54805610 -> NIL : (1, 'Duncan Hunter')
+	 Q903924 -> NIL : (1, 'Breakpoint cluster region protein (BCR)')
+	 Q14530157 -> NIL : (1, 'Zygaena sogdiana')
+	 Q21546788 -> NIL : (1, 'Andrea de Franchis')
+	 Q921280 -> NIL : (1, 'Tavern Township')
+	 Q7240050 -> NIL : (1, 'Cypripedium shanxiense')
+	 Q2276380 -> NIL : (1, 'hp')
+	 Q30253257 -> NIL : (1, 'Dhanu')
+	 Q787757 -> NIL : (2, 'Talbot-Lago;Talbot-Lago')
+	 Q92766964 -> NIL : (1, 'Augustinian')
+	 Q60751281 -> NIL : (1, 'Pietro Antonio Spinelli')
+	 Q105806713 -> NIL : (1, '1984')
+	 Q29583239 -> NIL : (1, 'ARG')
+	 Q89122818 -> NIL : (1, 'Yang Chun-Chi')
+	 Q55095204 -> NIL : (1, 'There Comes a Time')
+	 Q1929657 -> NIL : (1, 'Michael Volle')
+	 Q89997283 -> NIL : (1, 'Katsavos')
+	 Q24060017 -> NIL : (1, 'Tiit Nuudi')
+	 Q3814983 -> NIL : (1, 'Mirrormere')
+	 Q3597775 -> NIL : (1, '181279 Iapyx')
+	 Q29913001 -> NIL : (1, 'Abrázame muy fuerte')
+	 Q11964754 -> NIL : (1, 'Dany Verner')
+	 Q48995659 -> NIL : (1, 'Aden-Owen-Carlsberg Triple Junction')
+	 Q38368656 -> NIL : (1, 'Saint-Papoul Cathedral')
+	 Q52646349 -> NIL : (1, 'Bruce Cook')
+	 Q422025 -> NIL : (1, 'Haptoglobin')
+	 Q98113945 -> NIL : (1, 'Navy Department')
+	 Q15247448 -> NIL : (1, 'Bartramia ithyphylla')
+	 Q7120405 -> NIL : (1, 'prom')
+	 Q38250880 -> NIL : (1, 'Bad Route Creek Bridge')
+	 Q6102027 -> NIL : (1, 'Real Madrid')
+	 Q23059598 -> NIL : (1, 'Robin Anderson')
+	 Q62003831 -> NIL : (1, 'Dennis Randall')
+	 Q2966775 -> NIL : (1, 'Sun in the Last Days of the Shogunate')
+	 Q11741880 -> NIL : (1, 'receiver')
+	 Q31805140 -> NIL : (1, 'DWAW 999')
+	 Q3798303 -> NIL : (1, 'Indiscreet')
+	 Q56306406 -> NIL : (1, 'Franz Treichler')
+	 Q916795 -> NIL : (1, 'Brigitte Wolf')
+	 Q62036468 -> NIL : (1, 'The Argyle Case')
+	 Q1197526 -> NIL : (1, 'Death Angel')
+	 Q86733928 -> NIL : (1, 'Tanghin, Boudry')
+	 Q12836513 -> NIL : (1, 'Supreme Court of Azerbaijan')
+	 Q62633925 -> NIL : (1, 'Distant Past')
+	 Q101203264 -> NIL : (1, 'revival')
+	 Q29420213 -> NIL : (1, 'Western Region')
+	 Q6054194 -> NIL : (1, 'Halit Deringör')
+	 Q30753492 -> NIL : (1, "Porky's Double Trouble")
+	 Q24205078 -> NIL : (1, 'Thomas Hayward')
+	 Q3737855 -> NIL : (1, 'Fabio Triboli')
+	 Q98638122 -> NIL : (1, 'Curtis Lovejoy')
+	 Q1143153 -> NIL : (2, 'China Standard Time;China Standard Time')
+	 Q72219505 -> NIL : (1, 'Tiffany Snow')
+	 Q27978722 -> NIL : (1, 'J. Hillier')
+	 Q44477791 -> NIL : (1, "2009 President's Cup")
+	 Q15905994 -> NIL : (2, 'Rebecca Quinn;Rebecca Quinn')
+	 Q56249749 -> NIL : (1, 'Paul M. Gagnon')
+	 Q3488686 -> NIL : (1, 'Prądnik Czerwony')
+	 Q52843461 -> NIL : (1, 'Government senior secondary school')
+	 Q79080291 -> NIL : (1, 'Mu Boötis')
+	 Q21386657 -> NIL : (1, 'Collaria')
+	 Q56056827 -> NIL : (1, 'WDKL')
+	 Q614978 -> NIL : (1, 'Tonnerre')
+	 Q15723603 -> NIL : (1, 'Ajit Das')
+	 Q48854324 -> NIL : (1, '2014')
+	 Q30622632 -> NIL : (1, 'Shoal Point')
+	 Q56510977 -> NIL : (1, 'John Peck')
+	 Q4493916 -> NIL : (1, 'Andrei Fyodorov')
+	 Q62022182 -> NIL : (1, 'Kathleen Russell')
+	 Q16916498 -> NIL : (1, 'Morgan County Courthouse (Missouri)')
+	 Q30329635 -> NIL : (3, 'village development committee;village development committee;village development committee')
+	 Q50367506 -> NIL : (1, 'Mercedes Arias')
+	 Q30669098 -> NIL : (1, 'Ben-Dov')
+	 Q6052688 -> NIL : (1, "Assassin's Creed IV: Black Flag")
+	 Q65556473 -> NIL : (1, 'Horst Morokutti')
+	 Q56289597 -> NIL : (1, 'Colin Haley')
+	 Q3268411 -> NIL : (1, 'boxthorn')
+	 Q10334441 -> NIL : (1, 'Mário Gonzalez')
+	 Q50810269 -> NIL : (1, "Les Sables-d'Olonne")
+	 Q31213595 -> NIL : (1, 'Balagarh')
+	 Q47487977 -> NIL : (1, 'Louis Armstrong Stadium')
+	 Q4813766 -> NIL : (1, 'athletic director')
+	 Q2951287 -> NIL : (2, 'National Division 2;National Division 2')
+	 Q11060412 -> NIL : (1, 'Chang Chenchen')
+	 Q32375569 -> NIL : (1, 'Sarah Reilly')
+	 Q59197475 -> NIL : (1, 'Oscar Gallardo')
+	 Q97738035 -> NIL : (1, 'Sandy Comeau')
+	 Q52742051 -> NIL : (1, 'PAGASA')
+	 Q1742839 -> NIL : (1, 'Bjäresjö Church')
+	 Q10928604 -> NIL : (1, 'Kengkou')
+	 Q743895 -> NIL : (1, 'bpm')
+	 Q58641733 -> NIL : (1, 'Absa')
+	 Q54933130 -> NIL : (1, 'Jezreel')
+	 Q4134586 -> NIL : (1, 'Nail in the Boot')
+	 Q220715 -> NIL : (1, 'Quercus rotundifolia')
+	 Q1766761 -> NIL : (1, 'Maserati 4CLT')
+	 Q97599177 -> NIL : (1, 'Final Straw')
+	 Q4007278 -> NIL : (1, 'Vaini')
+	 Q13503975 -> NIL : (1, 'Lithophane unimoda')
+	 Q30077199 -> NIL : (1, 'Thomas Luff Perkins')
+	 Q1034219 -> NIL : (1, 'Charudes')
+	 Q545456 -> NIL : (1, 'Jure Velepec')
+	 Q416180 -> NIL : (1, 'Blancafort')
+	 Q20972991 -> NIL : (1, 'Saintbury')
+	 Q17480002 -> NIL : (1, 'Goodenia laevis')
+	 Q18327633 -> NIL : (1, 'Galaxy 5')
+	 Q18113164 -> NIL : (1, 'Ulivellia')
+	 Q31874734 -> NIL : (1, 'Northern shrike')
+	 Q29640646 -> NIL : (1, 'Buddy')
+	 Q8936787 -> NIL : (1, 'Chang Shih')
+	 Q3949465 -> NIL : (1, 'Blessed Sacrament')
+	 Q39046263 -> NIL : (1, 'Anandaram Dhekial Phookan College')
+	 Q48768213 -> NIL : (1, 'Ainslie Park')
+	 Q58129863 -> NIL : (1, 'Anna Thangi')
+	 Q30090030 -> NIL : (1, 'Christian Ramirez')
+	 Q17591342 -> NIL : (1, "Reader's Digest Condensed Books")
+	 Q30329709 -> NIL : (1, 'Fear of a Red Planet')
+	 Q17248163 -> NIL : (1, 'Trochocarpa cunninghamii')
+	 Q32920363 -> NIL : (1, 'National Constituent Assembly')
+	 Q55616826 -> NIL : (1, 'Liberty Pictures')
+	 Q13598058 -> NIL : (1, 'Dromius piceus')
+	 Q107284 -> NIL : (1, 'Katrin Lompscher')
+	 Q48995547 -> NIL : (1, 'Lucy spy ring')
+	 Q30709649 -> NIL : (1, 'Kevin Hensley')
+	 Q104861457 -> NIL : (1, "Gary Grigsby's War in Russia")
+	 Q61509524 -> NIL : (1, 'Shaoxing opera')
+	 Q16610512 -> NIL : (1, 'Stick to Your Guns')
+	 Q55604606 -> NIL : (1, 'B82')
+	 Q1977191 -> NIL : (1, 'Chlorocypha centripunctata')
+	 Q47487657 -> NIL : (1, 'Rashid Riyadh Al-Ameeri')
+	 Q4002040 -> NIL : (1, 'UPL')
+	 Q3334046 -> NIL : (1, 'Enallagma weewa')
+	 Q16579513 -> NIL : (1, 'Monte Capezzone')
+	 Q30588247 -> NIL : (1, 'Fangoria Chainsaw Awards')
+	 Q62610083 -> NIL : (1, 'Lorraine Krueger')
+	 Q30995730 -> NIL : (1, 'Tom Choi')
+	 Q13159080 -> NIL : (1, 'Gaalipata')
+	 Q6094056 -> NIL : (1, 'Bisanthe')
+	 Q3189167 -> NIL : (1, 'Julie Bertuccelli')
+	 Q56404208 -> NIL : (1, 'International Baccalaureate')
+	 Q55631425 -> NIL : (1, 'Austria')
+	 Q12778462 -> NIL : (1, 'Viacom')
+	 Q66711825 -> NIL : (1, 'Kate Horne')
+	 Q21823284 -> NIL : (1, 'Nimley Twegbe')
+	 Q1047509 -> NIL : (1, 'Mount Bental/Tal Al-Gharam')
+	 Q33125122 -> NIL : (1, 'Gavin Brady')
+	 Q499482 -> NIL : (1, 'Andreas Mayer')
+	 Q60526788 -> NIL : (1, '1938–39')
+	 Q2844293 -> NIL : (1, 'Amphisbaena bolivica')
+	 Q12325248 -> NIL : (1, 'Lyngby lake')
+	 Q13098211 -> NIL : (1, 'Tyrannosaurus rex')
+	 Q11352000 -> NIL : (1, 'Viktoria Shliakhova')
+	 Q52051487 -> NIL : (1, 'Helen Crook')
+	 Q762234 -> NIL : (1, 'Mallos')
+	 Q84770344 -> NIL : (1, 'Carol Rittner')
+	 Q27781564 -> NIL : (1, 'Cerro del Pueblo Formation')
+	 Q92778355 -> NIL : (1, 'Janet Thompson')
+	 Q3987492 -> NIL : (1, 'The Heart of Maryland')
+	 Q51103341 -> NIL : (1, 'Eza')
+	 Q3467237 -> NIL : (1, 'Leiso')
+	 Q30709616 -> NIL : (1, 'Juan del Campo')
+	 Q3138985 -> NIL : (1, 'HC Dinan Quévert')
+	 Q20524885 -> NIL : (1, 'Josip Torbar')
+	 Q3292912 -> NIL : (1, "Marie de La Tour d'Auvergne")
+	 Q11090720 -> NIL : (1, 'Qu Bo')
+	 Q6095171 -> NIL : (1, 'Füsun Demirel')
+	 Q3956057 -> NIL : (1, 'Sergio Castellaneta')
+	 Q1174683 -> NIL : (1, 'Servius')
+	 Q506920 -> NIL : (1, 'Gaston Lagaffe')
+	 Q21497813 -> NIL : (1, 'Pardoe')
+	 Q15989117 -> NIL : (1, 'Ingar Helge Gimle')
+	 Q22215233 -> NIL : (1, 'KEYA')
+	 Q2360304 -> NIL : (1, 'Stéphane Barin')
+	 Q96314868 -> NIL : (1, 'Cape Parliament')
+	 Q13232087 -> NIL : (1, 'Hirtomurex squamosus')
+	 Q47015578 -> NIL : (1, 'Agonoxeninae')
+	 Q105622770 -> NIL : (2, 'Boris Korneev;Boris Korneev')
+	 Q3409101 -> NIL : (2, 'broadcaster;television presenter')
+	 Q48653197 -> NIL : (1, 'Pytho')
+	 Q28838174 -> NIL : (1, 'Ovide')
+	 Q12933081 -> NIL : (1, 'Pyaar Mein Kabhi Kabhi')
+	 Q81156385 -> NIL : (1, 'Jimilu Mason')
+	 Q101064511 -> NIL : (1, 'Gurara')
+	 Q14545098 -> NIL : (1, 'Inland Scenic Route')
+	 Q62709988 -> NIL : (1, 'emu')
+	 Q21430182 -> NIL : (1, 'Tommasi')
+	 Q3825539 -> NIL : (1, 'DVB-C2')
+	 Q12373013 -> NIL : (1, 'Pärispea Peninsula')
+	 Q11620416 -> NIL : (1, 'Mitsutake Hagimoto')
+	 Q29560723 -> NIL : (1, 'KBC')
+	 Q10859521 -> NIL : (1, 'Věra Galatíková')
+	 Q18626079 -> NIL : (1, 'Iván Silva')
+	 Q8265333 -> NIL : (1, 'Monie Tung')
+	 Q28838730 -> NIL : (1, 'Downtown Boys')
+	 Q28065684 -> NIL : (1, 'Spoon-billed sandpiper')
+	 Q11843157 -> NIL : (1, 'Eosentomon pacificum')
+	 Q10485636 -> NIL : (1, 'Eosentomon zodion')
+	 Q3683997 -> NIL : (1, 'Combat of Giants')
+	 Q19896675 -> NIL : (1, 'Pieria (regional unit)')
+	 Q55138136 -> NIL : (1, 'Operation Lancaster II')
+	 Q840931 -> NIL : (1, 'Atractaspididae')
+	 Q41493352 -> NIL : (1, 'Steaua București')
+	 Q44492600 -> NIL : (1, 'Viru-Nigula Parish')
+	 Q42371402 -> NIL : (1, 'Mykola Belokurov')
+	 Q65954812 -> NIL : (1, 'Mercedes')
+	 Q20858589 -> NIL : (1, 'Ciutulești')
+	 Q15689570 -> NIL : (2, 'Andhra Pradesh Legislative Assembly;Andhra Pradesh Legislative Assembly')
+	 Q106562520 -> NIL : (1, 'Manoj Mendis')
+	 Q6476892 -> NIL : (1, 'Euseius')
+	 Q16694245 -> NIL : (1, 'Timofey Samsonov')
+	 Q61761648 -> NIL : (1, 'Barbara Jacket')
+	 Q63291769 -> NIL : (1, 'Themis')
+	 Q61877253 -> NIL : (1, 'Daniel Mendes')
+	 Q353135 -> NIL : (1, 'Admiralty')
+	 Q48834508 -> NIL : (1, 'List of Russian admirals')
+	 Q30643556 -> NIL : (1, 'Honi Gordon Sings')
+	 Q3061647 -> NIL : (1, 'Evoloko Jocker')
+	 Q97524617 -> NIL : (1, 'WFNX')
+	 Q47542153 -> NIL : (1, 'Jacqueline Bishop')
+	 Q3867351 -> NIL : (1, 'Mot nya tider')
+	 Q28921446 -> NIL : (3, 'South Georgia;South Georgia;South Georgia')
+	 Q60950429 -> NIL : (1, 'Brian Connaughton')
+	 Q102404467 -> NIL : (1, 'Charlie Scott')
+	 Q1388477 -> NIL : (1, 'Tom Storm')
+	 Q14931500 -> NIL : (1, 'Prioria copaifera')
+	 Q18156370 -> NIL : (1, 'Rallye de France – Alsace 2014')
+	 Q60790273 -> NIL : (1, 'Acrodonta')
+	 Q64759228 -> NIL : (1, 'Sky High Saunders')
+	 Q43082701 -> NIL : (1, 'Renée Witterstaetter')
+	 Q9145985 -> NIL : (1, 'Fang Xin')
+	 Q64746275 -> NIL : (1, 'Murali Kumar')
+	 Q47517095 -> NIL : (1, 'Jenny Curtsdotter')
+	 Q64118704 -> NIL : (1, 'Project CARS')
+	 Q422752 -> NIL : (1, 'ceruloplasmin')
+	 Q6040020 -> NIL : (1, 'Ercan Kesal')
+	 Q21104438 -> NIL : (1, 'Artem Loginov')
+	 Q3703155 -> NIL : (1, 'David Cortés')
+	 Q56541301 -> NIL : (1, 'Vycpálek')
+	 Q55636383 -> NIL : (1, 'U-Net')
+	 Q2357577 -> NIL : (1, 'Zsolt Szabó')
+	 Q58920660 -> NIL : (1, 'Felicity Cloake')
+	 Q29043408 -> NIL : (1, 'José Manuel Cerezo')
+	 Q5073554 -> NIL : (1, 'Ryan Day')
+	 Q61897385 -> NIL : (1, 'Dickie Davis')
+	 Q27982464 -> NIL : (1, 'Pilsbrytyphis')
+	 Q13139252 -> NIL : (1, 'Samut Prakan')
+	 Q1270921 -> NIL : (1, 'Döbra')
+	 Q7417959 -> NIL : (1, 'Sangguniang Kabataan')
+	 Q33498885 -> NIL : (1, 'Tau Kappa Epsilon')
+	 Q64073047 -> NIL : (1, 'Christine Anderson')
+	 Q4397294 -> NIL : (1, 'Romanovka, Meleuzovsky District, Republic of Bashkortostan')
+	 Q13549294 -> NIL : (1, 'Stamnodes albiapicata')
+	 Q21308185 -> NIL : (1, 'Neophaenis boucheri')
+	 Q13379498 -> NIL : (1, 'Lacinipolia lepidula')
+	 Q54318157 -> NIL : (1, 'Steven Edwards')
+	 Q21512841 -> NIL : (1, 'Castberg')
+	 Q11965622 -> NIL : (1, 'Dichrorampha plumbana')
+	 Q55609423 -> NIL : (1, 'Deuel County Courthouse and Jail')
+	 Q22829690 -> NIL : (1, 'Jackson Lake')
+	 Q12829733 -> NIL : (1, 'Belém')
+	 Q64855238 -> NIL : (1, 'Jessica Guo')
+	 Q29372077 -> NIL : (1, 'Rochester Lancers')
+	 Q3167118 -> NIL : (1, 'Jean-Luc Deganis')
+	 Q28842611 -> NIL : (1, 'Sergio Marchi')
+	 Q50626105 -> NIL : (1, 'Bruce Collins')
+	 Q10851015 -> NIL : (1, 'Ing Cup')
+	 Q105450491 -> NIL : (1, 'winter of 1962–63 in the United Kingdom')
+	 Q65953688 -> NIL : (1, 'CCTV-7')
+	 Q47537712 -> NIL : (1, 'lector')
+	 Q14922277 -> NIL : (1, 'Chrysobothris shawnee')
+	 Q421219 -> NIL : (1, 'thioredoxin')
+	 Q4001610 -> NIL : (1, '1985 Ebel U.S. Pro Indoor – Singles')
+	 Q28924907 -> NIL : (1, 'CenturyLink Center')
+	 Q48806977 -> NIL : (1, 'Carneys Creek')
+	 Q39930739 -> NIL : (1, 'Mauro Rossi')
+	 Q749761 -> NIL : (1, 'Atizapán de Zaragoza')
+	 Q15768656 -> NIL : (1, 'Cottonwoods')
+	 Q11574000 -> NIL : (1, 'Yaoji')
+	 Q11994668 -> NIL : (1, 'Pammene clanculana')
+	 Q30709783 -> NIL : (1, 'Don Parish')
+	 Q1812311 -> NIL : (1, 'Copa Antioquia')
+	 Q6172786 -> NIL : (1, 'Álvaro Espinoza')
+	 Q9682631 -> NIL : (1, '10th')
+	 Q20666281 -> NIL : (1, 'Terrence Agard')
+	 Q18519361 -> NIL : (1, 'Comarmondia')
+	 Q6381416 -> NIL : (1, '1996')
+	 Q3466321 -> NIL : (1, 'Temnopleuridae')
+	 Q92800752 -> NIL : (1, 'Austin Jackson')
+	 Q96618023 -> NIL : (1, 'Brian Jones')
+	 Q2601534 -> NIL : (1, 'Yu Xinna')
+	 Q1793975 -> NIL : (1, 'Kurt Pratsch-Kaufmann')
+	 Q341948 -> NIL : (2, 'ARTE;Arte')
+	 Q71442083 -> NIL : (1, 'Dan Petryk')
+	 Q29451940 -> NIL : (1, 'Antioquia')
+	 Q11821309 -> NIL : (1, 'Treaty of Belgrade')
+	 Q27602980 -> NIL : (1, 'Vietnam partridge')
+	 Q6545478 -> NIL : (1, 'Uzunalan, Çan')
+	 Q1568397 -> NIL : (1, 'Julius Müller')
+	 Q656043 -> NIL : (1, 'Sumerians')
+	 Q30253214 -> NIL : (1, 'm/s')
+	 Q20049088 -> NIL : (1, 'Garry Jennings')
+	 Q2840159 -> NIL : (1, 'Alsace')
+	 Q21118207 -> NIL : (1, 'TYRP1')
+	 Q260487 -> NIL : (1, 'European Community')
+	 Q16715017 -> NIL : (1, 'Governor of Rivne Oblast')
+	 Q24218669 -> NIL : (1, 'Birx')
+	 Q84953574 -> NIL : (1, 'Arizona mud turtle')
+	 Q105829749 -> NIL : (1, 'S. H. Weitzman')
+	 Q2293475 -> NIL : (1, 'Slalom')
+	 Q75097256 -> NIL : (1, 'Mixed Team Relay')
+	 Q53647079 -> NIL : (1, 'Ganna Poznikhirenko')
+	 Q17025018 -> NIL : (1, 'Wu Po-Hung')
+	 Q30715373 -> NIL : (1, 'Search engine software')
+	 Q8961113 -> NIL : (1, 'Natsuko Godai')
+	 Q106403931 -> NIL : (1, 'Middlesex College')
+	 Q61994851 -> NIL : (1, 'hydroids')
+	 Q29534059 -> NIL : (1, 'Tiler Peck')
+	 Q98556699 -> NIL : (1, 'Polyphonia')
+	 Q28871791 -> NIL : (1, 'List of cheesemakers')
+	 Q106127900 -> NIL : (1, 'Hwfa Williams')
+	 Q2887068 -> NIL : (1, 'Alejandro Trejo')
+	 Q396537 -> NIL : (2, 'polyp;polyp')
+	 Q30669589 -> NIL : (1, 'Campanile (surname)')
+	 Q54390339 -> NIL : (1, 'red wine')
+	 Q39078642 -> NIL : (1, 'Francis Lear')
+	 Q28822687 -> NIL : (1, 'Olivia')
+	 Q17045743 -> NIL : (1, 'Halit Kiliç')
+	 Q98704333 -> NIL : (1, 'Nikolay Melnikov')
+	 Q92772147 -> NIL : (1, 'Aaha')
+	 Q48441616 -> NIL : (1, 'Liam Williams')
+	 Q59521699 -> NIL : (1, 'HWA')
+	 Q19395668 -> NIL : (1, 'Lilian Heinz')
+	 Q6240121 -> NIL : (1, 'Göran Widenfelt')
+	 Q19712297 -> NIL : (1, 'Pleasure To Meet You')
+	 Q16568988 -> NIL : (1, "Children's Souls Accuse You")
+	 Q30074687 -> NIL : (1, '1959 County Championship')
+	 Q28771417 -> NIL : (1, 'Pilodeudorix obscurata')
+	 Q21111943 -> NIL : (1, 'citrin')
+	 Q19845025 -> NIL : (1, 'Dendrolirium')
+	 Q1215182 -> NIL : (1, 'Lucius Lucretius Tricipitinus Flavus')
+	 Q96615545 -> NIL : (1, 'Guðrún Arnardóttir')
+	 Q98960351 -> NIL : (1, 'Li Zhixuan')
+	 Q48688144 -> NIL : (1, 'Dolvett Quince')
+	 Q64358201 -> NIL : (1, 'Ocean Eyes')
+	 Q164280 -> NIL : (2, 'subfamilies;subfamily')
+	 Q10737463 -> NIL : (1, 'Balashikhinsky District')
+	 Q1878097 -> NIL : (1, 'Lutz Götz')
+	 Q105714541 -> NIL : (1, 'Kurtsuyu')
+	 Q60569993 -> NIL : (1, 'Robyn Silvernagle')
+	 Q29465836 -> NIL : (1, "Burke's Law")
+	 Q65657819 -> NIL : (1, 'Sex')
+	 Q15782220 -> NIL : (1, 'Alexander Bessmertnykh')
+	 Q28322685 -> NIL : (1, 'Roger Gauntlett')
+	 Q11736134 -> NIL : (1, 'Karol Kozun')
+	 Q38575184 -> NIL : (1, 'Zia-ul-Haq')
+	 Q37043478 -> NIL : (1, 'Nassar')
+	 Q102109260 -> NIL : (1, 'Owen Jenkins')
+	 Q13520576 -> NIL : (1, 'Olulis puncticinctalis')
+	 Q42893838 -> NIL : (1, 'Yücel Çolak')
+	 Q5145901 -> NIL : (1, 'Collagen, type XVII, alpha 1')
+	 Q43302779 -> NIL : (1, 'Alex Byrne')
+	 Q12225877 -> NIL : (1, 'Al-Masnah')
+	 Q97359778 -> NIL : (1, 'Hà Đông')
+	 Q27107351 -> NIL : (1, 'methylprednisolone acetate')
+	 Q56420274 -> NIL : (1, 'Our Lady of Pompeii Church')
+	 Q106372301 -> NIL : (1, '102nd Light Anti-Aircraft Regiment, Royal Artillery')
+	 Q13121039 -> NIL : (1, 'Vav')
+	 Q1877230 -> NIL : (1, 'Lumen Monteiro')
+	 Q3892101 -> NIL : (1, 'rivalry')
+	 Q28878253 -> NIL : (1, '2004 census')
+	 Q6053729 -> NIL : (1, 'Oscar Alegre')
+	 Q29564928 -> NIL : (1, 'swan')
+	 Q4384470 -> NIL : (1, 'Putyatino, Vologda Oblast')
+	 Q18575160 -> NIL : (1, 'Dichograptidae')
+	 Q11065523 -> NIL : (1, 'Minister of Construction')
+	 Q59180207 -> NIL : (1, 'Petra Cada')
+	 Q21901318 -> NIL : (1, 'Ingolf Fjord')
+	 Q96005373 -> NIL : (1, 'Samantha Taylor (equestrian)')
+	 Q3591794 -> NIL : (1, "L'Étape du Tour")
+	 Q62081663 -> NIL : (1, 'Geoff Emery')
+	 Q21126841 -> NIL : (1, 'Adipose triglyceride lipase')
+	 Q26790494 -> NIL : (1, 'Charles Allan Cathcart')
+	 Q363603 -> NIL : (1, 'Franc Kramberger')
+	 Q29557701 -> NIL : (1, 'play of the same title')
+	 Q63242051 -> NIL : (1, 'Andreus')
+	 Q12765692 -> NIL : (1, 'Phaethontiformes')
+	 Q99635603 -> NIL : (1, 'Martin')
+	 Q14213946 -> NIL : (1, 'Gülşah Hatun')
+	 Q1685018 -> NIL : (1, 'Jean-Marc Chabloz')
+	 Q802935 -> NIL : (1, 'Olten–Aarau railway line')
+	 Q69423979 -> NIL : (1, 'Willie Kahts')
+	 Q54810411 -> NIL : (1, 'Allan Davis')
+	 Q40480814 -> NIL : (1, 'Farooq Rind')
+	 Q28497763 -> NIL : (1, 'Kentucky')
+	 Q6426771 -> NIL : (1, 'Edward Kenway')
+	 Q75343548 -> NIL : (1, 'John Dalrymple')
+	 Q98827354 -> NIL : (1, 'Best Supporting Actor')
+	 Q25591626 -> NIL : (1, 'Kári')
+	 Q92773874 -> NIL : (1, 'Heart on My Sleeve')
+	 Q44830194 -> NIL : (1, 'Night Fever')
+	 Q5953079 -> NIL : (2, 'Mashiz Rural District;Mashiz Rural District')
+	 Q10585139 -> NIL : (1, 'Mikael Göransson')
+	 Q18366588 -> NIL : (1, 'Moldavia')
+	 Q25855044 -> NIL : (1, 'Masaki Yamada')
+	 Q61789280 -> NIL : (1, 'Tyra Perry')
+	 Q47089132 -> NIL : (1, 'Nancy Martin')
+	 Q63309197 -> NIL : (1, 'Professional Lighting and Sound Association')
+	 Q57776004 -> NIL : (1, 'David Ireland')
+	 Q4509482 -> NIL : (1, '2002–03 Primeira Liga')
+	 Q51723069 -> NIL : (1, 'Petre Hristovici')
+	 Q21693925 -> NIL : (1, 'Randall Davey')
+	 Q99461991 -> NIL : (1, 'Oslo Port Authority')
+	 Q75674102 -> NIL : (1, 'Frank Tang')
+	 Q29075221 -> NIL : (1, 'Details')
+	 Q25683100 -> NIL : (1, 'Yamyam')
+	 Q64484007 -> NIL : (1, 'cold front')
+	 Q28967974 -> NIL : (1, 'Alberto Picchi')
+	 Q21905178 -> NIL : (1, 'Ridgelands')
+	 Q72980993 -> NIL : (1, 'Muévete')
+	 Q28980480 -> NIL : (2, 'Ramla Municipal Stadium;Ramla Municipal Stadium')
+	 Q5689071 -> NIL : (1, 'Beshiva Pataq Rural District')
+	 Q85851387 -> NIL : (1, 'Masruq ibn Abraha')
+	 Q1489907 -> NIL : (1, '241363 Érdibálint')
+	 Q4536423 -> NIL : (1, '257439 Peppeprosperini')
+	 Q4130834 -> NIL : (1, 'GABA')
+	 Q28912298 -> NIL : (3, 'Alternative Press;Alternative Press;Alternative Press')
+	 Q2094435 -> NIL : (1, 'Medvode')
+	 Q6077189 -> NIL : (1, 'Maçka Gondola')
+	 Q51756900 -> NIL : (1, 'Sarah Anderson')
+	 Q1811818 -> NIL : (1, 'Stefan Rusch')
+	 Q140369 -> NIL : (1, 'Chiloscyllium missouriensis')
+	 Q24430847 -> NIL : (1, 'Mateusz Borkowski')
+	 Q9299429 -> NIL : (1, 'Yeung Chi Ka')
+	 Q2842585 -> NIL : (1, 'Mari Cruz Soriano')
+	 Q1684222 -> NIL : (1, 'Javier Cárdenas')
+	 Q105536898 -> NIL : (1, 'WiFi')
+	 Q85809788 -> NIL : (1, 'Tiny Hearts')
+	 Q28859270 -> NIL : (1, 'Kaljayi Kambakht')
+	 Q60765705 -> NIL : (1, 'Battersea Town Hall')
+	 Q10657905 -> NIL : (1, 'Ruspolia')
+	 Q65941018 -> NIL : (1, 'Francisco Medina')
+	 Q1061614 -> NIL : (1, 'Chanal')
+	 Q28871466 -> NIL : (1, 'DJ Maze')
+	 Q34225957 -> NIL : (1, 'waders')
+	 Q1089794 -> NIL : (1, 'Erkki Antila')
+	 Q1127807 -> NIL : (1, 'Constantin Carabela')
+	 Q2598187 -> NIL : (1, 'Xie Lihua')
+	 Q106528431 -> NIL : (1, 'Legend Quest')
+	 Q28971666 -> NIL : (1, 'Wang Rui')
+	 Q56537552 -> NIL : (1, 'Ataullah')
+	 Q85751320 -> NIL : (1, 'Ceredigion and Pembroke North')
+	 Q4051095 -> NIL : (1, 'The Game Creators')
+	 Q97452592 -> NIL : (1, 'Aditya Music')
+	 Q2544017 -> NIL : (1, 'Walter Durbano')
+	 Q21484976 -> NIL : (1, 'Fieraru')
+	 Q29035409 -> NIL : (1, 'Emily Pritt')
+	 Q98930686 -> NIL : (1, 'Lebogang Phalula')
+	 Q16021696 -> NIL : (2, 'number-one for four weeks;number-one')
+	 Q30029538 -> NIL : (1, 'Domingo Leyba')
+	 Q12208534 -> NIL : (1, 'cabinet')
+	 Q4221914 -> NIL : (1, 'Kirjasalo')
+	 Q3369632 -> NIL : (1, 'Patrick Liewig')
+	 Q159418 -> NIL : (1, 'Astragalus arenarius')
+	 Q43079337 -> NIL : (1, 'Central Washington')
+	 Q43079393 -> NIL : (1, 'Western Washington')
+	 Q29975001 -> NIL : (1, 'Huete')
+	 Q1499430 -> NIL : (1, '8421 Montanari')
+	 Q43375465 -> NIL : (1, 'Vachellia robusta')
+	 Q13228037 -> NIL : (1, 'Hesperopsis alpheus alpheus')
+	 Q5666149 -> NIL : (1, 'Alexander England')
+	 Q11818332 -> NIL : (1, 'Piotr')
+	 Q30323627 -> NIL : (1, 'Tim Viens')
+	 Q16482025 -> NIL : (1, '1999')
+	 Q1337196 -> NIL : (1, 'Ernest Jacquet')
+	 Q83808455 -> NIL : (1, 'Scottish Mussel')
+	 Q30708756 -> NIL : (1, 'Michael Špaček')
+	 Q23905185 -> NIL : (1, 'Levani Matiashvili')
+	 Q21452557 -> NIL : (1, 'Burkhanov')
+	 Q61591921 -> NIL : (1, 'Rudolf Dannhauer')
+	 Q105370223 -> NIL : (1, 'handicap hurdle')
+	 Q62017633 -> NIL : (1, 'joint committee')
+	 Q9047584 -> NIL : (1, 'Myriam Palacios')
+	 Q1672687 -> NIL : (1, 'Markha')
+	 Q44751883 -> NIL : (1, 'Dragan Vuković')
+	 Q55741039 -> NIL : (1, 'Asianet')
+	 Q97452174 -> NIL : (1, 'James Sugira')
+	 Q377795 -> NIL : (1, 'NS')
+	 Q15645574 -> NIL : (1, 'Aishbagh railway station')
+	 Q1485645 -> NIL : (1, 'Gips')
+	 Q48441358 -> NIL : (1, 'Aamer Iqbal')
+	 Q11679530 -> NIL : (1, 'H. G. Dattatreya')
+	 Q24707864 -> NIL : (1, 'the reserves')
+	 Q15927807 -> NIL : (1, 'Dong Xiwen')
+	 Q3858779 -> NIL : (1, 'Miranda Bonansea')
+	 Q3905267 -> NIL : (1, 'Pino Insegno')
+	 Q12415809 -> NIL : (1, 'Allahabad Junction')
+	 Q3892425 -> NIL : (1, 'Exprivia Molfetta')
+	 Q13417834 -> NIL : (1, 'HC Nové Zámky')
+	 Q31091995 -> NIL : (1, 'Mosonmagyaróvár')
+	 Q16276175 -> NIL : (1, 'Zhang Mo')
+	 Q50201709 -> NIL : (1, 'Amanda Hopps')
+	 Q2933550 -> NIL : (1, 'Calamobius')
+	 Q30302387 -> NIL : (1, 'Allan Sly')
+	 Q30709970 -> NIL : (1, 'Jaggi Singh')
+	 Q60447411 -> NIL : (1, 'The Wizard of Oz')
+	 Q55614903 -> NIL : (1, 'James White')
+	 Q28092196 -> NIL : (1, 'Sir Robert Pollock')
+	 Q407166 -> NIL : (1, 'somatostatin')
+	 Q28870780 -> NIL : (1, 'Hannah Black')
+	 Q73030207 -> NIL : (1, 'Saša Maksimović')
+	 Q93444968 -> NIL : (1, 'Roberta Gentini')
+	 Q827697 -> NIL : (1, 'Bertha Crowther')
+	 Q39053230 -> NIL : (1, '1983')
+	 Q11748750 -> NIL : (1, 'Krystyna Nowakowska')
+	 Q176813 -> NIL : (1, 'Madonna della Misericordia')
+	 Q19966818 -> NIL : (1, 'Ministry of Defence')
+	 Q27766908 -> NIL : (1, 'Helen Golden')
+	 Q62083505 -> NIL : (1, 'George F. Dannebrock')
+	 Q105087807 -> NIL : (1, 'Özlü')
+	 Q19956352 -> NIL : (1, 'Aleksandr Kurochkin')
+	 Q65066262 -> NIL : (1, 'in-group')
+	 Q2843254 -> NIL : (1, 'Muret')
+	 Q8559873 -> NIL : (1, 'Diego Torres')
+	 Q65081856 -> NIL : (1, 'Paramount Television')
+	 Q30070719 -> NIL : (1, 'daddy issues')
+	 Q11684511 -> NIL : (1, 'Adrian Świderski')
+	 Q28529500 -> NIL : (1, 'Stefano Moro')
+	 Q67162693 -> NIL : (1, 'Ziegler, Donald')
+	 Q3746319 -> NIL : (1, 'Flabellinopsis')
+	 Q63101712 -> NIL : (1, 'Tompkins, Eileen')
+	 Q60298614 -> NIL : (1, 'The Night We Met')
+	 Q19264 -> NIL : (1, 'Phaethontiformes')
+	 Q47781 -> NIL : (1, 'Union of the Centre (2002)')
+	 Q3375302 -> NIL : (1, 'The Perfect Crime')
+	 Q2132652 -> NIL : (1, 'Rathausbrücke')
+	 Q25563103 -> NIL : (1, 'Warangal')
+	 Q37459849 -> NIL : (1, 'Chandrashekhar')
+	 Q61247624 -> NIL : (1, 'Mu Raghava Iyengar')
+	 Q62689422 -> NIL : (1, 'Lo Tsai-Jen')
+	 Q55759962 -> NIL : (1, 'Jorge Félix')
+	 Q27208953 -> NIL : (1, 'Caina Township')
+	 Q30638818 -> NIL : (1, '1998')
+	 Q13484999 -> NIL : (1, 'Polyommatus icadius')
+	 Q2379972 -> NIL : (1, 'An Assisted Elopement')
+	 Q14849279 -> NIL : (1, 'Falsapolia vitula')
+	 Q48812264 -> NIL : (1, 'Greentouch Entertainment')
+	 Q66836520 -> NIL : (1, 'Yana Vorona')
+	 Q42318741 -> NIL : (1, 'Aeolus')
+	 Q15535094 -> NIL : (1, 'Cyperus portae-tartari')
+	 Q79478057 -> NIL : (1, 'Christine Harris')
+	 Q55713926 -> NIL : (1, 'Icelandic Cup')
+	 Q53266616 -> NIL : (1, 'Kim Kyung-ja')
+	 Q3815100 -> NIL : (1, 'Conde Vrolok')
+	 Q5502846 -> NIL : (1, 'Frequency')
+	 Q65031525 -> NIL : (1, 'Morton C. Hillman')
+	 Q33296193 -> NIL : (1, 'Anoop Kannan')
+	 Q31030751 -> NIL : (1, 'Aliaksei Nichypar')
+	 Q55643214 -> NIL : (1, 'Nakhchivan Memorial Museum')
+	 Q9183225 -> NIL : (1, 'Chin Shih-chieh')
+	 Q64624408 -> NIL : (1, 'So I Married an Anti-fan')
+	 Q42137502 -> NIL : (1, 'Mike Causey')
+	 Q66901890 -> NIL : (1, 'Wenzel, Steve')
+	 Q9899 -> NIL : (1, 'government of Amsterdam')
+	 Q16990924 -> NIL : (1, 'Maria Tolppanen')
+	 Q30325873 -> NIL : (1, 'Southern Miss')
+	 Q21484906 -> NIL : (1, 'Brodsky')
+	 Q27077223 -> NIL : (1, 'Ertugliflozin')
+	 Q86754439 -> NIL : (1, 'Michel Dion')
+	 Q953478 -> NIL : (1, 'Cernay')
+	 Q4426244 -> NIL : (1, "Council of People's Commissars")
+	 Q27537219 -> NIL : (1, 'Viktoria Kamenskaya')
+	 Q16422819 -> NIL : (1, '2002')
+	 Q48732342 -> NIL : (1, 'Jelawat')
+	 Q80155192 -> NIL : (1, 'Senedd')
+	 Q18975461 -> NIL : (1, 'Ryegrass mosaic virus')
+	 Q12642783 -> NIL : (1, 'Stjepan Grgac')
+	 Q11014260 -> NIL : (1, 'Ayaash')
+	 Q42820255 -> NIL : (1, 'Park Sung-hyun')
+	 Q3176216 -> NIL : (1, 'Jeanne de Divion')
+	 Q30315607 -> NIL : (1, 'Thea Queen')
+	 Q1444401 -> NIL : (1, 'Hou Yuxia')
+	 Q41671248 -> NIL : (1, 'Kyle Cranston')
+	 Q3441232 -> NIL : (1, 'Byzantine Greek')
+	 Q412483 -> NIL : (1, 'cholesterol side-chain cleavage enzyme')
+	 Q30706696 -> NIL : (1, 'Choe Yong-gon')
+	 Q39056781 -> NIL : (1, '1965')
+	 Q47460782 -> NIL : (1, 'Aurelia Marinescu')
+	 Q86923161 -> NIL : (1, 'Adam Gitsham')
+	 Q104381823 -> NIL : (1, 'public access')
+	 Q1178070 -> NIL : (1, 'Bourbon Restoration')
+	 Q9133962 -> NIL : (1, '4th Infantry Division')
+	 Q89270387 -> NIL : (1, '111 Tauri')
+	 Q39056264 -> NIL : (1, 'jet plane')
+	 Q46402057 -> NIL : (1, 'Kenny Neyens')
+	 Q101347 -> NIL : (1, 'Hilde Maroff')
+	 Q85774402 -> NIL : (1, 'Kim Jin-su')
+	 Q8317848 -> NIL : (1, 'Ye Jizhuang')
+	 Q106371552 -> NIL : (1, 'Mihail Karushkov')
+	 Q4284363 -> NIL : (1, 'Mathieu Loicq')
+	 Q18521093 -> NIL : (1, 'Desoria')
+	 Q27835285 -> NIL : (1, 'Talisson Glock')
+	 Q101693616 -> NIL : (1, 'Marcos Falcón')
+	 Q22704897 -> NIL : (1, 'Bijar')
+	 Q60538951 -> NIL : (1, '2014–15')
+	 Q408303 -> NIL : (1, 'Guanidinoacetate N-methyltransferase')
+	 Q2898216 -> NIL : (1, 'Bernard Lefèvre')
+	 Q13151751 -> NIL : (1, 'Banail Union')
+	 Q16943937 -> NIL : (1, 'Beatrice Ravenel')
+	 Q34527724 -> NIL : (1, 'FIN')
+	 Q18104594 -> NIL : (1, 'phylloxera')
+	 Q47458520 -> NIL : (1, 'Daniel Voiculescu')
+	 Q25428086 -> NIL : (1, 'Pursuit')
+	 Q50359420 -> NIL : (1, 'Produce 101')
+	 Q55400713 -> NIL : (1, 'CPP')
+	 Q28668549 -> NIL : (1, 'Cassa di Risparmio di Trieste')
+	 Q1114418 -> NIL : (1, 'Gilderoy Lockhart')
+	 Q56537497 -> NIL : (1, 'ANDAM')
+	 Q85720611 -> NIL : (1, '18th')
+	 Q3086444 -> NIL : (1, 'Françoise Christophe')
+	 Q79087954 -> NIL : (1, 'William Jeffries')
+	 Q4355004 -> NIL : (1, 'Firby')
+	 Q39044161 -> NIL : (1, 'Julio Ferrer')
+	 Q48877075 -> NIL : (1, 'Hannes Wagner')
+	 Q997579 -> NIL : (1, 'Belarusian Cup')
+	 Q19794485 -> NIL : (1, 'YMC Entertainment')
+	 Q63341559 -> NIL : (1, 'Karsten Koch')
+	 Q105077426 -> NIL : (1, 'Favour Aniekan')
+	 Q61460498 -> NIL : (1, 'Comédie-Française')
+	 Q23827037 -> NIL : (1, 'Lisa Gunnarsson')
+	 Q4480397 -> NIL : (1, 'Adolphe Favre')
+	 Q96372818 -> NIL : (1, 'Autumn Never Dies')
+	 Q55448587 -> NIL : (1, 'Monbulla')
+	 Q11885905 -> NIL : (1, 'Osmo Kock')
+	 Q22931205 -> NIL : (1, 'Balmoral')
+	 Q21538166 -> NIL : (1, 'Norbert Keenan')
+	 Q97236553 -> NIL : (1, 'List of Turkish diplomats assassinated by Armenian militant organisations')
+	 Q3215464 -> NIL : (1, 'Kournas, Chania')
+	 Q900013 -> NIL : (1, 'May Day')
+	 Q64624467 -> NIL : (1, 'The Dance Goes On')
+	 Q48835592 -> NIL : (1, '2016 NAIA football season')
+	 Q30728810 -> NIL : (1, 'Jalal Daoudi')
+	 Q3206819 -> NIL : (1, 'Box of Dreams')
+	 Q30621931 -> NIL : (1, 'Montmorenci')
+	 Q16086508 -> NIL : (1, 'Zoran Stevanović')
+	 Q48864798 -> NIL : (1, '1996')
+	 Q29097436 -> NIL : (1, '1995')
+	 Q42535445 -> NIL : (1, 'Mukhtar')
+	 Q48743547 -> NIL : (1, '1983')
+	 Q30640790 -> NIL : (1, '1988')
+	 Q43080938 -> NIL : (1, '1984')
+	 Q56258995 -> NIL : (1, 'Yannick Schwaller')
+	 Q29561241 -> NIL : (1, '69 kg')
+	 Q54867776 -> NIL : (1, 'Brian Tse')
+	 Q59655411 -> NIL : (2, '1968;1968')
+	 Q48844587 -> NIL : (1, '2001')
+	 Q49121188 -> NIL : (1, 'Andre Murray')
+	 Q54904767 -> NIL : (1, 'Demon Hunter')
+	 Q51716967 -> NIL : (1, 'death of JonBenét Ramsey')
+	 Q54958941 -> NIL : (1, 'Jerry Tucker')
+	 Q18180907 -> NIL : (1, 'Stanislav Zore')
+	 Q92767059 -> NIL : (1, 'eminent domain')
+	 Q6728090 -> NIL : (1, 'Shaghab')
+	 Q94679604 -> NIL : (1, 'Abhijit Guha')
+	 Q416601 -> NIL : (1, 'androgen receptor')
+	 Q27163028 -> NIL : (1, 'Prasterone sodium sulfate')
+	 Q30645786 -> NIL : (1, 'Hertfordshire')
+	 Q55150256 -> NIL : (1, 'Jules Huot')
+	 Q105226842 -> NIL : (1, 'Bob Hill')
+	 Q559181 -> NIL : (1, 'First Silesian War')
+	 Q58174278 -> NIL : (1, 'Arindam Ghosh')
+	 Q29431340 -> NIL : (1, 'Sary-Bulak')
+	 Q18560082 -> NIL : (1, 'Inambari gnatcatcher')
+	 Q56043500 -> NIL : (1, 'Syamdhar')
+	 Q28842926 -> NIL : (1, '2019 UEFA Champions League Final')
+	 Q44611008 -> NIL : (1, 'Willard W. Miles')
+	 Q30588434 -> NIL : (1, 'The World Is Full of Trouble')
+	 Q1533511 -> NIL : (1, 'Gober')
+	 Q28799879 -> NIL : (1, 'Július Ivan')
+shuffling mention/row indicies for prunning
+0 pruned, go next
+1 pruned, go next
+2 pruned, go next
+3 pruned, go next
+4 pruned, go next
+5 pruned, go next
+6 pruned, go next
+7 pruned, go next
+8 pruned, go next
+9 pruned, go next
+10 pruned, go next
+11 pruned, go next
+12 pruned, go next
+13 pruned, go next
+14 pruned, go next
+15 pruned, go next
+16 pruned, go next
+17 pruned, go next
+18 pruned, go next
+19 pruned, go next
+20 pruned, go next
+21 pruned, go next
+22 pruned, go next
+23 pruned, go next
+24 pruned, go next
+25 pruned, go next
+26 pruned, go next
+27 pruned, go next
+28 pruned, go next
+29 pruned, go next
+30 pruned, go next
+31 pruned, go next
+32 pruned, go next
+33 pruned, go next
+34 pruned, go next
+35 pruned, go next
+36 pruned, go next
+37 pruned, go next
+38 pruned, go next
+39 pruned, go next
+40 pruned, go next
+41 pruned, go next
+42 pruned, go next
+43 pruned, go next
+44 pruned, go next
+45 pruned, go next
+46 pruned, go next
+47 pruned, go next
+48 pruned, go next
+49 pruned, go next
+50 pruned, go next
+51 pruned, go next
+52 pruned, go next
+53 pruned, go next
+54 pruned, go next
+55 pruned, go next
+56 pruned, go next
+57 pruned, go next
+58 pruned, go next
+59 pruned, go next
+60 pruned, go next
+61 pruned, go next
+62 pruned, go next
+63 pruned, go next
+64 pruned, go next
+65 pruned, go next
+66 pruned, go next
+67 pruned, go next
+68 pruned, go next
+69 pruned, go next
+70 pruned, go next
+71 pruned, go next
+72 pruned, go next
+73 pruned, go next
+74 pruned, go next
+75 pruned, go next
+76 pruned, go next
+77 pruned, go next
+78 pruned, go next
+79 pruned, go next
+80 pruned, go next
+81 pruned, go next
+82 pruned, go next
+83 pruned, go next
+84 pruned, go next
+85 pruned, go next
+86 pruned, go next
+87 pruned, go next
+88 pruned, go next
+89 pruned, go next
+90 pruned, go next
+91 pruned, go next
+92 pruned, go next
+93 pruned, go next
+94 pruned, go next
+95 pruned, go next
+96 pruned, go next
+97 pruned, go next
+98 pruned, go next
+99 pruned, go next
+row 1197737 left context len 140 beyond 128
+row 1197737 right context len 130 beyond 128
+row 2884637 left context len 197 beyond 128
+row 4206737 left context len 161 beyond 128
+row 4308422 left context len 151 beyond 128
+row 4308422 right context len 156 beyond 128
+row 5138664 left context len 130 beyond 128
+row 7459293 right context len 170 beyond 128
+row 7743894 right context len 156 beyond 128
+row 7891544 left context len 148 beyond 128
+row 7891544 right context len 137 beyond 128
+row 7922831 right context len 144 beyond 128
+row 8102161 left context len 199 beyond 128
+row 8102161 right context len 234 beyond 128
+row 8699315 left context len 146 beyond 128
+row 8699315 right context len 156 beyond 128
+row 9117897 left context len 143 beyond 128
+row 9117897 right context len 155 beyond 128
+row 9894135 right context len 129 beyond 128
+label non-exist in the entity catalogue: Q11194176
+row 10252255 left context len 131 beyond 128
+label non-exist in the entity catalogue: Q3931411
+row 10491338 left context len 140 beyond 128
+valid NIL mentions:
+	 Q287961 -> NIL : (1, 'β2-adrenoceptor')
+	 Q29982419 -> NIL : (2, 'Edo;Edo')
+	 Q799774 -> NIL : (1, 'Baeza')
+	 Q21716670 -> NIL : (1, 'Tilehurst')
+	 Q15855265 -> NIL : (1, 'Yang Jisheng')
+	 Q61947311 -> NIL : (1, 'Sergio Santos')
+	 Q104011435 -> NIL : (1, 'Linda Hayes')
+	 Q57594490 -> NIL : (1, 'Eagle Talon')
+	 Q30701922 -> NIL : (1, 'yellow-necked greenbul')
+	 Q102077068 -> NIL : (1, 'Mapp and Lucia')
+	 Q53554127 -> NIL : (1, 'Gilbert de la Hay')
+	 Q63228663 -> NIL : (1, 'Cheyenne Roundup')
+	 Q22653138 -> NIL : (1, 'Sooke Lake')
+	 Q3269265 -> NIL : (1, 'Lygisaurus curtus')
+	 Q2746364 -> NIL : (5, 'Jammu and Kashmir;Jammu and Kashmir;Jammu and Kashmir;Jammu and Kashmir;Jammu and Kashmir')
+	 Q12177407 -> NIL : (1, 'Berlin Airlift')
+	 Q105347927 -> NIL : (1, "I Don't Want to Go to Bed")
+	 Q92778099 -> NIL : (1, 'Moy House')
+	 Q11497423 -> NIL : (1, 'Lyric Suite')
+	 Q96758497 -> NIL : (1, 'abuse of power')
+	 Q21113988 -> NIL : (1, 'CCL28')
+	 Q77759188 -> NIL : (1, 'Jerry Jumonville')
+	 Q20759625 -> NIL : (1, 'Ralph Abraham')
+	 Q21206940 -> NIL : (1, 'Brisbane')
+	 Q54868992 -> NIL : (1, 'Honky Tonk Blues')
+	 Q56265965 -> NIL : (1, 'William Cobbold')
+	 Q21509949 -> NIL : (1, 'de Burgh')
+	 Q96942538 -> NIL : (1, 'London Regiment')
+	 Q29514843 -> NIL : (1, 'Taskmaster')
+	 Q1035602 -> NIL : (1, 'Carceri')
+	 Q62277511 -> NIL : (1, 'Father Takes the Air')
+	 Q779125 -> NIL : (1, 'Publius Cornelius Rutilus Cossus')
+	 Q10467717 -> NIL : (1, 'Degu')
+	 Q52004998 -> NIL : (1, 'Ajoy Biswas')
+	 Q1288511 -> NIL : (1, 'Antal Simon')
+	 Q100418629 -> NIL : (1, 'Thomas J. Brunner')
+	 Q3144296 -> NIL : (1, 'Hyponephele')
+	 Q63776734 -> NIL : (1, 'WNWT')
+	 Q3734408 -> NIL : (1, 'Eugenio Mosso')
+	 Q28106764 -> NIL : (1, 'Cinnamon teal')
+	 Q30591211 -> NIL : (1, 'Seaborg Technologies')
+	 Q1354018 -> NIL : (1, 'Sappho Painter')
+	 Q56244604 -> NIL : (1, 'Wetherall')
+	 Q16867617 -> NIL : (1, 'Reggie Kray')
+	 Q1668868 -> NIL : (1, 'James Henigan')
+	 Q31840126 -> NIL : (1, 'Marième Boye')
+	 Q87205979 -> NIL : (1, 'Dukha Bhagat')
+	 Q197653 -> NIL : (1, 'Zheng Yumin')
+	 Q60763585 -> NIL : (1, 'Piedmont Park Apartments')
+	 Q56539123 -> NIL : (1, 'Kühner')
+	 Q29191763 -> NIL : (1, 'Don Cheatham')
+	 Q12320065 -> NIL : (1, 'Johannes Hansen')
+	 Q64729902 -> NIL : (1, 'Phil Saunders')
+	 Q26258875 -> NIL : (1, 'Charles Nicholas Pallmer')
+	 Q30597368 -> NIL : (1, 'Swang (song)')
+	 Q20829851 -> NIL : (1, 'Annie Smith')
+	 Q20977 -> NIL : (1, 'Hoopoe')
+	 Q13694132 -> NIL : (1, 'Shuanggui Subdistrict')
+	 Q716693 -> NIL : (1, "M'. Acilius Aviola")
+	 Q413766 -> NIL : (1, 'fibronectin')
+	 Q62032381 -> NIL : (1, 'US Country')
+	 Q92297602 -> NIL : (1, 'List of highest paved roads in Europe')
+	 Q12613268 -> NIL : (1, 'Lee Hyo-jung')
+	 Q1679949 -> NIL : (1, 'James Anderson')
+	 Q1421590 -> NIL : (1, 'Iroquois Confederacy')
+	 Q2245458 -> NIL : (1, 'Michel Stolker')
+	 Q28872893 -> NIL : (1, 'Sofia Kraft')
+	 Q29349934 -> NIL : (1, 'Raquel Fernández')
+	 Q1058190 -> NIL : (1, 'CD9')
+	 Q12516320 -> NIL : (1, 'Pondok Ranji')
+	 Q96380122 -> NIL : (1, "HMS ''Melpomene''")
+	 Q96392644 -> NIL : (1, 'Mendicant')
+	 Q75135733 -> NIL : (1, "Écris l'histoire")
+	 Q21111463 -> NIL : (1, 'Retinoblastoma protein')
+	 Q54817638 -> NIL : (1, 'St Albans')
+	 Q61314673 -> NIL : (1, 'John Birdsall')
+	 Q102078577 -> NIL : (1, 'Nagorno-Karabakh War')
+	 Q30709738 -> NIL : (1, 'Ayni, Tajikistan')
+	 Q21484602 -> NIL : (1, 'Delius')
+	 Q88224860 -> NIL : (1, 'John Dunlop')
+	 Q64683568 -> NIL : (1, 'Jack Stanton')
+	 Q20820265 -> NIL : (1, 'Konai Helu Thaman')
+	 Q92782065 -> NIL : (1, 'Raymond Duncan')
+	 Q18987579 -> NIL : (1, 'Dakshin Sunamganj Upazila')
+	 Q3724363 -> NIL : (1, 'Emilio Carelli')
+	 Q3436719 -> NIL : (1, 'Robert de Sablé')
+	 Q47459052 -> NIL : (1, 'Darryl Sambell')
+	 Q35829036 -> NIL : (1, 'Henry Blount, 4th Earl of Newport')
+	 Q52420998 -> NIL : (1, 'Clelia Haji-Ioannou')
+	 Q55611468 -> NIL : (1, 'Fargo-Moorhead Fever')
+	 Q54823988 -> NIL : (1, 'Kaasi')
+	 Q2379199 -> NIL : (1, 'City of Edinburgh')
+	 Q45364924 -> NIL : (1, 'Kyros Marinis')
+	 Q2284273 -> NIL : (1, 'Hecelchakán Municipality')
+	 Q6480928 -> NIL : (1, 'Gamasellus muscosus')
+	 Q4390283 -> NIL : (1, 'Rasputina')
+	 Q1112868 -> NIL : (1, 'Florea Văetuș')
+	 Q50963519 -> NIL : (1, 'The King of Paris')
+	 Q41574446 -> NIL : (1, 'Movistar Team')
+	 Q416356 -> NIL : (1, 'PTEN')
+	 Q57788611 -> NIL : (1, 'The American Scholar')
+	 Q28671797 -> NIL : (1, 'Kathleen Fee')
+	 Q28820985 -> NIL : (1, 'Wit')
+	 Q48767672 -> NIL : (1, 'Convention Parliament')
+	 Q55404202 -> NIL : (1, 'Lee Merklinger')
+	 Q54819710 -> NIL : (1, 'Cristian Borja')
+	 Q1128912 -> NIL : (1, 'Spartak Dubnica nad Váhom')
+	 Q33417597 -> NIL : (1, 'Jeserik Pinto')
+	 Q29060312 -> NIL : (1, 'Thomas')
+	 Q708135 -> NIL : (1, 'Silver Bear for an outstanding single achievement')
+	 Q11398181 -> NIL : (1, 'Haiyuza Theatre Company')
+	 Q24786902 -> NIL : (1, 'armadillo repeat')
+	 Q39515902 -> NIL : (2, 'Dominik Märki;Dominik Märki')
+	 Q28070573 -> NIL : (1, 'Cephetola pinodes pinodes')
+	 Q24865563 -> NIL : (1, 'Karina Manta')
+	 Q57599910 -> NIL : (1, 'Legal Aid Society')
+	 Q24287968 -> NIL : (1, 'Aranka Szeiler')
+	 Q415826 -> NIL : (1, 'Ryan Newman')
+	 Q98020213 -> NIL : (1, 'Rajinder Singh Jr.')
+	 Q3783173 -> NIL : (1, 'Hans P. Eugster')
+	 Q48440966 -> NIL : (1, 'Al-Harrah')
+	 Q16181500 -> NIL : (1, 'Soo Joo Park')
+	 Q20978394 -> NIL : (1, 'Janieck Devy')
+	 Q2422682 -> NIL : (1, 'clypeus')
+	 Q35087798 -> NIL : (1, 'The Arbitrator')
+	 Q8970975 -> NIL : (1, 'Hubert Wu')
+	 Q1483914 -> NIL : (1, '9837 Jerryhorow')
+	 Q56395844 -> NIL : (1, 'Fan Wei')
+	 Q42758142 -> NIL : (1, 'licentiate')
+	 Q48803393 -> NIL : (1, 'Hamilton West—Ancaster—Dundas')
+	 Q11513332 -> NIL : (1, "Haru's Journey")
+	 Q85786286 -> NIL : (1, 'Morehead River')
+	 Q15623579 -> NIL : (1, 'barbed wire')
+	 Q61466704 -> NIL : (1, 'Soil water')
+	 Q79980536 -> NIL : (1, 'Tania Modleski')
+	 Q93309006 -> NIL : (1, 'Isaac Norris')
+	 Q30673337 -> NIL : (1, 'Ibrahim Idris Kpotum')
+	 Q55740778 -> NIL : (1, 'Badlapur')
+	 Q29344624 -> NIL : (1, 'UNISON')
+	 Q64005648 -> NIL : (1, 'Butcher, Baker, Nightmare Maker')
+	 Q59917796 -> NIL : (1, 'Anna Maria Peduzzi')
+	 Q28464331 -> NIL : (1, 'Bernardo Guadagni')
+	 Q24839341 -> NIL : (1, 'Venmo')
+	 Q56292104 -> NIL : (1, '2017 NAIA football season')
+	 Q47349583 -> NIL : (1, 'Rohan Tungate')
+	 Q95984336 -> NIL : (1, 'The Bronco Buster')
+	 Q55584905 -> NIL : (1, 'Si. Singh')
+	 Q30590431 -> NIL : (1, 'EVA International')
+shuffling mention/row indicies for prunning
+0 pruned, go next
+1 pruned, go next
+2 pruned, go next
+3 pruned, go next
+4 pruned, go next
+5 pruned, go next
+6 pruned, go next
+7 pruned, go next
+8 pruned, go next
+9 pruned, go next
+10 pruned, go next
+11 pruned, go next
+12 pruned, go next
+13 pruned, go next
+14 pruned, go next
+15 pruned, go next
+16 pruned, go next
+17 pruned, go next
+18 pruned, go next
+19 pruned, go next
+20 pruned, go next
+21 pruned, go next
+22 pruned, go next
+23 pruned, go next
+24 pruned, go next
+25 pruned, go next
+26 pruned, go next
+27 pruned, go next
+28 pruned, go next
+29 pruned, go next
+30 pruned, go next
+31 pruned, go next
+32 pruned, go next
+33 pruned, go next
+34 pruned, go next
+35 pruned, go next
+36 pruned, go next
+37 pruned, go next
+38 pruned, go next
+39 pruned, go next
+40 pruned, go next
+41 pruned, go next
+42 pruned, go next
+43 pruned, go next
+44 pruned, go next
+45 pruned, go next
+46 pruned, go next
+47 pruned, go next
+48 pruned, go next
+49 pruned, go next
+50 pruned, go next
+51 pruned, go next
+52 pruned, go next
+53 pruned, go next
+54 pruned, go next
+55 pruned, go next
+56 pruned, go next
+57 pruned, go next
+58 pruned, go next
+59 pruned, go next
+60 pruned, go next
+61 pruned, go next
+62 pruned, go next
+63 pruned, go next
+64 pruned, go next
+65 pruned, go next
+66 pruned, go next
+67 pruned, go next
+68 pruned, go next
+69 pruned, go next
+70 pruned, go next
+71 pruned, go next
+72 pruned, go next
+73 pruned, go next
+74 pruned, go next
+75 pruned, go next
+76 pruned, go next
+77 pruned, go next
+78 pruned, go next
+79 pruned, go next
+80 pruned, go next
+81 pruned, go next
+82 pruned, go next
+83 pruned, go next
+84 pruned, go next
+85 pruned, go next
+86 pruned, go next
+87 pruned, go next
+88 pruned, go next
+89 pruned, go next
+90 pruned, go next
+91 pruned, go next
+92 pruned, go next
+93 pruned, go next
+94 pruned, go next
+95 pruned, go next
+96 pruned, go next
+97 pruned, go next
+98 pruned, go next
+99 pruned, go next
+row 2546075 left context len 143 beyond 128
+row 2546075 right context len 145 beyond 128
+row 2847669 right context len 134 beyond 128
+row 3141510 left context len 240 beyond 128
+row 3141510 right context len 240 beyond 128
+label non-exist in the entity catalogue: Q4896294
+row 3837078 left context len 134 beyond 128
+row 3837078 right context len 136 beyond 128
+row 4232990 left context len 166 beyond 128
+row 4232990 right context len 167 beyond 128
+row 4474668 left context len 153 beyond 128
+row 4528895 left context len 153 beyond 128
+row 4528895 right context len 159 beyond 128
+row 6743685 right context len 209 beyond 128
+row 7584729 right context len 130 beyond 128
+row 7655104 left context len 198 beyond 128
+row 8144559 left context len 226 beyond 128
+row 8144559 right context len 263 beyond 128
+row 8730546 right context len 140 beyond 128
+row 8809486 left context len 144 beyond 128
+row 8939553 left context len 154 beyond 128
+row 9096560 left context len 189 beyond 128
+row 9096560 right context len 195 beyond 128
+row 9139032 left context len 156 beyond 128
+row 9583366 left context len 133 beyond 128
+row 9690510 right context len 160 beyond 128
+row 10351112 right context len 161 beyond 128
+label non-exist in the entity catalogue: Q341624
+test NIL mentions:
+	 Q92768632 -> NIL : (1, 'tanha')
+	 Q3291153 -> NIL : (1, 'Bolsward')
+	 Q20817212 -> NIL : (1, 'ginseng')
+	 Q1585855 -> NIL : (1, 'Harold Jones')
+	 Q9287797 -> NIL : (1, 'Henrik Otto Albedyll')
+	 Q64403106 -> NIL : (1, 'Rainbow Brite')
+	 Q54371665 -> NIL : (1, 'powerhead')
+	 Q50614672 -> NIL : (2, 'grass;Grass')
+	 Q211319 -> NIL : (1, 'Serres regional unit')
+	 Q95147137 -> NIL : (1, "Andy O'Brien")
+	 Q1073880 -> NIL : (3, 'SNK;SNK;SNK')
+	 Q1261670 -> NIL : (1, 'Drägerwerk AG')
+	 Q13652117 -> NIL : (1, 'Martin Beck')
+	 Q2829161 -> NIL : (1, 'Akuapem')
+	 Q11944059 -> NIL : (1, 'Puqudu')
+	 Q17635044 -> NIL : (1, 'The Artistic Career of Corky')
+	 Q21476627 -> NIL : (1, 'Narasimha Rao')
+	 Q63532478 -> NIL : (3, 'president;president;President')
+	 Q41911880 -> NIL : (2, 'village;village')
+	 Q30074592 -> NIL : (1, '1964–65')
+	 Q31798226 -> NIL : (1, 'Yisroel Meir Gabbai')
+	 Q29573902 -> NIL : (1, "Mickey Spillane's Mike Hammer: More Than Murder")
+	 Q65063489 -> NIL : (1, 'On and On')
+	 Q79199233 -> NIL : (1, 'Gabriel Soler')
+	 Q3165459 -> NIL : (1, 'Jean-François Beauchemin')
+	 Q15183494 -> NIL : (1, '70720 Davidskillman')
+	 Q17425448 -> NIL : (1, 'Alison Winter')
+	 Q56510615 -> NIL : (1, 'Stefan Stoykov')
+	 Q54952975 -> NIL : (1, 'River Trails School District 26')
+	 Q21115043 -> NIL : (1, '5-HT1A receptor')
+	 Q61731637 -> NIL : (1, 'Bosnian Croats')
+	 Q10737004 -> NIL : (1, 'Bacău')
+	 Q12829829 -> NIL : (1, 'pus')
+	 Q29371926 -> NIL : (2, 'prince;prince')
+	 Q55757447 -> NIL : (1, 'Chris Dave')
+	 Q42292137 -> NIL : (1, 'Chang Hao')
+	 Q106308524 -> NIL : (1, 'Stuart Milner Finlayson')
+	 Q137370 -> NIL : (1, 'Papilio multicaudata')
+	 Q72558917 -> NIL : (1, 'Terry Malkin')
+	 Q52067293 -> NIL : (1, 'Marshall Teague')
+	 Q58819409 -> NIL : (1, 'SR 320')
+	 Q86924687 -> NIL : (1, 'Grizzly Tales for Gruesome Kids')
+	 Q87412798 -> NIL : (1, 'WYDD')
+	 Q10749440 -> NIL : (1, 'Coenoptychus')
+	 Q39162043 -> NIL : (1, 'Abdullah (name)')
+	 Q26772644 -> NIL : (1, 'James Bulkeley, 6th Viscount Bulkeley')
+	 Q58910324 -> NIL : (1, 'List of highways numbered 19')
+	 Q1381988 -> NIL : (1, 'Everett Dunklee')
+	 Q50350552 -> NIL : (1, 'Ogden Mills')
+	 Q12481687 -> NIL : (1, 'Albury')
+	 Q9248882 -> NIL : (1, 'Ziitsagaany Ganbat')
+	 Q28224959 -> NIL : (1, 'Hibernia')
+	 Q29007110 -> NIL : (1, 'Potato virus Y')
+	 Q2274053 -> NIL : (1, 'Finn Arnestad')
+	 Q1587905 -> NIL : (1, 'Hepatic tanager')
+	 Q60337192 -> NIL : (1, 'List of highways numbered 49')
+	 Q1208843 -> NIL : (1, 'Diana Koleva')
+	 Q82576794 -> NIL : (1, 'Aramoho')
+	 Q10709917 -> NIL : (1, 'Andra Svea artilleriregemente')
+	 Q1988350 -> NIL : (1, 'Nikos Polychronopoulos')
+	 Q91816885 -> NIL : (1, 'American Gladiators')
+	 Q66123713 -> NIL : (1, 'DWPR Radyo Asenso 1296')
+	 Q17487737 -> NIL : (1, 'BRCA1')
+	 Q87177468 -> NIL : (1, 'Jeremy Harding')
+	 Q30638486 -> NIL : (1, 'The Lonely Robot')
+	 Q101240273 -> NIL : (1, 'cabinet')
+	 Q56166333 -> NIL : (1, 'Michael Keogh')
+	 Q60740237 -> NIL : (1, 'Into That Good Night')
+	 Q1215658 -> NIL : (1, 'Narvik')
+	 Q96464481 -> NIL : (1, 'The Man from Toronto')
+	 Q33105447 -> NIL : (1, "Webster's Third New International Dictionary")
+	 Q30639636 -> NIL : (1, '1994')
+	 Q6157133 -> NIL : (1, 'Spanish Actors Union')
+	 Q68473565 -> NIL : (1, 'Wen Xiaoyan')
+	 Q27075012 -> NIL : (1, 'Puerto Rican parakeet')
+	 Q28970848 -> NIL : (1, 'Musée historique')
+	 Q106366888 -> NIL : (1, 'Rae Blanchard')
+	 Q4515814 -> NIL : (1, 'Chicago Blackhawks')
+	 Q2173097 -> NIL : (1, 'Rudolf Ising')
+	 Q18707712 -> NIL : (1, 'Paolo Pittino')
+	 Q65089164 -> NIL : (1, 'Society for Pediatric Research')
+	 Q3776125 -> NIL : (1, 'Lingay')
+	 Q63485152 -> NIL : (1, 'Mark Rosenthal')
+	 Q29913288 -> NIL : (1, 'Justice Hill')
+	 Q51754704 -> NIL : (1, 'Meagan Spooner')
+	 Q22941110 -> NIL : (1, 'Agassiz Glacier')
+	 Q104759367 -> NIL : (1, 'Lhasa')
+	 Q37499955 -> NIL : (1, 'Fedorchuk')
+	 Q3759275 -> NIL : (1, 'Protomyctophum bolini')
+	 Q16158716 -> NIL : (1, 'Thrixeena Akua')
+	 Q6815867 -> NIL : (1, 'Memphis Red Sox')
+	 Q60793198 -> NIL : (1, 'Ecclesiastical History Society')
+	 Q15752780 -> NIL : (1, 'metallurgist')
+	 Q13559263 -> NIL : (1, 'Stergamataea delicatum')
+	 Q27997671 -> NIL : (1, 'Hemeroplanis immaculalis')
+	 Q1661694 -> NIL : (1, 'Tony Gibb')
+	 Q43082739 -> NIL : (1, 'Details')
+	 Q47542801 -> NIL : (1, 'Reason Party')
+	 Q17166003 -> NIL : (1, 'Thyrsites')
+	 Q29919397 -> NIL : (1, 'Watch Dogs')
+	 Q98602846 -> NIL : (1, 'Mike Preston')
+	 Q29840315 -> NIL : (1, 'A Story About My Uncle')
+	 Q56222528 -> NIL : (1, 'Ger Collins')
+	 Q11487615 -> NIL : (1, 'Zhang Yan')
+	 Q48976515 -> NIL : (1, 'Vacaville High School')
+	 Q60746472 -> NIL : (1, 'First Baptist Church of Hackensack')
+	 Q3183783 -> NIL : (1, 'Jorge Allen')
+	 Q1444446 -> NIL : (1, 'Großer Ehrenberg')
+	 Q47467278 -> NIL : (1, 'Bindiya')
+	 Q17993791 -> NIL : (1, 'Juan Carlos Colombo')
+	 Q42948123 -> NIL : (1, 'Alicia Abella')
+	 Q85103897 -> NIL : (1, 'Gibraltar Premier Division')
+	 Q2933806 -> NIL : (1, 'Feel the Love')
+	 Q85933172 -> NIL : (1, 'Nam Yoon-ho')
+	 Q43016242 -> NIL : (1, 'Anne Cross')
+	 Q576789 -> NIL : (3, 'Emsian;Emsian;Emsian')
+	 Q50807511 -> NIL : (1, 'Theresa Wallis')
+	 Q10469348 -> NIL : (1, 'Deraeocoris scutellaris')
+	 Q251640 -> NIL : (1, 'Lists of lunar eclipses')
+	 Q96384256 -> NIL : (1, 'Javier Revuelta')
+	 Q39054069 -> NIL : (1, '1978')
+	 Q53041968 -> NIL : (1, 'Two Wives')
+	 Q16744102 -> NIL : (1, '2 May 2014 Odessa clashes')
+	 Q85774087 -> NIL : (1, 'K.P.A.')
+	 Q57416451 -> NIL : (1, 'Jacques Renaud')
+	 Q103821076 -> NIL : (1, 'Kolomyia Raion')
+	 Q928190 -> NIL : (1, 'Antoine Dignef')
+	 Q29382720 -> NIL : (1, 'Choi Bo-Gun')
+	 Q15061717 -> NIL : (1, 'Weiherkopf')
+	 Q52369901 -> NIL : (1, 'Prem Kumar')
+	 Q30019049 -> NIL : (1, 'Simoneau, Wayne')
+	 Q37935480 -> NIL : (1, 'Ecola State Park')
+	 Q1944785 -> NIL : (1, 'Hygrotus inaequalis')
+	 Q19819236 -> NIL : (1, 'Carmen')
+	 Q5732396 -> NIL : (1, 'Boschia')
+	 Q7053873 -> NIL : (1, 'NASL')
+	 Q37952757 -> NIL : (1, 'Aurora Marion')
+	 Q29647216 -> NIL : (1, 'Isla San Jerónimo')
+	 Q823841 -> NIL : (1, 'Lorenz')
+	 Q56751170 -> NIL : (1, 'Thomas Stoll')
+	 Q46996766 -> NIL : (1, 'Patcharin Cheapchandej')
+	 Q30638772 -> NIL : (1, '1998')
+	 Q73920222 -> NIL : (1, '1989')
+	 Q62714512 -> NIL : (1, 'Alfred Blumberg')
+	 Q37822372 -> NIL : (1, 'David Bryant')
+	 Q50919066 -> NIL : (1, 'Huang Ming')
+	 Q9004127 -> NIL : (1, 'Heiward Mak')
+	 Q21507662 -> NIL : (1, 'Skeat')
+	 Q29618087 -> NIL : (1, 'Trey Hendrickson')
+update label ids under the pruning setting
+update label ids under the pruning setting
+update label ids under the pruning setting
+updating entity catalogue: keeping those associated with mentions
+training data:86379 docs, 1312/86379 NILs/mentions
+validation data:10688 docs, 154/10688 NILs/mentions
+testing data:10613 docs, 158/10613 NILs/mentions
+entities:79412

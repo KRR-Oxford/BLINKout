@@ -26,6 +26,7 @@ parser.add_argument('--use_NIL_tag', action="store_true",help="Whether to use NI
 parser.add_argument('--use_NIL_desc', action="store_true",help="Whether to add NIL description, instead of using an empty string")
 parser.add_argument('--use_NIL_desc_tag', action="store_true",help="Whether to use special token of NIL in the description, instead of using \"NIL\"")
 parser.add_argument('--use_synonyms', action="store_true",help="Whether to use synonyms for candidate representation")
+parser.add_argument('--max_cand_length',type=str,help="max candidate length",default='128')
 
 args = parser.parse_args()
 
@@ -46,6 +47,7 @@ with open(biencoder_config) as json_file:
     biencoder_params["path_to_model"] = biencoder_model_path
     biencoder_params["bert_model"] = biencoder_model # this updates the bert_model used (overwrites the one in the path_to_model_config)
     biencoder_params["lowercase"] = lowercase
+    biencoder_params["max_cand_length"] = int(args.max_cand_length)
 biencoder = load_biencoder(biencoder_params) # here it loads the biencoder
 
 # Read the first 10 or all entities from entity catalogue, e.g. entity.jsonl

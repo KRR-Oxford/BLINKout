@@ -22,7 +22,6 @@ def select_field(data, key1, key2=None):
     else:
         return [example[key1][key2] for example in data]
 
-
 def get_context_representation(
     sample,
     tokenizer,
@@ -45,25 +44,60 @@ def get_context_representation(
 
     left_quota = (max_seq_length - len(mention_tokens)) // 2 - 1
     right_quota = max_seq_length - len(mention_tokens) - left_quota - 2
+    mention_quota = len(mention_tokens)
     left_add = len(context_left)
     right_add = len(context_right)
+    #adjust the left (and right) quota based on the other to fill the max_seq_length
     if left_add <= left_quota:
         if right_add > right_quota:
-            right_quota += left_quota - left_add
+            right_quota += left_quota - left_add 
     else:
         if right_add <= right_quota:
             left_quota += right_quota - right_add
-
+    #the case when no left quota or right quota remained (they are 0 or negative) - here mention tokens might get shrinked
+    if left_quota < 0:
+        #print('left_quota:', left_quota)
+        mention_quota = mention_quota + left_quota
+        print('mention shrinked by %d:' % -left_quota, mention_tokens)
+        left_quota = 0
+    if right_quota < 0:
+        #print('right_quota:',right_quota)
+        mention_quota = mention_quota + right_quota
+        print('mention shrinked by %d:' % -right_quota, mention_tokens)
+        right_quota = 0        
+    mention_tokens = mention_tokens[:mention_quota]        
+    # if context_left[-left_quota:] != context_left[len(context_left)-left_quota:]:
+    #     print('context_left:',context_left)
+    #     print('left_quota:',left_quota)
+    #     print("context_left[-left_quota:]",context_left[-left_quota:])
+    #     print("context_left[len(context_left)-left_quota:]",context_left[len(context_left)-left_quota:])
+    #     '''
+    #         context_left: ['medication', ',', 'rehabilitation', 'and', 'health', 'care', 'consumption', 'in', 'adults', 'with']
+    #         left_quota: 12
+    #         context_left[-left_quota:] ['medication', ',', 'rehabilitation', 'and', 'health', 'care', 'consumption', 'in', 'adults', 'with']
+    #         context_left[len(context_left)-left_quota:] ['adults', 'with']
+    #         context_left: ['patient', '-', 'physician', 'disco', '##rdan', '##ce', 'in', 'global', 'assessment', 'in']
+    #         left_quota: 11
+    #         context_left[-left_quota:] ['patient', '-', 'physician', 'disco', '##rdan', '##ce', 'in', 'global', 'assessment', 'in']
+    #         context_left[len(context_left)-left_quota:] ['in']
+    #         context_left: ['spinal', 'load', 'in', 'nurses', 'during', 'emergency', 'lifting', 'of']
+    #     '''
+    if left_quota != 0:
+        assert context_left[-left_quota:] == context_left[max(0,len(context_left)-left_quota):]
     context_tokens = (
-        context_left[-left_quota:] + mention_tokens + context_right[:right_quota]
+        #context_left[-left_quota:] + mention_tokens + context_right[:right_quota]
+        context_left[max(0,len(context_left)-left_quota):] + mention_tokens + context_right[:right_quota]
     )
 
     context_tokens = ["[CLS]"] + context_tokens + ["[SEP]"]
     input_ids = tokenizer.convert_tokens_to_ids(context_tokens)
     padding = [0] * (max_seq_length - len(input_ids))
     input_ids += padding
-    assert len(input_ids) == max_seq_length
-
+    #assert len(input_ids) == max_seq_length
+    if len(input_ids) != max_seq_length:
+        print('len(input_ids):',len(input_ids),'max_seq_length:',max_seq_length)
+        print('context_tokens:',context_tokens)
+        print('mention_tokens:',mention_tokens)
     mention_ids = tokenizer.convert_tokens_to_ids(mention_tokens)
     if len(mention_ids) < max_seq_length:
         padding = [0] * (max_seq_length - len(mention_ids))
@@ -151,6 +185,7 @@ def get_candidate_representation(
 
 # remove the synonym rows from data (for the synonym as entities setting)
 # ignore the cases when synonyms are used as the entitiy; this appears when using the _syn_full data setting and when the mention and contexts repeats (the first appearance is the canonical name of the entity). 
+# this may occasionally remove simply duplicated data (e.g. 862817 kept out of 863798 in the NILK training data) - this is OK.
 def remove_syn_rows_from_data(samples,mention_key="mention",context_key="context",):
     dict_mention_in_context = {}
     sample_w_o_syn_rows = []
@@ -190,9 +225,10 @@ def process_mention_data(
 ):
     processed_samples = []
     # remove the synonym rows from data for inference, but not for training (if there are any, for the synonym as entities setting)
-    if remove_syn_rows:
-      samples = remove_syn_rows_from_data(samples)
     print('num of samples:',len(samples))
+    if remove_syn_rows:
+        samples = remove_syn_rows_from_data(samples)
+        print('num of samples after removing syn (or repeated) rows:',len(samples))
     if debug:
         samples = samples[:200]
 

@@ -5,9 +5,6 @@
 
 ## also added preprocessing for tigerchen52/Biomedical-Entity-Linking (Chen et al., 2021)
 
-# input: the UMLS folder (e.g. UMLS2017AA) containing MRCONSO.RRF, MRDEF.RRF, and MRSTY.RRF
-# output: preprocessed ontology files
-
 '''
 output format: each line is 
 for BLINK:
@@ -504,7 +501,7 @@ if prune_entity_catalogue:
         #list_iris: 40803
 
 # save the entity catalogue (and the one with a NIL entity)
-# for BLINK
+# for BLINK/Sieve
 output_to_file('%s/UMLS%s%s%s%s%s.jsonl' % (output_data_folder_path, onto_ver.replace('/','_'), '_pruned' + str(pruning_ratio) if prune_entity_catalogue else '', '_syn' if add_synonyms else '', output_syn_mark, ('_' + output_format) if output_format != 'BLINK' else ''),entity_json_str)
 # # for Biomedical-Entity-Linking
 # output_to_file('%s/UMLS%s%s.txt' % (output_data_folder_path, onto_ver.replace('/','_'), '_pruned' + str(pruning_ratio) if prune_entity_catalogue else ''),entity_str_bioel)
