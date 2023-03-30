@@ -148,7 +148,7 @@ bs_cand_enc=50 # for entity representation bs as 2000 for NILK with BERT-base ar
 use_debug_cross_enc=false
 train_cross=true
 use_NIL_threshold=false
-use_NIL_ranking=true
+use_NIL_ranking=false
 # the three NIL-rep settings below do not work when use_NIL_ranking is false
 use_NIL_tag=false
 use_NIL_desc=false
