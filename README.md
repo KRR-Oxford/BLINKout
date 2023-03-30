@@ -3,13 +3,23 @@ This is the anonymous repository for BLINKout.
 
 # Model Training and Inference
 See `step_all_BLINK.sh` for running BLINK models with Threshold-based and NIL-rep-based methods.
+* specify `dataset` (and `mm_onto_ver_model_mark` for MedMentions)
+* setting `bi_enc_bertmodel` and `cross_enc_bertmodel` (and change `further_model_mark` accordingly)
 * setting `train_bi`, `rep_ents`, `train_cross`, `inference` to `true` to perform each step. 
+* setting `use_best_top_k` as `true` if using tuned top-k, otherwise using default
 * setting `use_NIL_threshold` to `true` when using the threshold-based approach (and the corresponding `th2` as threshold value for each dataset)
 * setting `use_NIL_ranking` to `true` when using the NIL-rep-based approach (and setting NIL representation binary parameters of `use_NIL_tag`, `use_NIL_desc`, and `use_NIL_desc_tag`)
 
 See `step_all_BLINKout.sh` for running BLINKout models and the dynamic feature baseline.
+* specify `dataset` (and `mm_onto_ver_model_mark` for MedMentions)
+* setting `bi_enc_bertmodel` and `cross_enc_bertmodel` (and change `further_model_mark` accordingly)
+* setting `train_bi`, `rep_ents`, `train_cross`, `inference` to `true` to perform each step. 
+* setting `use_best_top_k` as `true` if using tuned top-k, otherwise using default
+* setting NIL representation binary parameters of `use_NIL_tag`, `use_NIL_desc`, and `use_NIL_desc_tag`.
+* setting `dynamic_emb_extra_ft_baseline` to `true` and select the corresponding line (around 273-274) to use either the NIL regulariser (`gu2021`) or the dynamic feature baseline (`full-features-NIL-infer`), also setting the value of `lambda_NIL`.
 
 See `step_all_BM25+cross-enc.sh` for all BM25+BERT models.
+* requires the tokenizer of the saved biencoder model, so run `step_all_BLINK.sh` with the same biencoder model first before running this script.
 
 # Data Sources
 * ShARe/CLEF 2013 dataset is from https://physionet.org/content/shareclefehealth2013/1.0/

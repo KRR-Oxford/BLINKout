@@ -267,12 +267,11 @@ fi
 
 if [ "$dynamic_emb_extra_ft_baseline" = true ]
 then
-  lambda_NIL=0.25 # as default
-  #lambda_NIL=0.015
+  lambda_NIL=0.25 # as default for dynamic feature-based baseline
+  #lambda_NIL=0.01 # 0.25 for ShARe/CLEF 2013 and MM-pruned-0.2 datasets, 0.2 for MM-pruned-0.1, 0.05 for MM-2014AB, and 0.01 for NILK-sample.
+
   #arg_dynamic_emb_extra_ft_baseline=--use_NIL_classification\ --lambda_NIL\ ${lambda_NIL}\ --use_score_features\ --use_score_pooling\ --use_men_only_score_ft\ --use_extra_features\ --use_NIL_classification_infer;joint_learning_mark='full-features-NIL-infer'
   arg_dynamic_emb_extra_ft_baseline=--use_NIL_classification\ --lambda_NIL\ ${lambda_NIL}\ --use_men_only_score_ft;joint_learning_mark='gu2021'
-  #arg_dynamic_emb_extra_ft_baseline=--use_NIL_classification\ --lambda_NIL\ ${lambda_NIL}\ --use_men_only_score_ft\ --use_score_features\ --use_score_pooling\ --use_extra_features;joint_learning_mark='full-features'
-  #arg_dynamic_emb_extra_ft_baseline=--use_NIL_classification\ --lambda_NIL\ ${lambda_NIL}\ --use_score_features\ --use_score_pooling\ --use_extra_features;joint_learning_mark='rao2013'
 else
   arg_dynamic_emb_extra_ft_baseline=''
   joint_learning_mark=''
