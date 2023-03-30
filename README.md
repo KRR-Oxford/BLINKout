@@ -9,7 +9,7 @@ See `step_all_BLINKout.sh` for running BLINKout models and the dynamic feature b
 See `step_all_BM25+cross-enc.sh` for all BM25+BERT models.
 
 For all scripts above:
-* specify `dataset` (and `mm_onto_ver_model_mark` for MedMentions)
+* setting `dataset` (and `mm_onto_ver_model_mark` for MedMentions)
 * setting `bi_enc_bertmodel` and `cross_enc_bertmodel` (and change `further_model_mark` accordingly)
 * setting `train_bi` (except BM25), `rep_ents`, `train_cross`, `inference` to `true` to perform each step. 
 * setting `use_best_top_k` as `true` if using tuned top-k, otherwise using default
