@@ -56,6 +56,7 @@ then
   else 
     top_k_cross=4 #default as 4 for NILK-sample and 10 for the other datasets; the best BLINKout model had 𝑘 as 150 for ShARe/CLEF 2013, 50 for MM-pruned-0.1, MM-2014AB, and NILK-sample, and 100 for MM-pruned-0.2.
   fi
+  lambda_NIL=0.01
 
   cross_enc_epoch_name=''
   further_result_mark='-new'
@@ -81,6 +82,7 @@ then
   else 
     top_k_cross=10 #default as 4 for NILK-sample and 10 for the other datasets; the best BLINKout model had 𝑘 as 150 for ShARe/CLEF 2013, 50 for MM-pruned-0.1, MM-2014AB, and NILK-sample, and 100 for MM-pruned-0.2.
   fi
+  lambda_NIL=0.25
   num_train_epochs_bi_enc=3
   num_train_epochs_cross_enc=4
 
@@ -110,7 +112,7 @@ then
     else 
       top_k_cross=10 #default as 4 for NILK-sample and 10 for the other datasets; the best BLINKout model had 𝑘 as 150 for ShARe/CLEF 2013, 50 for MM-pruned-0.1, MM-2014AB, and NILK-sample, and 100 for MM-pruned-0.2.
     fi
-
+    lambda_NIL=0.2
   fi
   if [ "$onto_ver" = 2017AA_pruned0.2 ]
   then
@@ -123,18 +125,7 @@ then
     else 
       top_k_cross=10 #default as 4 for NILK-sample and 10 for the other datasets; the best BLINKout model had 𝑘 as 150 for ShARe/CLEF 2013, 50 for MM-pruned-0.1, MM-2014AB, and NILK-sample, and 100 for MM-pruned-0.2.
     fi
-  fi
-  if [ "$onto_ver" = 2015AB ]
-  then
-    NIL_ent_ind_w_syn=128974
-    NIL_ent_ind=36907
-
-    if [ "$use_best_top_k" = true ]
-    then
-      top_k_cross=10 # to be tuned
-    else 
-      top_k_cross=10 #default as 4 for NILK-sample and 10 for the other datasets; the best BLINKout model had 𝑘 as 150 for ShARe/CLEF 2013, 50 for MM-pruned-0.1, MM-2014AB, and NILK-sample, and 100 for MM-pruned-0.2.
-    fi
+    lambda_NIL=0.25
   fi
   if [ "$onto_ver" = 2014AB ]
   then
@@ -147,6 +138,7 @@ then
     else 
       top_k_cross=10 #default as 4 for NILK-sample and 10 for the other datasets; the best BLINKout model had 𝑘 as 150 for ShARe/CLEF 2013, 50 for MM-pruned-0.1, MM-2014AB, and NILK-sample, and 100 for MM-pruned-0.2.
     fi
+    lambda_NIL=0.05
   fi
 
   max_cand_length=128
@@ -267,11 +259,9 @@ fi
 
 if [ "$dynamic_emb_extra_ft_baseline" = true ]
 then
-  lambda_NIL=0.25 # as default for dynamic feature-based baseline
-  #lambda_NIL=0.01 # 0.25 for ShARe/CLEF 2013 and MM-pruned-0.2 datasets, 0.2 for MM-pruned-0.1, 0.05 for MM-2014AB, and 0.01 for NILK-sample.
+  #arg_dynamic_emb_extra_ft_baseline=--use_NIL_classification\ --lambda_NIL\ ${lambda_NIL}\ --use_score_features\ --use_score_pooling\ --use_men_only_score_ft\ --use_extra_features\ --use_NIL_classification_infer;joint_learning_mark='full-features-NIL-infer';lambda_NIL=0.25 # as default for dynamic feature-based baseline
+  arg_dynamic_emb_extra_ft_baseline=--use_NIL_classification\ --lambda_NIL\ ${lambda_NIL}\ --use_men_only_score_ft;joint_learning_mark='gu2021' #lambda_NIL=0.01 # 0.25 for ShARe/CLEF 2013 and MM-pruned-0.2 datasets, 0.2 for MM-pruned-0.1, 0.05 for MM-2014AB, and 0.01 for NILK-sample.
 
-  #arg_dynamic_emb_extra_ft_baseline=--use_NIL_classification\ --lambda_NIL\ ${lambda_NIL}\ --use_score_features\ --use_score_pooling\ --use_men_only_score_ft\ --use_extra_features\ --use_NIL_classification_infer;joint_learning_mark='full-features-NIL-infer'
-  arg_dynamic_emb_extra_ft_baseline=--use_NIL_classification\ --lambda_NIL\ ${lambda_NIL}\ --use_men_only_score_ft;joint_learning_mark='gu2021'
 else
   arg_dynamic_emb_extra_ft_baseline=''
   joint_learning_mark=''
