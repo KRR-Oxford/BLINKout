@@ -1,5 +1,5 @@
-# BLINKout-anonymous
-This is the anonymous repository for BLINKout.
+# BLINKout
+This is the repository for the work [Reveal the Unknown: Out-of-Knowledge-Base Mention Discovery with Entity Linking](https://arxiv.org/abs/2302.07189).
 
 # Model Training and Inference
 See `step_all_BLINK.sh` for running BLINK models with Threshold-based and NIL-rep-based methods.
