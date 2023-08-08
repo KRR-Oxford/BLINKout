@@ -1,5 +1,9 @@
-# BLINKout
-This is the repository for the work [Reveal the Unknown: Out-of-Knowledge-Base Mention Discovery with Entity Linking](https://arxiv.org/abs/2302.07189).
+# BLINKout: Out-of-KB Mention Discovery
+This is the official repository for [Reveal the Unknown: Out-of-Knowledge-Base Mention Discovery with Entity Linking](https://arxiv.org/abs/2302.07189), accepted for CIKM 2023. 
+
+The study adapts BERT-based Entity Linking (BLINK) to identify mentions that do not have corresponding KB entities by matching them to a special NIL entity, with NIL entity representation and classification, and synonym enhancement. 
+
+The study also applies KB Pruning and Versioning strategies to automatically construct out-of-KB datasets from common in-KB EL datasets. Please see the model training and data construction scripts below.
 
 # Model Training and Inference
 See `step_all_BLINK.sh` for running BLINK models with Threshold-based and NIL-rep-based methods.
