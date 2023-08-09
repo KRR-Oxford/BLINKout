@@ -29,7 +29,12 @@ For `step_all_BLINKout.sh`, further
 For `step_all_BM25+cross-enc.sh`
 * requiring the tokenizer of the saved biencoder model, so run `step_all_BLINK.sh` with the same biencoder model first before running this script.
 
-# Data Sources
+# Data Availability and Data Sources
+
+Link to out-of-KB mention discovery datasets: https://zenodo.org/record/8228371. 
+
+We acknowledge to from the sources below for data construction:
+
 * ShARe/CLEF 2013 dataset is from https://physionet.org/content/shareclefehealth2013/1.0/
 * MedMention dataset is from https://github.com/chanzuckerberg/MedMentions
 * UMLS (versions 2012AB, 2014AB, 2017AA) is from https://www.nlm.nih.gov/research/umls/index.html
