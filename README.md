@@ -33,7 +33,7 @@ For `step_all_BM25+cross-enc.sh`
 
 Link to out-of-KB mention discovery datasets: https://zenodo.org/record/8228371. 
 
-We acknowledge to from the sources below for data construction:
+We acknowledge the sources below for data construction:
 
 * ShARe/CLEF 2013 dataset is from https://physionet.org/content/shareclefehealth2013/1.0/
 * MedMention dataset is from https://github.com/chanzuckerberg/MedMentions
@@ -47,4 +47,4 @@ We acknowledge to from the sources below for data construction:
 See files under the `preprocessing` folder, where running scripts to create the datasets are in `run_preprocess_ents_and_data.sh`.
 
 # Acknowledgement
-The repository is based on [`BLINK`](https://github.com/facebookresearch/BLINK) under the MIT license.
+The repository is based on [`BLINK`](https://github.com/facebookresearch/BLINK) under the MIT license. Also, we acknowledge the data sources above.
