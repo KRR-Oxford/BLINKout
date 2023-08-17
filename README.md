@@ -44,7 +44,7 @@ We acknowledge the sources below for data construction:
 * WikiData 2017 dump is from https://archive.org/download/enwiki-20170220/enwiki-20170220-pages-articles.xml.bz2
 
 # Data Scripts
-See files under the `preprocessing` folder, where running scripts to create the datasets are in `run_preprocess_ents_and_data.sh`.
+See files under the [`preprocessing`](https://github.com/KRR-Oxford/BLINKout/tree/main/preprocessing) folder, where running scripts to create the datasets are in `run_preprocess_ents_and_data.sh`.
 
 # Acknowledgement
 The repository is based on [`BLINK`](https://github.com/facebookresearch/BLINK) under the MIT license. Also, we acknowledge the data sources above.
