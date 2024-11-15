@@ -5,6 +5,8 @@ The study adapts BERT-based Entity Linking (BLINK) to identify mentions that do 
 
 The study also applies KB Pruning and Versioning strategies to automatically construct out-of-KB datasets from common in-KB Entity Linking datasets. Please see the model training and data construction scripts below.
 
+Note: we noticed some Dependabot alerts related to the previous versions of libraries (Transformers, PyTorch, NLTK, and Flair, as in `requirements.txt`), but we have limited bandwidth to resolve them for this research-based project. Please be aware of this when you are using the project.
+
 # Model Training and Inference
 See `step_all_BLINK.sh` for running BLINK models with Threshold-based and NIL-rep-based methods.
 
